@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Numkinch"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Numkinch">
+				<Option output="/Users/muetdhiver/Projets/Dépôts/Numkinch/Numkinch" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/muetdhiver/Projets/Dépôts/Numkinch"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 Numkinch"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Numkinch/fast">
+				<Option output="/Users/muetdhiver/Projets/Dépôts/Numkinch/Numkinch" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/muetdhiver/Projets/Dépôts/Numkinch"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 Numkinch/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Core/ChooseCharactersState.cpp">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Core/ChooseCharactersState.h">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Core/GameEngine.cpp">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Core/GameEngine.h">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Core/GameState.h">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Core/GameStateManager.cpp">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Core/GameStateManager.h">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Core/MainMenuState.cpp">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Core/MainMenuState.h">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Button.cpp">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Button.h">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/ChooseCharacterMenu.cpp">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/ChooseCharacterMenu.h">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Element.cpp">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Element.h">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/MenuBackground.cpp">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/MenuBackground.h">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Main.cpp">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/FindSDL2.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
