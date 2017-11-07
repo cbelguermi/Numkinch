@@ -5,7 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Numkinch.dir/Core/GameStateManager.cpp.o"
   "CMakeFiles/Numkinch.dir/GUI/Element.cpp.o"
   "CMakeFiles/Numkinch.dir/GUI/Button.cpp.o"
-  "CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.o"
+  "CMakeFiles/Numkinch.dir/GUI/Background.cpp.o"
   "CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o"
   "CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o"
   "CMakeFiles/Numkinch.dir/Logic/Race.cpp.o"

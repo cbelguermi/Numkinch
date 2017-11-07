@@ -4,6 +4,6 @@
 
 #include "Elf.h"
 
-Elf::Elf() : Race() {
+Elf::Elf() : Race() {}
 
-}
+Elf::Elf(Class &characterClass) : Race(characterClass) {}

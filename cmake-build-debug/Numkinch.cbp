@@ -121,6 +121,12 @@
 		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Core/PlayState.h">
 			<Option target="Numkinch"/>
 		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Background.cpp">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Background.h">
+			<Option target="Numkinch"/>
+		</Unit>
 		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Button.cpp">
 			<Option target="Numkinch"/>
 		</Unit>
@@ -131,12 +137,6 @@
 			<Option target="Numkinch"/>
 		</Unit>
 		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Element.h">
-			<Option target="Numkinch"/>
-		</Unit>
-		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/MenuBackground.cpp">
-			<Option target="Numkinch"/>
-		</Unit>
-		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/MenuBackground.h">
 			<Option target="Numkinch"/>
 		</Unit>
 		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Sprite.cpp">

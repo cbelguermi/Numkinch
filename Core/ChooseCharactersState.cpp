@@ -3,28 +3,24 @@
 //
 
 #include "ChooseCharactersState.h"
-#include "PlayState.h"
 #include "../Logic/CharacterFactory.h"
-
-#define NB_PLAYERS 4
+#include "PlayState.h"
 
 ChooseCharactersState::ChooseCharactersState() : _chooseCharacterBg(CHOOSE_CHAR_BG_PATH),
                                                  _playGameBtn(GAME_BUTTON_PATH, GAME_BUTTON_X, GAME_BUTTON_Y,
                                                  GAME_BUTTON_WIDTH, GAME_BUTTON_HEIGHT)
 {}
 
-void ChooseCharactersState:: playStateHandler()
+void ChooseCharactersState:: playStateHandler(vector<Race *> & players)
 {
-    GameState * playState = new PlayState(_randomPlayers);
+    auto * playState = new PlayState();
+    playState->setPlayers(players);
     GameStateManager::get().changeGameState(playState);
 }
 
 //TODO: generate 4 randomly chosen characters, put them in a vector and pass it to PlayState
 void ChooseCharactersState::onEnter()
 {
-    for (int i = 0; i < NB_PLAYERS; i++) {
-        _randomPlayers.push_back(unique_ptr<Race>(CharacterFactory::get().createCharacter()));
-    }
 }
 
 void ChooseCharactersState::onExit()
@@ -34,11 +30,18 @@ void ChooseCharactersState::onExit()
 
 void ChooseCharactersState::handleEvents()
 {
+
+    vector<Race *> randomPlayers(NB_PLAYERS);
+    for (int i = 0; i < NB_PLAYERS; i++) {
+        randomPlayers[i] = CharacterFactory::get().createCharacter();
+    }
+
     SDL_Event event{};
     while (SDL_PollEvent(& event) != 0)
     {
         if (event.type == SDL_QUIT)
         {
+            onExit();
             GameEngine::get().Quit();
             break;
         }
@@ -46,7 +49,8 @@ void ChooseCharactersState::handleEvents()
         _playGameBtn.handleEvent(&event);
         if (_playGameBtn.pressed())
         {
-            playStateHandler();
+            playStateHandler(randomPlayers);
+            break;
         }
     }
 }

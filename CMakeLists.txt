@@ -15,7 +15,7 @@ if (APPLE)
     set(SDL2_TTF_LIBRARY /Library/Frameworks/SDL2_ttf.framework)
 endif (APPLE)
 
-set(SOURCE_FILES Main.cpp Core/GameEngine.cpp Core/GameEngine.h Core/GameState.h Core/MainMenuState.cpp Core/MainMenuState.h Core/GameStateManager.cpp Core/GameStateManager.h GUI/Element.h GUI/Element.cpp GUI/Button.cpp GUI/Button.h GUI/MenuBackground.cpp GUI/MenuBackground.h Core/ChooseCharactersState.cpp Core/ChooseCharactersState.h Logic/CharacterFactory.cpp Logic/CharacterFactory.h Logic/Race.cpp Logic/Race.h Logic/Class.cpp Logic/Class.h Logic/SkillSet.cpp Logic/SkillSet.h Logic/Elf.cpp Logic/Elf.h Logic/Skill.cpp Logic/Skill.h Logic/Dwarf.cpp Logic/Dwarf.h Logic/Assassin.cpp Logic/Assassin.h Logic/Paladin.cpp Logic/Paladin.h Core/PlayState.cpp Core/PlayState.h GUI/Sprite.cpp GUI/Sprite.h)
+set(SOURCE_FILES Main.cpp Core/GameEngine.cpp Core/GameEngine.h Core/GameState.h Core/MainMenuState.cpp Core/MainMenuState.h Core/GameStateManager.cpp Core/GameStateManager.h GUI/Element.h GUI/Element.cpp GUI/Button.cpp GUI/Button.h GUI/Background.cpp GUI/Background.h Core/ChooseCharactersState.cpp Core/ChooseCharactersState.h Logic/CharacterFactory.cpp Logic/CharacterFactory.h Logic/Race.cpp Logic/Race.h Logic/Class.cpp Logic/Class.h Logic/SkillSet.cpp Logic/SkillSet.h Logic/Elf.cpp Logic/Elf.h Logic/Skill.cpp Logic/Skill.h Logic/Dwarf.cpp Logic/Dwarf.h Logic/Assassin.cpp Logic/Assassin.h Logic/Paladin.cpp Logic/Paladin.h Core/PlayState.cpp Core/PlayState.h GUI/Sprite.cpp GUI/Sprite.h)
 add_executable(Numkinch ${SOURCE_FILES})
 
 include_directories(${SDL2_INCLUDE_DIR} ${SDL2_IMAGE_INCLUDE_DIR} ${SDL2_TTF_INCLUDE_DIR})

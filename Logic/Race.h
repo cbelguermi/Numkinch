@@ -18,6 +18,8 @@ private:
 public:
     Race();
 
+    explicit Race(Class & characterClass);
+
     void setCharacterClass(Class & characterClass);
 
 };

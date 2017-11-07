@@ -32,6 +32,7 @@ void MainMenuState::handleEvents() {
     {
         if (event.type == SDL_QUIT)
         {
+            onExit();
             GameEngine::get().Quit();
             break;
         }
@@ -45,6 +46,7 @@ void MainMenuState::handleEvents() {
         _menuQuitBtn.handleEvent(&event);
         if (_menuQuitBtn.pressed())
         {
+            onExit();
             GameEngine::get().Quit();
             break;
         }

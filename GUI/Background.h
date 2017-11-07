@@ -8,10 +8,10 @@
 #include "../Core/GameEngine.h"
 #include "Element.h"
 
-class MenuBackground : public Element {
+class Background : public Element {
 
 public:
-    explicit MenuBackground(const char * path);
+    explicit Background(const char * path);
 
     void handleEvent(SDL_Event * event) override;
 

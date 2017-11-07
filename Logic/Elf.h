@@ -13,6 +13,8 @@ class Elf : public Race {
 public:
     Elf();
 
+    explicit Elf(Class & characterClass);
+
 };
 
 

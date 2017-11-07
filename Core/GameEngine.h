@@ -8,6 +8,9 @@
 #include <SDL.h>
 #include "GameStateManager.h"
 
+#define NB_PLAYERS 4
+
+
 class GameEngine {
 
 private:

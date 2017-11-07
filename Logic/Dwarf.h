@@ -10,6 +10,11 @@
 
 class Dwarf : public Race {
 
+public:
+    Dwarf();
+
+    Dwarf(Class & characterClass);
+
 };
 
 

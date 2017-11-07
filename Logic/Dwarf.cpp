@@ -3,3 +3,7 @@
 //
 
 #include "Dwarf.h"
+
+Dwarf::Dwarf() : Race() {}
+
+Dwarf::Dwarf(Class &characterClass) : Race(characterClass) {}

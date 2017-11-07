@@ -7,7 +7,7 @@
 
 #include "GameEngine.h"
 #include "GameState.h"
-#include "../GUI/MenuBackground.h"
+#include "../GUI/Background.h"
 #include "../GUI/Button.h"
 
 #define MENU_BG_PATH        "./res/menu_bg.png"
@@ -24,7 +24,7 @@
 class MainMenuState : public GameState {
 
 private:
-    MenuBackground _menuBg;
+    Background _menuBg;
     Button _menuNewPlayBtn;
     Button _menuQuitBtn;
 

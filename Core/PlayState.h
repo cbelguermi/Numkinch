@@ -8,20 +8,23 @@
 #include <vector>
 #include "../Logic/Race.h"
 #include "GameState.h"
+#include "../GUI/Background.h"
+
+#define IN_GAME_BG_PATH "./res/choose_bg.png"
+
 
 using namespace std;
 
 class PlayState : public GameState {
 
 private:
+    Background _inGameBg;
     vector<unique_ptr<Race>> _players;
 
 public:
-    PlayState() = default;
+    PlayState();
 
-    explicit PlayState(vector<unique_ptr<Race>> & players);
-
-    PlayState(const PlayState &) = default;
+    void setPlayers(vector<Race *> players);
 
     void onEnter() override;
 

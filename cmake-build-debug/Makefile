@@ -258,6 +258,33 @@ Core/PlayState.cpp.s:
 	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Core/PlayState.cpp.s
 .PHONY : Core/PlayState.cpp.s
 
+GUI/Background.o: GUI/Background.cpp.o
+
+.PHONY : GUI/Background.o
+
+# target to build an object file
+GUI/Background.cpp.o:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/Background.cpp.o
+.PHONY : GUI/Background.cpp.o
+
+GUI/Background.i: GUI/Background.cpp.i
+
+.PHONY : GUI/Background.i
+
+# target to preprocess a source file
+GUI/Background.cpp.i:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/Background.cpp.i
+.PHONY : GUI/Background.cpp.i
+
+GUI/Background.s: GUI/Background.cpp.s
+
+.PHONY : GUI/Background.s
+
+# target to generate assembly for a file
+GUI/Background.cpp.s:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/Background.cpp.s
+.PHONY : GUI/Background.cpp.s
+
 GUI/Button.o: GUI/Button.cpp.o
 
 .PHONY : GUI/Button.o
@@ -311,33 +338,6 @@ GUI/Element.s: GUI/Element.cpp.s
 GUI/Element.cpp.s:
 	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/Element.cpp.s
 .PHONY : GUI/Element.cpp.s
-
-GUI/MenuBackground.o: GUI/MenuBackground.cpp.o
-
-.PHONY : GUI/MenuBackground.o
-
-# target to build an object file
-GUI/MenuBackground.cpp.o:
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.o
-.PHONY : GUI/MenuBackground.cpp.o
-
-GUI/MenuBackground.i: GUI/MenuBackground.cpp.i
-
-.PHONY : GUI/MenuBackground.i
-
-# target to preprocess a source file
-GUI/MenuBackground.cpp.i:
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.i
-.PHONY : GUI/MenuBackground.cpp.i
-
-GUI/MenuBackground.s: GUI/MenuBackground.cpp.s
-
-.PHONY : GUI/MenuBackground.s
-
-# target to generate assembly for a file
-GUI/MenuBackground.cpp.s:
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.s
-.PHONY : GUI/MenuBackground.cpp.s
 
 GUI/Sprite.o: GUI/Sprite.cpp.o
 
@@ -660,15 +660,15 @@ help:
 	@echo "... Core/PlayState.o"
 	@echo "... Core/PlayState.i"
 	@echo "... Core/PlayState.s"
+	@echo "... GUI/Background.o"
+	@echo "... GUI/Background.i"
+	@echo "... GUI/Background.s"
 	@echo "... GUI/Button.o"
 	@echo "... GUI/Button.i"
 	@echo "... GUI/Button.s"
 	@echo "... GUI/Element.o"
 	@echo "... GUI/Element.i"
 	@echo "... GUI/Element.s"
-	@echo "... GUI/MenuBackground.o"
-	@echo "... GUI/MenuBackground.i"
-	@echo "... GUI/MenuBackground.s"
 	@echo "... GUI/Sprite.o"
 	@echo "... GUI/Sprite.i"
 	@echo "... GUI/Sprite.s"

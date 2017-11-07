@@ -6,7 +6,7 @@
 #define NUMKINCH_CHOOSECHARACTERSSTATE_H
 
 #include "GameState.h"
-#include "../GUI/MenuBackground.h"
+#include "../GUI/Background.h"
 #include "../GUI/Button.h"
 #include "../Logic/Race.h"
 #include <vector>
@@ -22,13 +22,10 @@
 class ChooseCharactersState : public GameState {
 
 private:
-    MenuBackground _chooseCharacterBg;
+    Background _chooseCharacterBg;
     Button _playGameBtn;
 
-
-    vector<unique_ptr<Race>> _randomPlayers;
-
-    void playStateHandler();
+    void playStateHandler(vector<Race *> & players);
 
 
 public:

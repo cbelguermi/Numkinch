@@ -201,28 +201,28 @@ CMakeFiles/Numkinch.dir/GUI/Button.cpp.o.provides: CMakeFiles/Numkinch.dir/GUI/B
 CMakeFiles/Numkinch.dir/GUI/Button.cpp.o.provides.build: CMakeFiles/Numkinch.dir/GUI/Button.cpp.o
 
 
-CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.o: CMakeFiles/Numkinch.dir/flags.make
-CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.o: ../GUI/MenuBackground.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/MenuBackground.cpp
+CMakeFiles/Numkinch.dir/GUI/Background.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/GUI/Background.cpp.o: ../GUI/Background.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Numkinch.dir/GUI/Background.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/GUI/Background.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Background.cpp
 
-CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/MenuBackground.cpp > CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.i
+CMakeFiles/Numkinch.dir/GUI/Background.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/GUI/Background.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Background.cpp > CMakeFiles/Numkinch.dir/GUI/Background.cpp.i
 
-CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/MenuBackground.cpp -o CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.s
+CMakeFiles/Numkinch.dir/GUI/Background.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/GUI/Background.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Background.cpp -o CMakeFiles/Numkinch.dir/GUI/Background.cpp.s
 
-CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.o.requires:
+CMakeFiles/Numkinch.dir/GUI/Background.cpp.o.requires:
 
-.PHONY : CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.o.requires
+.PHONY : CMakeFiles/Numkinch.dir/GUI/Background.cpp.o.requires
 
-CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.o.provides: CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.o.provides.build
-.PHONY : CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.o.provides
+CMakeFiles/Numkinch.dir/GUI/Background.cpp.o.provides: CMakeFiles/Numkinch.dir/GUI/Background.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/Background.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/GUI/Background.cpp.o.provides
 
-CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.o.provides.build: CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.o
+CMakeFiles/Numkinch.dir/GUI/Background.cpp.o.provides.build: CMakeFiles/Numkinch.dir/GUI/Background.cpp.o
 
 
 CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o: CMakeFiles/Numkinch.dir/flags.make
@@ -521,7 +521,7 @@ Numkinch_OBJECTS = \
 "CMakeFiles/Numkinch.dir/Core/GameStateManager.cpp.o" \
 "CMakeFiles/Numkinch.dir/GUI/Element.cpp.o" \
 "CMakeFiles/Numkinch.dir/GUI/Button.cpp.o" \
-"CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.o" \
+"CMakeFiles/Numkinch.dir/GUI/Background.cpp.o" \
 "CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o" \
 "CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o" \
 "CMakeFiles/Numkinch.dir/Logic/Race.cpp.o" \
@@ -544,7 +544,7 @@ Numkinch_EXTERNAL_OBJECTS =
 ../Numkinch: CMakeFiles/Numkinch.dir/Core/GameStateManager.cpp.o
 ../Numkinch: CMakeFiles/Numkinch.dir/GUI/Element.cpp.o
 ../Numkinch: CMakeFiles/Numkinch.dir/GUI/Button.cpp.o
-../Numkinch: CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/GUI/Background.cpp.o
 ../Numkinch: CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o
 ../Numkinch: CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o
 ../Numkinch: CMakeFiles/Numkinch.dir/Logic/Race.cpp.o
@@ -573,7 +573,7 @@ CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/Core/MainMenuState.cpp
 CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/Core/GameStateManager.cpp.o.requires
 CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/GUI/Element.cpp.o.requires
 CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/GUI/Button.cpp.o.requires
-CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/GUI/Background.cpp.o.requires
 CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o.requires
 CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o.requires
 CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/Logic/Race.cpp.o.requires

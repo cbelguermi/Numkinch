@@ -23,7 +23,6 @@ CharacterFactory & CharacterFactory::get()
 }
 /* =============================== */
 
-
 /**
  * Randomly chooses a (race, class) combination and creates the character.
  *
@@ -41,42 +40,32 @@ Race * CharacterFactory::createCharacter() {
     randClass = uniformClassDistribution(randomEngine);
 
     Race * newChar = nullptr;
-
-    switch(randRace) {
-        case elf:
-        {
-            Elf newElf;
-            newChar = &newElf;
+    switch (randRace) {
+        case elf: {
+            newChar = new Elf();
         }
-        case dwarf:
-        {
-            Dwarf newDwarf;
-            newChar = & newDwarf;
+        case dwarf: {
+            newChar = new Dwarf();
         }
-        default:
-        {
-            Dwarf defaultDwarf;
-            newChar = & defaultDwarf;
+        default: {
+            newChar = new Dwarf();
         }
     }
 
-    switch(randClass) {
-        case assassin:
-        {
+    switch (randClass) {
+        case assassin: {
             Assassin tempAssassin;
-            Class & newAssassin = tempAssassin;
+            Class &newAssassin = tempAssassin;
             newChar->setCharacterClass(newAssassin);
         }
-        case paladin:
-        {
+        case paladin: {
             Paladin tempPaladin;
-            Class & newPaladin = tempPaladin;
+            Class &newPaladin = tempPaladin;
             newChar->setCharacterClass(newPaladin);
         }
-        default:
-        {
+        default: {
             Paladin defaultPaladin;
-            Class & newDefPaladin = defaultPaladin;
+            Class &newDefPaladin = defaultPaladin;
             newChar->setCharacterClass(newDefPaladin);
         }
     }

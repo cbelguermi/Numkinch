@@ -10,6 +10,10 @@ Race::Race() {
 
 }
 
+Race::Race(Class & characterClass) : _class(characterClass) {
+
+}
+
 void Race::setCharacterClass(Class & characterClass) {
 
     _class = characterClass;
