@@ -7,15 +7,15 @@
 Element::Element(const char * path) {
 
     _imagePath = path;
-    _surface = NULL;
-    _texture = NULL;
+    _surface = nullptr;
+    _texture = nullptr;
 }
 
 void Element::loadImage() {
 
     try {
         _surface = IMG_Load(_imagePath);
-        if (_surface == NULL)
+        if (_surface == nullptr)
             throw "Surface init failed";
     }
     catch (char * str) {
@@ -28,7 +28,7 @@ void Element::loadTexture() {
 
     try {
         _texture = SDL_CreateTextureFromSurface(GameEngine::getGameRenderer(), _surface);
-        if (_texture == NULL)
+        if (_texture == nullptr)
             throw "Texture init failed";
     }
     catch (char * str) {
@@ -39,7 +39,13 @@ void Element::loadTexture() {
 
 Element::~Element() {
 
-    _imagePath = NULL;
-    _texture = NULL;
-    _surface = NULL;
+    _imagePath = nullptr;
+    _texture = nullptr;
+    _surface = nullptr;
+}
+
+void Element::cleanup() {
+
+    SDL_FreeSurface(_surface);
+    SDL_DestroyTexture(_texture);
 }

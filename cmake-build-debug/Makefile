@@ -231,6 +231,33 @@ Core/MainMenuState.cpp.s:
 	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Core/MainMenuState.cpp.s
 .PHONY : Core/MainMenuState.cpp.s
 
+Core/PlayState.o: Core/PlayState.cpp.o
+
+.PHONY : Core/PlayState.o
+
+# target to build an object file
+Core/PlayState.cpp.o:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o
+.PHONY : Core/PlayState.cpp.o
+
+Core/PlayState.i: Core/PlayState.cpp.i
+
+.PHONY : Core/PlayState.i
+
+# target to preprocess a source file
+Core/PlayState.cpp.i:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Core/PlayState.cpp.i
+.PHONY : Core/PlayState.cpp.i
+
+Core/PlayState.s: Core/PlayState.cpp.s
+
+.PHONY : Core/PlayState.s
+
+# target to generate assembly for a file
+Core/PlayState.cpp.s:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Core/PlayState.cpp.s
+.PHONY : Core/PlayState.cpp.s
+
 GUI/Button.o: GUI/Button.cpp.o
 
 .PHONY : GUI/Button.o
@@ -257,33 +284,6 @@ GUI/Button.s: GUI/Button.cpp.s
 GUI/Button.cpp.s:
 	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/Button.cpp.s
 .PHONY : GUI/Button.cpp.s
-
-GUI/ChooseCharacterMenu.o: GUI/ChooseCharacterMenu.cpp.o
-
-.PHONY : GUI/ChooseCharacterMenu.o
-
-# target to build an object file
-GUI/ChooseCharacterMenu.cpp.o:
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/ChooseCharacterMenu.cpp.o
-.PHONY : GUI/ChooseCharacterMenu.cpp.o
-
-GUI/ChooseCharacterMenu.i: GUI/ChooseCharacterMenu.cpp.i
-
-.PHONY : GUI/ChooseCharacterMenu.i
-
-# target to preprocess a source file
-GUI/ChooseCharacterMenu.cpp.i:
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/ChooseCharacterMenu.cpp.i
-.PHONY : GUI/ChooseCharacterMenu.cpp.i
-
-GUI/ChooseCharacterMenu.s: GUI/ChooseCharacterMenu.cpp.s
-
-.PHONY : GUI/ChooseCharacterMenu.s
-
-# target to generate assembly for a file
-GUI/ChooseCharacterMenu.cpp.s:
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/ChooseCharacterMenu.cpp.s
-.PHONY : GUI/ChooseCharacterMenu.cpp.s
 
 GUI/Element.o: GUI/Element.cpp.o
 
@@ -339,6 +339,276 @@ GUI/MenuBackground.cpp.s:
 	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/MenuBackground.cpp.s
 .PHONY : GUI/MenuBackground.cpp.s
 
+GUI/Sprite.o: GUI/Sprite.cpp.o
+
+.PHONY : GUI/Sprite.o
+
+# target to build an object file
+GUI/Sprite.cpp.o:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.o
+.PHONY : GUI/Sprite.cpp.o
+
+GUI/Sprite.i: GUI/Sprite.cpp.i
+
+.PHONY : GUI/Sprite.i
+
+# target to preprocess a source file
+GUI/Sprite.cpp.i:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.i
+.PHONY : GUI/Sprite.cpp.i
+
+GUI/Sprite.s: GUI/Sprite.cpp.s
+
+.PHONY : GUI/Sprite.s
+
+# target to generate assembly for a file
+GUI/Sprite.cpp.s:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.s
+.PHONY : GUI/Sprite.cpp.s
+
+Logic/Assassin.o: Logic/Assassin.cpp.o
+
+.PHONY : Logic/Assassin.o
+
+# target to build an object file
+Logic/Assassin.cpp.o:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.o
+.PHONY : Logic/Assassin.cpp.o
+
+Logic/Assassin.i: Logic/Assassin.cpp.i
+
+.PHONY : Logic/Assassin.i
+
+# target to preprocess a source file
+Logic/Assassin.cpp.i:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.i
+.PHONY : Logic/Assassin.cpp.i
+
+Logic/Assassin.s: Logic/Assassin.cpp.s
+
+.PHONY : Logic/Assassin.s
+
+# target to generate assembly for a file
+Logic/Assassin.cpp.s:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.s
+.PHONY : Logic/Assassin.cpp.s
+
+Logic/CharacterFactory.o: Logic/CharacterFactory.cpp.o
+
+.PHONY : Logic/CharacterFactory.o
+
+# target to build an object file
+Logic/CharacterFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o
+.PHONY : Logic/CharacterFactory.cpp.o
+
+Logic/CharacterFactory.i: Logic/CharacterFactory.cpp.i
+
+.PHONY : Logic/CharacterFactory.i
+
+# target to preprocess a source file
+Logic/CharacterFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.i
+.PHONY : Logic/CharacterFactory.cpp.i
+
+Logic/CharacterFactory.s: Logic/CharacterFactory.cpp.s
+
+.PHONY : Logic/CharacterFactory.s
+
+# target to generate assembly for a file
+Logic/CharacterFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.s
+.PHONY : Logic/CharacterFactory.cpp.s
+
+Logic/Class.o: Logic/Class.cpp.o
+
+.PHONY : Logic/Class.o
+
+# target to build an object file
+Logic/Class.cpp.o:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Class.cpp.o
+.PHONY : Logic/Class.cpp.o
+
+Logic/Class.i: Logic/Class.cpp.i
+
+.PHONY : Logic/Class.i
+
+# target to preprocess a source file
+Logic/Class.cpp.i:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Class.cpp.i
+.PHONY : Logic/Class.cpp.i
+
+Logic/Class.s: Logic/Class.cpp.s
+
+.PHONY : Logic/Class.s
+
+# target to generate assembly for a file
+Logic/Class.cpp.s:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Class.cpp.s
+.PHONY : Logic/Class.cpp.s
+
+Logic/Dwarf.o: Logic/Dwarf.cpp.o
+
+.PHONY : Logic/Dwarf.o
+
+# target to build an object file
+Logic/Dwarf.cpp.o:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.o
+.PHONY : Logic/Dwarf.cpp.o
+
+Logic/Dwarf.i: Logic/Dwarf.cpp.i
+
+.PHONY : Logic/Dwarf.i
+
+# target to preprocess a source file
+Logic/Dwarf.cpp.i:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.i
+.PHONY : Logic/Dwarf.cpp.i
+
+Logic/Dwarf.s: Logic/Dwarf.cpp.s
+
+.PHONY : Logic/Dwarf.s
+
+# target to generate assembly for a file
+Logic/Dwarf.cpp.s:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.s
+.PHONY : Logic/Dwarf.cpp.s
+
+Logic/Elf.o: Logic/Elf.cpp.o
+
+.PHONY : Logic/Elf.o
+
+# target to build an object file
+Logic/Elf.cpp.o:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Elf.cpp.o
+.PHONY : Logic/Elf.cpp.o
+
+Logic/Elf.i: Logic/Elf.cpp.i
+
+.PHONY : Logic/Elf.i
+
+# target to preprocess a source file
+Logic/Elf.cpp.i:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Elf.cpp.i
+.PHONY : Logic/Elf.cpp.i
+
+Logic/Elf.s: Logic/Elf.cpp.s
+
+.PHONY : Logic/Elf.s
+
+# target to generate assembly for a file
+Logic/Elf.cpp.s:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Elf.cpp.s
+.PHONY : Logic/Elf.cpp.s
+
+Logic/Paladin.o: Logic/Paladin.cpp.o
+
+.PHONY : Logic/Paladin.o
+
+# target to build an object file
+Logic/Paladin.cpp.o:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.o
+.PHONY : Logic/Paladin.cpp.o
+
+Logic/Paladin.i: Logic/Paladin.cpp.i
+
+.PHONY : Logic/Paladin.i
+
+# target to preprocess a source file
+Logic/Paladin.cpp.i:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.i
+.PHONY : Logic/Paladin.cpp.i
+
+Logic/Paladin.s: Logic/Paladin.cpp.s
+
+.PHONY : Logic/Paladin.s
+
+# target to generate assembly for a file
+Logic/Paladin.cpp.s:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.s
+.PHONY : Logic/Paladin.cpp.s
+
+Logic/Race.o: Logic/Race.cpp.o
+
+.PHONY : Logic/Race.o
+
+# target to build an object file
+Logic/Race.cpp.o:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Race.cpp.o
+.PHONY : Logic/Race.cpp.o
+
+Logic/Race.i: Logic/Race.cpp.i
+
+.PHONY : Logic/Race.i
+
+# target to preprocess a source file
+Logic/Race.cpp.i:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Race.cpp.i
+.PHONY : Logic/Race.cpp.i
+
+Logic/Race.s: Logic/Race.cpp.s
+
+.PHONY : Logic/Race.s
+
+# target to generate assembly for a file
+Logic/Race.cpp.s:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Race.cpp.s
+.PHONY : Logic/Race.cpp.s
+
+Logic/Skill.o: Logic/Skill.cpp.o
+
+.PHONY : Logic/Skill.o
+
+# target to build an object file
+Logic/Skill.cpp.o:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Skill.cpp.o
+.PHONY : Logic/Skill.cpp.o
+
+Logic/Skill.i: Logic/Skill.cpp.i
+
+.PHONY : Logic/Skill.i
+
+# target to preprocess a source file
+Logic/Skill.cpp.i:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Skill.cpp.i
+.PHONY : Logic/Skill.cpp.i
+
+Logic/Skill.s: Logic/Skill.cpp.s
+
+.PHONY : Logic/Skill.s
+
+# target to generate assembly for a file
+Logic/Skill.cpp.s:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Skill.cpp.s
+.PHONY : Logic/Skill.cpp.s
+
+Logic/SkillSet.o: Logic/SkillSet.cpp.o
+
+.PHONY : Logic/SkillSet.o
+
+# target to build an object file
+Logic/SkillSet.cpp.o:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.o
+.PHONY : Logic/SkillSet.cpp.o
+
+Logic/SkillSet.i: Logic/SkillSet.cpp.i
+
+.PHONY : Logic/SkillSet.i
+
+# target to preprocess a source file
+Logic/SkillSet.cpp.i:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.i
+.PHONY : Logic/SkillSet.cpp.i
+
+Logic/SkillSet.s: Logic/SkillSet.cpp.s
+
+.PHONY : Logic/SkillSet.s
+
+# target to generate assembly for a file
+Logic/SkillSet.cpp.s:
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.s
+.PHONY : Logic/SkillSet.cpp.s
+
 Main.o: Main.cpp.o
 
 .PHONY : Main.o
@@ -387,18 +657,48 @@ help:
 	@echo "... Core/MainMenuState.o"
 	@echo "... Core/MainMenuState.i"
 	@echo "... Core/MainMenuState.s"
+	@echo "... Core/PlayState.o"
+	@echo "... Core/PlayState.i"
+	@echo "... Core/PlayState.s"
 	@echo "... GUI/Button.o"
 	@echo "... GUI/Button.i"
 	@echo "... GUI/Button.s"
-	@echo "... GUI/ChooseCharacterMenu.o"
-	@echo "... GUI/ChooseCharacterMenu.i"
-	@echo "... GUI/ChooseCharacterMenu.s"
 	@echo "... GUI/Element.o"
 	@echo "... GUI/Element.i"
 	@echo "... GUI/Element.s"
 	@echo "... GUI/MenuBackground.o"
 	@echo "... GUI/MenuBackground.i"
 	@echo "... GUI/MenuBackground.s"
+	@echo "... GUI/Sprite.o"
+	@echo "... GUI/Sprite.i"
+	@echo "... GUI/Sprite.s"
+	@echo "... Logic/Assassin.o"
+	@echo "... Logic/Assassin.i"
+	@echo "... Logic/Assassin.s"
+	@echo "... Logic/CharacterFactory.o"
+	@echo "... Logic/CharacterFactory.i"
+	@echo "... Logic/CharacterFactory.s"
+	@echo "... Logic/Class.o"
+	@echo "... Logic/Class.i"
+	@echo "... Logic/Class.s"
+	@echo "... Logic/Dwarf.o"
+	@echo "... Logic/Dwarf.i"
+	@echo "... Logic/Dwarf.s"
+	@echo "... Logic/Elf.o"
+	@echo "... Logic/Elf.i"
+	@echo "... Logic/Elf.s"
+	@echo "... Logic/Paladin.o"
+	@echo "... Logic/Paladin.i"
+	@echo "... Logic/Paladin.s"
+	@echo "... Logic/Race.o"
+	@echo "... Logic/Race.i"
+	@echo "... Logic/Race.s"
+	@echo "... Logic/Skill.o"
+	@echo "... Logic/Skill.i"
+	@echo "... Logic/Skill.s"
+	@echo "... Logic/SkillSet.o"
+	@echo "... Logic/SkillSet.i"
+	@echo "... Logic/SkillSet.s"
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"

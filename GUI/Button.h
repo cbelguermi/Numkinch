@@ -18,7 +18,7 @@ private:
     bool _pressed;
 
 public:
-    Button(const char * path, int x, int y);
+    Button(const char * path, int x, int y, int w, int h);
 
     void handleEvent(SDL_Event *event) override;
 

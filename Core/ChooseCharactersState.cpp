@@ -3,15 +3,28 @@
 //
 
 #include "ChooseCharactersState.h"
-#include "MainMenuState.h"
+#include "PlayState.h"
+#include "../Logic/CharacterFactory.h"
+
+#define NB_PLAYERS 4
 
 ChooseCharactersState::ChooseCharactersState() : _chooseCharacterBg(CHOOSE_CHAR_BG_PATH),
-                                                 _playGameBtn(GAME_BUTTON_PATH, GAME_BUTTON_X, GAME_BUTTON_Y)
+                                                 _playGameBtn(GAME_BUTTON_PATH, GAME_BUTTON_X, GAME_BUTTON_Y,
+                                                 GAME_BUTTON_WIDTH, GAME_BUTTON_HEIGHT)
 {}
 
+void ChooseCharactersState:: playStateHandler()
+{
+    GameState * playState = new PlayState(_randomPlayers);
+    GameStateManager::get().changeGameState(playState);
+}
+
+//TODO: generate 4 randomly chosen characters, put them in a vector and pass it to PlayState
 void ChooseCharactersState::onEnter()
 {
-
+    for (int i = 0; i < NB_PLAYERS; i++) {
+        _randomPlayers.push_back(unique_ptr<Race>(CharacterFactory::get().createCharacter()));
+    }
 }
 
 void ChooseCharactersState::onExit()
@@ -33,7 +46,7 @@ void ChooseCharactersState::handleEvents()
         _playGameBtn.handleEvent(&event);
         if (_playGameBtn.pressed())
         {
-            GameStateManager::get().changeGameState(new MainMenuState());
+            playStateHandler();
         }
     }
 }

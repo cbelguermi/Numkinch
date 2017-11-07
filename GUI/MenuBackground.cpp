@@ -14,7 +14,7 @@ void MenuBackground::render() {
 
     loadTexture();
 
-    SDL_RenderCopy(GameEngine::getGameRenderer(), _texture, NULL, NULL);
+    SDL_RenderCopy(GameEngine::getGameRenderer(), _texture, nullptr, nullptr);
 }
 
 void MenuBackground::handleEvent(SDL_Event * event) {
@@ -23,6 +23,5 @@ void MenuBackground::handleEvent(SDL_Event * event) {
 
 void MenuBackground::cleanup() {
 
-    SDL_FreeSurface(_surface);
-    SDL_DestroyTexture(_texture);
+   Element::cleanup();
 }

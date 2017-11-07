@@ -13,7 +13,7 @@ class MenuBackground : public Element {
 public:
     explicit MenuBackground(const char * path);
 
-    void handleEvent(SDL_Event * event) override ;
+    void handleEvent(SDL_Event * event) override;
 
     void render() override;
 

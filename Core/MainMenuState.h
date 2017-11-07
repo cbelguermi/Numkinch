@@ -13,6 +13,8 @@
 #define MENU_BG_PATH        "./res/menu_bg.png"
 #define PLAY_BUTTON_PATH    "./res/play_btn.png"
 #define QUIT_BUTTON_PATH    "./res/quit_btn.png"
+#define MENU_BUTTON_WIDTH 100
+#define MENU_BUTTON_HEIGHT 50
 
 #define PLAY_BUTTON_X ((GameEngine::get().getWindowWidth() / 2) - (MENU_BUTTON_WIDTH / 2))
 #define PLAY_BUTTON_Y ((GameEngine::get().getWindowHeight() / 2) - (MENU_BUTTON_HEIGHT / 2))

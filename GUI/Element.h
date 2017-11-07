@@ -17,15 +17,20 @@ protected:
     SDL_Texture * _texture;
 
     void loadImage();
+
     void loadTexture();
 
 
 public:
     explicit Element(const char * path);
+
     virtual ~Element();
+
     virtual void handleEvent(SDL_Event * event) = 0;
+
     virtual void render() = 0;
-    virtual void cleanup() = 0;
+
+    virtual void cleanup();
 };
 
 

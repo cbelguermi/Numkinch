@@ -4,11 +4,11 @@
 
 #include "Button.h"
 
-Button::Button(const char * path, int x, int y) : Element(path) {
+Button::Button(const char * path, int x, int y, int w, int h) : Element(path) {
 
     _pressed = false;
-    _btnRect.w = MENU_BUTTON_WIDTH;
-    _btnRect.h = MENU_BUTTON_HEIGHT;
+    _btnRect.w = w;
+    _btnRect.h = h;
     _btnRect.x = x;
     _btnRect.y = y;
 }
@@ -39,11 +39,10 @@ void Button::render() {
 
     loadTexture();
 
-    SDL_RenderCopy(GameEngine::getGameRenderer(), _texture, NULL, &_btnRect);
+    SDL_RenderCopy(GameEngine::getGameRenderer(), _texture, nullptr, &_btnRect);
 }
 
 void Button::cleanup() {
 
-    SDL_FreeSurface(_surface);
-    SDL_DestroyTexture(_texture);
+    Element::cleanup();
 }

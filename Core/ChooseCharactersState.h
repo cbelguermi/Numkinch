@@ -8,18 +8,28 @@
 #include "GameState.h"
 #include "../GUI/MenuBackground.h"
 #include "../GUI/Button.h"
+#include "../Logic/Race.h"
+#include <vector>
 
 #define CHOOSE_CHAR_BG_PATH "./res/choose_bg.png"
 #define GAME_BUTTON_PATH    "./res/game_btn.png"
 
 #define GAME_BUTTON_X ((GameEngine::get().getWindowWidth() / 2) - (MENU_BUTTON_WIDTH / 2))
 #define GAME_BUTTON_Y ((GameEngine::get().getWindowHeight() / 2) - (MENU_BUTTON_HEIGHT / 2))
+#define GAME_BUTTON_WIDTH 100
+#define GAME_BUTTON_HEIGHT 50
 
 class ChooseCharactersState : public GameState {
 
 private:
     MenuBackground _chooseCharacterBg;
     Button _playGameBtn;
+
+
+    vector<unique_ptr<Race>> _randomPlayers;
+
+    void playStateHandler();
+
 
 public:
     ChooseCharactersState();

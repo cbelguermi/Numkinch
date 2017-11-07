@@ -8,8 +8,10 @@
 #include "ChooseCharactersState.h"
 
 MainMenuState::MainMenuState() : _menuBg(MENU_BG_PATH),
-                                 _menuNewPlayBtn(PLAY_BUTTON_PATH, PLAY_BUTTON_X, PLAY_BUTTON_Y),
-                                 _menuQuitBtn(QUIT_BUTTON_PATH, QUIT_BUTTON_X, QUIT_BUTTON_Y)
+                                 _menuNewPlayBtn(PLAY_BUTTON_PATH, PLAY_BUTTON_X, PLAY_BUTTON_Y, MENU_BUTTON_WIDTH,
+                                 MENU_BUTTON_HEIGHT),
+                                 _menuQuitBtn(QUIT_BUTTON_PATH, QUIT_BUTTON_X, QUIT_BUTTON_Y, MENU_BUTTON_WIDTH,
+                                 MENU_BUTTON_HEIGHT)
 {}
 
 void MainMenuState::onEnter() {
