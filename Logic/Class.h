@@ -5,14 +5,25 @@
 #ifndef NUMKINCH_CLASS_H
 #define NUMKINCH_CLASS_H
 
-
-#include "SkillSet.h"
+#include "Skill.h"
 
 class Class {
 
-private:
-    SkillSet _acquiredSkills;
+protected:
+    const int _class;
 
+    Skill _attack;
+
+    Skill _defense;
+
+    Skill _agility;
+
+    Skill _life;
+
+public:
+    explicit Class(int characterClass);
+
+    int getClass() const;
 };
 
 

@@ -5,16 +5,12 @@
 #ifndef NUMKINCH_CHARACTER_H
 #define NUMKINCH_CHARACTER_H
 
-
 #include "Race.h"
 
 class Elf : public Race {
 
 public:
-    Elf();
-
-    explicit Elf(Class & characterClass);
-
+    explicit Elf(Class * characterClass);
 };
 
 

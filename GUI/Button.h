@@ -5,11 +5,7 @@
 #ifndef NUMKINCH_BUTTON_H
 #define NUMKINCH_BUTTON_H
 
-
 #include "Element.h"
-
-#define MENU_BUTTON_WIDTH 100
-#define MENU_BUTTON_HEIGHT 50
 
 class Button : public Element {
 

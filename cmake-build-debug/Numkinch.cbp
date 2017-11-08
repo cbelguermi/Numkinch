@@ -139,6 +139,9 @@
 		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Element.h">
 			<Option target="Numkinch"/>
 		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/GUIConstants.h">
+			<Option target="Numkinch"/>
+		</Unit>
 		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Sprite.cpp">
 			<Option target="Numkinch"/>
 		</Unit>
@@ -163,6 +166,9 @@
 		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Class.h">
 			<Option target="Numkinch"/>
 		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Classes.h">
+			<Option target="Numkinch"/>
+		</Unit>
 		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Dwarf.cpp">
 			<Option target="Numkinch"/>
 		</Unit>
@@ -173,6 +179,9 @@
 			<Option target="Numkinch"/>
 		</Unit>
 		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Elf.h">
+			<Option target="Numkinch"/>
+		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/LogicConstants.h">
 			<Option target="Numkinch"/>
 		</Unit>
 		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Paladin.cpp">
@@ -187,16 +196,13 @@
 		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Race.h">
 			<Option target="Numkinch"/>
 		</Unit>
+		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Races.h">
+			<Option target="Numkinch"/>
+		</Unit>
 		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Skill.cpp">
 			<Option target="Numkinch"/>
 		</Unit>
 		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Skill.h">
-			<Option target="Numkinch"/>
-		</Unit>
-		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/SkillSet.cpp">
-			<Option target="Numkinch"/>
-		</Unit>
-		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/SkillSet.h">
 			<Option target="Numkinch"/>
 		</Unit>
 		<Unit filename="/Users/muetdhiver/Projets/Dépôts/Numkinch/Main.cpp">

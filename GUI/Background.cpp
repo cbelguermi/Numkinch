@@ -4,12 +4,10 @@
 
 #include "Background.h"
 
-Background::Background(const char * path) : Element(path) {
+Background::Background(const char * path) : Element(path) {}
 
-}
-
-void Background::render() {
-
+void Background::render()
+{
     loadImage();
 
     loadTexture();
@@ -17,11 +15,9 @@ void Background::render() {
     SDL_RenderCopy(GameEngine::getGameRenderer(), _texture, nullptr, nullptr);
 }
 
-void Background::handleEvent(SDL_Event * event) {
+void Background::handleEvent(SDL_Event * event) {}
 
-}
-
-void Background::cleanup() {
-
+void Background::cleanup()
+{
    Element::cleanup();
 }

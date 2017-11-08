@@ -5,23 +5,40 @@
 #ifndef NUMKINCH_RACE_H
 #define NUMKINCH_RACE_H
 
-
-#include "SkillSet.h"
+#include "Skill.h"
 #include "Class.h"
 
 class Race {
 
-private:
-    SkillSet _innateSkills;
-    Class _class;
+protected:
+    const int _race;
+
+    Skill _attack;
+
+    Skill _defense;
+
+    Skill _agility;
+
+    Skill _life;
+
+    Class * _class;
 
 public:
-    Race();
+    Race(int race, Class * characterClass);
 
-    explicit Race(Class & characterClass);
+    int getRace() const;
 
-    void setCharacterClass(Class & characterClass);
+    int getClass() const;
 
+    const Skill & getAttack() const;
+
+    const Skill & getDefense() const;
+
+    const Skill & getAgility() const;
+
+    const Skill & getLife() const;
+
+    virtual ~Race();
 };
 
 

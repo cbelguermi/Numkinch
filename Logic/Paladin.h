@@ -5,11 +5,12 @@
 #ifndef NUMKINCH_PALADIN_H
 #define NUMKINCH_PALADIN_H
 
-
 #include "Class.h"
 
 class Paladin : public Class {
 
+public:
+    Paladin();
 };
 
 

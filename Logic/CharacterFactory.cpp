@@ -2,13 +2,15 @@
 // Created by Chloé Belguermi on 03/11/2017.
 //
 
+#include <cstdlib>
+#include <random>
 #include "CharacterFactory.h"
+#include "Races.h"
+#include "Classes.h"
 #include "Elf.h"
 #include "Dwarf.h"
 #include "Assassin.h"
 #include "Paladin.h"
-#include <cstdlib>
-#include <random>
 
 using namespace std;
 
@@ -39,36 +41,29 @@ Race * CharacterFactory::createCharacter() {
     randRace = uniformRaceDistribution(randomEngine);
     randClass = uniformClassDistribution(randomEngine);
 
-    Race * newChar = nullptr;
     switch (randRace) {
         case elf: {
-            newChar = new Elf();
+            switch (randClass) {
+                case assassin:
+                    return new Elf(new Assassin());
+                case paladin:
+                    return new Elf(new Paladin());
+                default:
+                    return new Elf(new Assassin());
+            }
         }
         case dwarf: {
-            newChar = new Dwarf();
+            switch (randClass) {
+                case assassin:
+                    return new Dwarf(new Assassin());
+                case paladin:
+                    return new Dwarf(new Paladin());
+                default:
+                    return new Dwarf(new Assassin());
+            }
         }
         default: {
-            newChar = new Dwarf();
+            return new Dwarf(new Assassin());
         }
     }
-
-    switch (randClass) {
-        case assassin: {
-            Assassin tempAssassin;
-            Class &newAssassin = tempAssassin;
-            newChar->setCharacterClass(newAssassin);
-        }
-        case paladin: {
-            Paladin tempPaladin;
-            Class &newPaladin = tempPaladin;
-            newChar->setCharacterClass(newPaladin);
-        }
-        default: {
-            Paladin defaultPaladin;
-            Class &newDefPaladin = defaultPaladin;
-            newChar->setCharacterClass(newDefPaladin);
-        }
-    }
-
-    return newChar;
 }

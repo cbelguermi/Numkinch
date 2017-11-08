@@ -5,10 +5,12 @@
 #ifndef NUMKINCH_ASSASSIN_H
 #define NUMKINCH_ASSASSIN_H
 
-
 #include "Class.h"
 
 class Assassin : public Class {
+
+public:
+    Assassin();
 
 };
 

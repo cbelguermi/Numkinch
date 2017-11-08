@@ -5,16 +5,12 @@
 #ifndef NUMKINCH_DWARF_H
 #define NUMKINCH_DWARF_H
 
-
 #include "Race.h"
 
 class Dwarf : public Race {
 
 public:
-    Dwarf();
-
-    Dwarf(Class & characterClass);
-
+    explicit Dwarf(Class * characterClass);
 };
 
 

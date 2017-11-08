@@ -5,7 +5,6 @@
 #ifndef NUMKINCH_SKILL_H
 #define NUMKINCH_SKILL_H
 
-
 class Skill {
 
 private:
@@ -15,7 +14,7 @@ private:
 public:
     Skill();
 
-    Skill(int maxValue, int value);
+    explicit Skill(int maxValue);
 
     int getValue() const;
 

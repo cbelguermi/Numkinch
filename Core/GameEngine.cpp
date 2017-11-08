@@ -3,7 +3,9 @@
 //
 
 #include "GameEngine.h"
+#include "GameStateManager.h"
 #include "MainMenuState.h"
+#include "../GUI/GUIConstants.h"
 
 #define INIT_FAILED (-1)
 

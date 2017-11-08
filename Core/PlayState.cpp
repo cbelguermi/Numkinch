@@ -3,22 +3,20 @@
 //
 
 #include "PlayState.h"
+#include "../GUI/GUIConstants.h"
 
-
-PlayState::PlayState() : _inGameBg(IN_GAME_BG_PATH), _players(NB_PLAYERS) {
-
-}
+PlayState::PlayState() : _inGameBg(IN_GAME_BG_PATH), _players(NB_PLAYERS)
+{}
 
 void PlayState::onEnter() {}
 
-void PlayState::onExit() {
-
+void PlayState::onExit()
+{
     _inGameBg.cleanup();
-
 }
 
-void PlayState::handleEvents() {
-
+void PlayState::handleEvents()
+{
     SDL_Event event{};
     while (SDL_PollEvent(& event) != 0)
     {
@@ -30,24 +28,20 @@ void PlayState::handleEvents() {
         }
 
     }
-
 }
 
-void PlayState::update() {
+void PlayState::update() {}
 
-}
-
-void PlayState::render() {
-
+void PlayState::render()
+{
     _inGameBg.render();
 }
 
-void PlayState::setPlayers(vector<Race *> players) {
-
+void PlayState::setPlayers(vector<Race *> players)
+{
     for (auto &player : players) {
         _players.push_back(unique_ptr<Race>(player));
     }
-
 }
 
 PlayState::~PlayState() = default;

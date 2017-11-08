@@ -6,10 +6,6 @@
 #define NUMKINCH_GAMEENGINE_H
 
 #include <SDL.h>
-#include "GameStateManager.h"
-
-#define NB_PLAYERS 4
-
 
 class GameEngine {
 
@@ -17,9 +13,6 @@ private:
     static GameEngine _gameEngine;
     static SDL_Window * _gameWindow;
     static SDL_Renderer * _gameRenderer;
-
-    const int WINDOW_WIDTH = 800;
-    const int WINDOW_HEIGHT = 600;
 
     bool _running;
 

@@ -12,7 +12,6 @@
 
 #define IN_GAME_BG_PATH "./res/choose_bg.png"
 
-
 using namespace std;
 
 class PlayState : public GameState {
@@ -37,8 +36,6 @@ public:
     void render() override;
 
     ~PlayState() override;
-
-
 };
 
 

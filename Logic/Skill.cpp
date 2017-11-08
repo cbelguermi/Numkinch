@@ -6,16 +6,11 @@
 
 Skill::Skill() : _value(0), _maxValue(0) { }
 
-Skill::Skill(int maxValue, int value) {
+Skill::Skill(int maxValue) {
 
     if (maxValue >= 0) {
         _maxValue = maxValue;
-        if (value >= 0 && value <= maxValue) {
-            _value = value;
-        }
-        else {
-            _value = _maxValue;
-        }
+        _value = maxValue;
     }
     else {
         _maxValue = 0;

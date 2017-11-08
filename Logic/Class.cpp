@@ -3,3 +3,11 @@
 //
 
 #include "Class.h"
+
+Class::Class(int characterClass) : _class(characterClass)
+{}
+
+int Class::getClass() const
+{
+    return _class;
+}

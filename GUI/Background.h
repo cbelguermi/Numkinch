@@ -5,7 +5,6 @@
 #ifndef NUMKINCH_MENUBACKGROUND_H
 #define NUMKINCH_MENUBACKGROUND_H
 
-#include "../Core/GameEngine.h"
 #include "Element.h"
 
 class Background : public Element {

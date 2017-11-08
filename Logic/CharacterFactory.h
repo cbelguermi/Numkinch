@@ -14,10 +14,6 @@ private:
 
     static CharacterFactory _characterFactory;
 
-    enum Races { elf, dwarf };
-
-    enum Classes { assassin, paladin };
-
 public:
     static CharacterFactory & get();
 
