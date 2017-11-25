@@ -15,8 +15,6 @@ void Background::render()
     SDL_RenderCopy(GameEngine::getGameRenderer(), _texture, nullptr, nullptr);
 }
 
-void Background::handleEvent(SDL_Event * event) {}
-
 void Background::cleanup()
 {
    Element::cleanup();

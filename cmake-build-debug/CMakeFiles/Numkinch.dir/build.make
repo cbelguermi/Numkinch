@@ -249,225 +249,201 @@ CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o.provides: CMakeFiles/Nu
 CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o.provides.build: CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o
 
 
-CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o: CMakeFiles/Numkinch.dir/flags.make
-CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o: ../Logic/CharacterFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/CharacterFactory.cpp
+CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.o: ../PlayerLogic/CharacterFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/CharacterFactory.cpp
 
-CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/CharacterFactory.cpp > CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.i
+CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/CharacterFactory.cpp > CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.i
 
-CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/CharacterFactory.cpp -o CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.s
+CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/CharacterFactory.cpp -o CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.s
 
-CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o.requires:
+CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.o.requires:
 
-.PHONY : CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o.requires
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.o.requires
 
-CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o.provides: CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o.provides.build
-.PHONY : CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o.provides
+CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.o.provides: CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.o.provides
 
-CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o.provides.build: CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o
+CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.o.provides.build: CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.o
 
 
-CMakeFiles/Numkinch.dir/Logic/Race.cpp.o: CMakeFiles/Numkinch.dir/flags.make
-CMakeFiles/Numkinch.dir/Logic/Race.cpp.o: ../Logic/Race.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Numkinch.dir/Logic/Race.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/Logic/Race.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Race.cpp
+CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.o: ../PlayerLogic/Race.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Race.cpp
 
-CMakeFiles/Numkinch.dir/Logic/Race.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/Logic/Race.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Race.cpp > CMakeFiles/Numkinch.dir/Logic/Race.cpp.i
+CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Race.cpp > CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.i
 
-CMakeFiles/Numkinch.dir/Logic/Race.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/Logic/Race.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Race.cpp -o CMakeFiles/Numkinch.dir/Logic/Race.cpp.s
+CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Race.cpp -o CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.s
 
-CMakeFiles/Numkinch.dir/Logic/Race.cpp.o.requires:
+CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.o.requires:
 
-.PHONY : CMakeFiles/Numkinch.dir/Logic/Race.cpp.o.requires
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.o.requires
 
-CMakeFiles/Numkinch.dir/Logic/Race.cpp.o.provides: CMakeFiles/Numkinch.dir/Logic/Race.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Race.cpp.o.provides.build
-.PHONY : CMakeFiles/Numkinch.dir/Logic/Race.cpp.o.provides
+CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.o.provides: CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.o.provides
 
-CMakeFiles/Numkinch.dir/Logic/Race.cpp.o.provides.build: CMakeFiles/Numkinch.dir/Logic/Race.cpp.o
+CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.o.provides.build: CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.o
 
 
-CMakeFiles/Numkinch.dir/Logic/Class.cpp.o: CMakeFiles/Numkinch.dir/flags.make
-CMakeFiles/Numkinch.dir/Logic/Class.cpp.o: ../Logic/Class.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Numkinch.dir/Logic/Class.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/Logic/Class.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Class.cpp
+CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.o: ../PlayerLogic/Class.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Class.cpp
 
-CMakeFiles/Numkinch.dir/Logic/Class.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/Logic/Class.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Class.cpp > CMakeFiles/Numkinch.dir/Logic/Class.cpp.i
+CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Class.cpp > CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.i
 
-CMakeFiles/Numkinch.dir/Logic/Class.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/Logic/Class.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Class.cpp -o CMakeFiles/Numkinch.dir/Logic/Class.cpp.s
+CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Class.cpp -o CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.s
 
-CMakeFiles/Numkinch.dir/Logic/Class.cpp.o.requires:
+CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.o.requires:
 
-.PHONY : CMakeFiles/Numkinch.dir/Logic/Class.cpp.o.requires
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.o.requires
 
-CMakeFiles/Numkinch.dir/Logic/Class.cpp.o.provides: CMakeFiles/Numkinch.dir/Logic/Class.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Class.cpp.o.provides.build
-.PHONY : CMakeFiles/Numkinch.dir/Logic/Class.cpp.o.provides
+CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.o.provides: CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.o.provides
 
-CMakeFiles/Numkinch.dir/Logic/Class.cpp.o.provides.build: CMakeFiles/Numkinch.dir/Logic/Class.cpp.o
+CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.o.provides.build: CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.o
 
 
-CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.o: CMakeFiles/Numkinch.dir/flags.make
-CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.o: ../Logic/SkillSet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/SkillSet.cpp
+CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.o: ../PlayerLogic/Elf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Elf.cpp
 
-CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/SkillSet.cpp > CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.i
+CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Elf.cpp > CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.i
 
-CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/SkillSet.cpp -o CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.s
+CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Elf.cpp -o CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.s
 
-CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.o.requires:
+CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.o.requires:
 
-.PHONY : CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.o.requires
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.o.requires
 
-CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.o.provides: CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.o.provides.build
-.PHONY : CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.o.provides
+CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.o.provides: CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.o.provides
 
-CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.o.provides.build: CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.o
+CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.o.provides.build: CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.o
 
 
-CMakeFiles/Numkinch.dir/Logic/Elf.cpp.o: CMakeFiles/Numkinch.dir/flags.make
-CMakeFiles/Numkinch.dir/Logic/Elf.cpp.o: ../Logic/Elf.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Numkinch.dir/Logic/Elf.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/Logic/Elf.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Elf.cpp
+CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.o: ../PlayerLogic/Skill.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Skill.cpp
 
-CMakeFiles/Numkinch.dir/Logic/Elf.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/Logic/Elf.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Elf.cpp > CMakeFiles/Numkinch.dir/Logic/Elf.cpp.i
+CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Skill.cpp > CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.i
 
-CMakeFiles/Numkinch.dir/Logic/Elf.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/Logic/Elf.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Elf.cpp -o CMakeFiles/Numkinch.dir/Logic/Elf.cpp.s
+CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Skill.cpp -o CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.s
 
-CMakeFiles/Numkinch.dir/Logic/Elf.cpp.o.requires:
+CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.o.requires:
 
-.PHONY : CMakeFiles/Numkinch.dir/Logic/Elf.cpp.o.requires
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.o.requires
 
-CMakeFiles/Numkinch.dir/Logic/Elf.cpp.o.provides: CMakeFiles/Numkinch.dir/Logic/Elf.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Elf.cpp.o.provides.build
-.PHONY : CMakeFiles/Numkinch.dir/Logic/Elf.cpp.o.provides
+CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.o.provides: CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.o.provides
 
-CMakeFiles/Numkinch.dir/Logic/Elf.cpp.o.provides.build: CMakeFiles/Numkinch.dir/Logic/Elf.cpp.o
+CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.o.provides.build: CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.o
 
 
-CMakeFiles/Numkinch.dir/Logic/Skill.cpp.o: CMakeFiles/Numkinch.dir/flags.make
-CMakeFiles/Numkinch.dir/Logic/Skill.cpp.o: ../Logic/Skill.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Numkinch.dir/Logic/Skill.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/Logic/Skill.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Skill.cpp
+CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.o: ../PlayerLogic/Dwarf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Dwarf.cpp
 
-CMakeFiles/Numkinch.dir/Logic/Skill.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/Logic/Skill.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Skill.cpp > CMakeFiles/Numkinch.dir/Logic/Skill.cpp.i
+CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Dwarf.cpp > CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.i
 
-CMakeFiles/Numkinch.dir/Logic/Skill.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/Logic/Skill.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Skill.cpp -o CMakeFiles/Numkinch.dir/Logic/Skill.cpp.s
+CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Dwarf.cpp -o CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.s
 
-CMakeFiles/Numkinch.dir/Logic/Skill.cpp.o.requires:
+CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.o.requires:
 
-.PHONY : CMakeFiles/Numkinch.dir/Logic/Skill.cpp.o.requires
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.o.requires
 
-CMakeFiles/Numkinch.dir/Logic/Skill.cpp.o.provides: CMakeFiles/Numkinch.dir/Logic/Skill.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Skill.cpp.o.provides.build
-.PHONY : CMakeFiles/Numkinch.dir/Logic/Skill.cpp.o.provides
+CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.o.provides: CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.o.provides
 
-CMakeFiles/Numkinch.dir/Logic/Skill.cpp.o.provides.build: CMakeFiles/Numkinch.dir/Logic/Skill.cpp.o
+CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.o.provides.build: CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.o
 
 
-CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.o: CMakeFiles/Numkinch.dir/flags.make
-CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.o: ../Logic/Dwarf.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Dwarf.cpp
+CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.o: ../PlayerLogic/Assassin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Assassin.cpp
 
-CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Dwarf.cpp > CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.i
+CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Assassin.cpp > CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.i
 
-CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Dwarf.cpp -o CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.s
+CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Assassin.cpp -o CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.s
 
-CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.o.requires:
+CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.o.requires:
 
-.PHONY : CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.o.requires
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.o.requires
 
-CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.o.provides: CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.o.provides.build
-.PHONY : CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.o.provides
+CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.o.provides: CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.o.provides
 
-CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.o.provides.build: CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.o
+CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.o.provides.build: CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.o
 
 
-CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.o: CMakeFiles/Numkinch.dir/flags.make
-CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.o: ../Logic/Assassin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Assassin.cpp
+CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.o: ../PlayerLogic/Paladin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Paladin.cpp
 
-CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Assassin.cpp > CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.i
+CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Paladin.cpp > CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.i
 
-CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Assassin.cpp -o CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.s
+CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Paladin.cpp -o CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.s
 
-CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.o.requires:
+CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.o.requires:
 
-.PHONY : CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.o.requires
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.o.requires
 
-CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.o.provides: CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.o.provides.build
-.PHONY : CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.o.provides
+CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.o.provides: CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.o.provides
 
-CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.o.provides.build: CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.o
-
-
-CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.o: CMakeFiles/Numkinch.dir/flags.make
-CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.o: ../Logic/Paladin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Paladin.cpp
-
-CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Paladin.cpp > CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.i
-
-CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/Logic/Paladin.cpp -o CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.s
-
-CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.o.requires:
-
-.PHONY : CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.o.requires
-
-CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.o.provides: CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.o.provides.build
-.PHONY : CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.o.provides
-
-CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.o.provides.build: CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.o
+CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.o.provides.build: CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.o
 
 
 CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o: CMakeFiles/Numkinch.dir/flags.make
 CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o: ../Core/PlayState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/Core/PlayState.cpp
 
 CMakeFiles/Numkinch.dir/Core/PlayState.cpp.i: cmake_force
@@ -489,28 +465,412 @@ CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o.provides: CMakeFiles/Numkinch.dir/C
 CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o.provides.build: CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o
 
 
-CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.o: CMakeFiles/Numkinch.dir/flags.make
-CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.o: ../GUI/Sprite.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Sprite.cpp
+CMakeFiles/Numkinch.dir/GUI/Tile.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/GUI/Tile.cpp.o: ../GUI/Tile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Numkinch.dir/GUI/Tile.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/GUI/Tile.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Tile.cpp
 
-CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Sprite.cpp > CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.i
+CMakeFiles/Numkinch.dir/GUI/Tile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/GUI/Tile.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Tile.cpp > CMakeFiles/Numkinch.dir/GUI/Tile.cpp.i
 
-CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Sprite.cpp -o CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.s
+CMakeFiles/Numkinch.dir/GUI/Tile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/GUI/Tile.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Tile.cpp -o CMakeFiles/Numkinch.dir/GUI/Tile.cpp.s
 
-CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.o.requires:
+CMakeFiles/Numkinch.dir/GUI/Tile.cpp.o.requires:
 
-.PHONY : CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.o.requires
+.PHONY : CMakeFiles/Numkinch.dir/GUI/Tile.cpp.o.requires
 
-CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.o.provides: CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.o.provides.build
-.PHONY : CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.o.provides
+CMakeFiles/Numkinch.dir/GUI/Tile.cpp.o.provides: CMakeFiles/Numkinch.dir/GUI/Tile.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/Tile.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/GUI/Tile.cpp.o.provides
 
-CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.o.provides.build: CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.o
+CMakeFiles/Numkinch.dir/GUI/Tile.cpp.o.provides.build: CMakeFiles/Numkinch.dir/GUI/Tile.cpp.o
+
+
+CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: ../GUI/TileGroup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/TileGroup.cpp
+
+CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/TileGroup.cpp > CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.i
+
+CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/TileGroup.cpp -o CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.s
+
+CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o.requires:
+
+.PHONY : CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o.requires
+
+CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o.provides: CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o.provides
+
+CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o.provides.build: CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o
+
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.o: ../PlayerLogic/Barbarian.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Barbarian.cpp
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Barbarian.cpp > CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.i
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Barbarian.cpp -o CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.s
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.o.requires:
+
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.o.requires
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.o.provides: CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.o.provides
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.o.provides.build: CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.o
+
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.o: ../PlayerLogic/Human.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Human.cpp
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Human.cpp > CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.i
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Human.cpp -o CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.s
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.o.requires:
+
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.o.requires
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.o.provides: CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.o.provides
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.o.provides.build: CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.o
+
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.o: ../PlayerLogic/Thief.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Thief.cpp
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Thief.cpp > CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.i
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Thief.cpp -o CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.s
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.o.requires:
+
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.o.requires
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.o.provides: CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.o.provides
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.o.provides.build: CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.o
+
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.o: ../PlayerLogic/Priest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Priest.cpp
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Priest.cpp > CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.i
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/PlayerLogic/Priest.cpp -o CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.s
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.o.requires:
+
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.o.requires
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.o.provides: CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.o.provides
+
+CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.o.provides.build: CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.o
+
+
+CMakeFiles/Numkinch.dir/GUI/Text.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/GUI/Text.cpp.o: ../GUI/Text.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Numkinch.dir/GUI/Text.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/GUI/Text.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Text.cpp
+
+CMakeFiles/Numkinch.dir/GUI/Text.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/GUI/Text.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Text.cpp > CMakeFiles/Numkinch.dir/GUI/Text.cpp.i
+
+CMakeFiles/Numkinch.dir/GUI/Text.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/GUI/Text.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/Text.cpp -o CMakeFiles/Numkinch.dir/GUI/Text.cpp.s
+
+CMakeFiles/Numkinch.dir/GUI/Text.cpp.o.requires:
+
+.PHONY : CMakeFiles/Numkinch.dir/GUI/Text.cpp.o.requires
+
+CMakeFiles/Numkinch.dir/GUI/Text.cpp.o.provides: CMakeFiles/Numkinch.dir/GUI/Text.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/Text.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/GUI/Text.cpp.o.provides
+
+CMakeFiles/Numkinch.dir/GUI/Text.cpp.o.provides.build: CMakeFiles/Numkinch.dir/GUI/Text.cpp.o
+
+
+CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.o: ../GUI/CharacterCard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/CharacterCard.cpp
+
+CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/CharacterCard.cpp > CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.i
+
+CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/CharacterCard.cpp -o CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.s
+
+CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.o.requires:
+
+.PHONY : CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.o.requires
+
+CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.o.provides: CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.o.provides
+
+CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.o.provides.build: CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.o
+
+
+CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.o: ../GUI/StatCard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/StatCard.cpp
+
+CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/StatCard.cpp > CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.i
+
+CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/GUI/StatCard.cpp -o CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.s
+
+CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.o.requires:
+
+.PHONY : CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.o.requires
+
+CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.o.provides: CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.o.provides
+
+CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.o.provides.build: CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.o
+
+
+CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o: ../WorldLogic/Dungeon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/Dungeon.cpp
+
+CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/Dungeon.cpp > CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.i
+
+CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/Dungeon.cpp -o CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.s
+
+CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o.requires:
+
+.PHONY : CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o.requires
+
+CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o.provides: CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o.provides
+
+CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o.provides.build: CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o
+
+
+CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o: ../WorldLogic/Room.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/Room.cpp
+
+CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/Room.cpp > CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.i
+
+CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/Room.cpp -o CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.s
+
+CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o.requires:
+
+.PHONY : CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o.requires
+
+CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o.provides: CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o.provides
+
+CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o.provides.build: CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o
+
+
+CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.o: ../WorldLogic/Card.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/Card.cpp
+
+CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/Card.cpp > CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.i
+
+CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/Card.cpp -o CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.s
+
+CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.o.requires:
+
+.PHONY : CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.o.requires
+
+CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.o.provides: CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.o.provides
+
+CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.o.provides.build: CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.o
+
+
+CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.o: ../WorldLogic/Monster.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/Monster.cpp
+
+CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/Monster.cpp > CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.i
+
+CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/Monster.cpp -o CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.s
+
+CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.o.requires:
+
+.PHONY : CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.o.requires
+
+CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.o.provides: CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.o.provides
+
+CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.o.provides.build: CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.o
+
+
+CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.o: ../WorldLogic/Trap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/Trap.cpp
+
+CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/Trap.cpp > CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.i
+
+CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/Trap.cpp -o CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.s
+
+CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.o.requires:
+
+.PHONY : CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.o.requires
+
+CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.o.provides: CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.o.provides
+
+CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.o.provides.build: CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.o
+
+
+CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.o: ../WorldLogic/Treasure.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/Treasure.cpp
+
+CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/Treasure.cpp > CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.i
+
+CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/Treasure.cpp -o CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.s
+
+CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.o.requires:
+
+.PHONY : CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.o.requires
+
+CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.o.provides: CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.o.provides
+
+CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.o.provides.build: CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.o
+
+
+CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.o: ../WorldLogic/RoomFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/RoomFactory.cpp
+
+CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/RoomFactory.cpp > CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.i
+
+CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/RoomFactory.cpp -o CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.s
+
+CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.o.requires:
+
+.PHONY : CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.o.requires
+
+CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.o.provides: CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.o.provides
+
+CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.o.provides.build: CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.o
+
+
+CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.o: CMakeFiles/Numkinch.dir/flags.make
+CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.o: ../WorldLogic/BigCard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.o -c /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/BigCard.cpp
+
+CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/BigCard.cpp > CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.i
+
+CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/muetdhiver/Projets/Dépôts/Numkinch/WorldLogic/BigCard.cpp -o CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.s
+
+CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.o.requires:
+
+.PHONY : CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.o.requires
+
+CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.o.provides: CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.o.provides.build
+.PHONY : CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.o.provides
+
+CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.o.provides.build: CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.o
 
 
 # Object files for target Numkinch
@@ -523,17 +883,32 @@ Numkinch_OBJECTS = \
 "CMakeFiles/Numkinch.dir/GUI/Button.cpp.o" \
 "CMakeFiles/Numkinch.dir/GUI/Background.cpp.o" \
 "CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o" \
-"CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o" \
-"CMakeFiles/Numkinch.dir/Logic/Race.cpp.o" \
-"CMakeFiles/Numkinch.dir/Logic/Class.cpp.o" \
-"CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.o" \
-"CMakeFiles/Numkinch.dir/Logic/Elf.cpp.o" \
-"CMakeFiles/Numkinch.dir/Logic/Skill.cpp.o" \
-"CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.o" \
-"CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.o" \
-"CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.o" \
+"CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.o" \
+"CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.o" \
+"CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.o" \
+"CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.o" \
+"CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.o" \
+"CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.o" \
+"CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.o" \
+"CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.o" \
 "CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o" \
-"CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.o"
+"CMakeFiles/Numkinch.dir/GUI/Tile.cpp.o" \
+"CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o" \
+"CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.o" \
+"CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.o" \
+"CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.o" \
+"CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.o" \
+"CMakeFiles/Numkinch.dir/GUI/Text.cpp.o" \
+"CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.o" \
+"CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.o" \
+"CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o" \
+"CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o" \
+"CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.o" \
+"CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.o" \
+"CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.o" \
+"CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.o" \
+"CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.o" \
+"CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.o"
 
 # External object files for target Numkinch
 Numkinch_EXTERNAL_OBJECTS =
@@ -546,20 +921,35 @@ Numkinch_EXTERNAL_OBJECTS =
 ../Numkinch: CMakeFiles/Numkinch.dir/GUI/Button.cpp.o
 ../Numkinch: CMakeFiles/Numkinch.dir/GUI/Background.cpp.o
 ../Numkinch: CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o
-../Numkinch: CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o
-../Numkinch: CMakeFiles/Numkinch.dir/Logic/Race.cpp.o
-../Numkinch: CMakeFiles/Numkinch.dir/Logic/Class.cpp.o
-../Numkinch: CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.o
-../Numkinch: CMakeFiles/Numkinch.dir/Logic/Elf.cpp.o
-../Numkinch: CMakeFiles/Numkinch.dir/Logic/Skill.cpp.o
-../Numkinch: CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.o
-../Numkinch: CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.o
-../Numkinch: CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.o
 ../Numkinch: CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o
-../Numkinch: CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/GUI/Tile.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/GUI/Text.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.o
+../Numkinch: CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.o
 ../Numkinch: CMakeFiles/Numkinch.dir/build.make
 ../Numkinch: CMakeFiles/Numkinch.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable ../Numkinch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/muetdhiver/Projets/Dépôts/Numkinch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking CXX executable ../Numkinch"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Numkinch.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -575,17 +965,32 @@ CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/GUI/Element.cpp.o.requ
 CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/GUI/Button.cpp.o.requires
 CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/GUI/Background.cpp.o.requires
 CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o.requires
-CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/Logic/CharacterFactory.cpp.o.requires
-CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/Logic/Race.cpp.o.requires
-CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/Logic/Class.cpp.o.requires
-CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/Logic/SkillSet.cpp.o.requires
-CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/Logic/Elf.cpp.o.requires
-CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/Logic/Skill.cpp.o.requires
-CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/Logic/Dwarf.cpp.o.requires
-CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/Logic/Assassin.cpp.o.requires
-CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/Logic/Paladin.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/PlayerLogic/CharacterFactory.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/PlayerLogic/Race.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/PlayerLogic/Class.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/PlayerLogic/Elf.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/PlayerLogic/Skill.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/PlayerLogic/Dwarf.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/PlayerLogic/Assassin.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/PlayerLogic/Paladin.cpp.o.requires
 CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o.requires
-CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/GUI/Sprite.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/GUI/Tile.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/PlayerLogic/Barbarian.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/PlayerLogic/Human.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/PlayerLogic/Thief.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/PlayerLogic/Priest.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/GUI/Text.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/GUI/CharacterCard.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/GUI/StatCard.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/WorldLogic/Card.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/WorldLogic/Monster.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/WorldLogic/Treasure.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.o.requires
+CMakeFiles/Numkinch.dir/requires: CMakeFiles/Numkinch.dir/WorldLogic/BigCard.cpp.o.requires
 
 .PHONY : CMakeFiles/Numkinch.dir/requires
 

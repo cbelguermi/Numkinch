@@ -8,8 +8,9 @@
 #include "GameState.h"
 #include "../GUI/Background.h"
 #include "../GUI/Button.h"
-#include "../Logic/Race.h"
-#include "../GUI/Sprite.h"
+#include "../PlayerLogic/Race.h"
+#include "../GUI/Tile.h"
+#include "../GUI/CharacterCard.h"
 #include <vector>
 
 
@@ -20,11 +21,11 @@ class ChooseCharactersState : public GameState {
 private:
     Background _chooseCharacterBg;
     Button _playGameBtn;
-    vector<Sprite *> _characters;
+    vector<CharacterCard *> _characters;
 
-    vector<Race *> _randomPlayers;
+    vector<unique_ptr<Race>> _randomPlayers;
 
-    void playStateHandler(vector<Race *> & players);
+    void playStateHandler();
 
 
 public:

@@ -12,8 +12,6 @@ class Background : public Element {
 public:
     explicit Background(const char * path);
 
-    void handleEvent(SDL_Event * event) override;
-
     void render() override;
 
     void cleanup() override;

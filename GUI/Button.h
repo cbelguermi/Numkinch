@@ -5,18 +5,18 @@
 #ifndef NUMKINCH_BUTTON_H
 #define NUMKINCH_BUTTON_H
 
-#include "Element.h"
+#include "IHandleable.h"
+#include "Tile.h"
 
-class Button : public Element {
+class Button : public Tile, IHandleable {
 
 private:
-    SDL_Rect _btnRect;
     bool _pressed;
 
 public:
     Button(const char * path, int x, int y, int w, int h);
 
-    void handleEvent(SDL_Event *event) override;
+    void handleEvent(SDL_Event * event) override;
 
     void render() override;
 

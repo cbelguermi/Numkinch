@@ -2,21 +2,25 @@
 // Created by Chloé Belguermi on 18/10/2017.
 //
 
+#include <SDL_ttf.h>
 #include "MainMenuState.h"
 #include "GameStateManager.h"
 #include "ChooseCharactersState.h"
 #include "../GUI/GUIConstants.h"
 
 MainMenuState::MainMenuState() : _menuBg(MENU_BG_PATH),
-                                 _menuNewPlayBtn(PLAY_BUTTON_PATH, ((WINDOW_WIDTH / 2) - (MENU_BUTTON_WIDTH / 2)),
-                                                 ((WINDOW_HEIGHT / 2) - (MENU_BUTTON_HEIGHT / 2)), MENU_BUTTON_WIDTH,
-                                                 MENU_BUTTON_HEIGHT),
-                                 _menuQuitBtn(QUIT_BUTTON_PATH, ((WINDOW_WIDTH / 2) - (MENU_BUTTON_WIDTH / 2)),
-                                              ((WINDOW_HEIGHT / 2) + MENU_BUTTON_HEIGHT), MENU_BUTTON_WIDTH,
-                                              MENU_BUTTON_HEIGHT)
+                                 _menuNewPlayBtn(PLAY_BUTTON_PATH, ((WINDOW_WIDTH / 2) - (BUTTON_WIDTH / 2)),
+                                                 ((WINDOW_HEIGHT / 2) - (BUTTON_HEIGHT / 2)), BUTTON_WIDTH,
+                                                 BUTTON_HEIGHT),
+                                 _menuQuitBtn(QUIT_BUTTON_PATH, ((WINDOW_WIDTH / 2) - (BUTTON_WIDTH / 2)),
+                                              ((WINDOW_HEIGHT / 2) + BUTTON_HEIGHT), BUTTON_WIDTH,
+                                              BUTTON_HEIGHT)
 {}
 
-void MainMenuState::onEnter() {}
+void MainMenuState::onEnter()
+{
+
+}
 
 void MainMenuState::onExit()
 {
@@ -37,13 +41,13 @@ void MainMenuState::handleEvents()
             break;
         }
 
-        _menuNewPlayBtn.handleEvent(&event);
+        _menuNewPlayBtn.handleEvent(& event);
         if (_menuNewPlayBtn.pressed())
         {
             GameStateManager::get().changeGameState(new ChooseCharactersState());
         }
 
-        _menuQuitBtn.handleEvent(&event);
+        _menuQuitBtn.handleEvent(& event);
         if (_menuQuitBtn.pressed())
         {
             onExit();

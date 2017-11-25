@@ -1,0 +1,27 @@
+//
+// Created by Chloé Belguermi on 19/11/2017.
+//
+
+#ifndef NUMKINCH_TREASURE_H
+#define NUMKINCH_TREASURE_H
+
+#include "Room.h"
+
+class Treasure : public Room {
+
+private:
+    const unsigned int _targetSkill;
+
+    const unsigned int _bonus;
+
+public:
+    Treasure(int type, const char * name, const char * description, const char * entityImage, unsigned int targetSkill,
+             unsigned int bonus);
+
+private:
+    const char * getBonusString();
+
+};
+
+
+#endif //NUMKINCH_TREASURE_H

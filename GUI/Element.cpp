@@ -39,7 +39,7 @@ void Element::loadTexture() {
 
 Element::~Element() {
 
-    _imagePath = nullptr;
+    _imagePath = nullptr; // _imagePath receives string literal, no need to call delete[]
     _texture = nullptr;
     _surface = nullptr;
 }

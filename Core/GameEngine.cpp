@@ -2,6 +2,7 @@
 // Created by Chloé Belguermi on 17/10/2017.
 //
 
+#include <SDL_ttf.h>
 #include "GameEngine.h"
 #include "GameStateManager.h"
 #include "MainMenuState.h"
@@ -63,7 +64,15 @@ bool GameEngine::onInit()
         return false;
     }
 
-    IMG_Init(IMG_INIT_PNG);
+    if (TTF_Init() < 0)
+    {
+        return false;
+    }
+
+    if (IMG_Init(IMG_INIT_PNG) < 0)
+    {
+        return false;
+    }
 
     if ((_gameWindow = SDL_CreateWindow("Numkinch",
                                         SDL_WINDOWPOS_UNDEFINED,
@@ -120,6 +129,8 @@ int GameEngine::onExecute()
 
         update();
 
+        SDL_RenderClear(GameEngine::getGameRenderer());
+
         render();
 
         SDL_RenderPresent(GameEngine::getGameRenderer());
@@ -150,6 +161,7 @@ void GameEngine::onCleanup()
     SDL_DestroyRenderer(getGameRenderer());
     SDL_DestroyWindow(getGameWindow());
     IMG_Quit();
+    TTF_Quit();
     SDL_Quit();
 }
 

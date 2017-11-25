@@ -8,8 +8,9 @@
 #include <SDL.h>
 #include <SDL_image.h>
 #include "../Core/GameEngine.h"
+#include "IDisplayable.h"
 
-class Element {
+class Element : public IDisplayable {
 
 protected:
     const char * _imagePath;
@@ -25,8 +26,6 @@ public:
     explicit Element(const char * path);
 
     virtual ~Element();
-
-    virtual void handleEvent(SDL_Event * event) = 0;
 
     virtual void render() = 0;
 

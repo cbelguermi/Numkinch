@@ -3,14 +3,13 @@
 //
 
 #include "ChooseCharactersState.h"
-#include "../Logic/CharacterFactory.h"
+#include "../PlayerLogic/CharacterFactory.h"
 #include "PlayState.h"
 #include "../GUI/GUIConstants.h"
 #include "GameStateManager.h"
-#include "../Logic/Races.h"
 
-#define THIEF_PATH "./res/thief.png"
-#define WIZARD_PATH "./res/wizard.png"
+
+#define CARD_PATH "./res/CardBase.png"
 
 #define CHOOSE_CHAR_BG_PATH "./res/choose_bg.png"
 #define GAME_BUTTON_PATH    "./res/game_btn.png"
@@ -18,29 +17,44 @@
 
 ChooseCharactersState::ChooseCharactersState() : _chooseCharacterBg(CHOOSE_CHAR_BG_PATH),
                                                  _playGameBtn(GAME_BUTTON_PATH,
-                                                              ((WINDOW_WIDTH / 2) - (MENU_BUTTON_WIDTH / 2)),
-                                                              ((WINDOW_HEIGHT / 2) - (MENU_BUTTON_HEIGHT / 2)),
-                                                              MENU_BUTTON_WIDTH, MENU_BUTTON_HEIGHT),
-                                                 _randomPlayers(NB_PLAYERS), _characters(NB_PLAYERS)
-{}
-
-void ChooseCharactersState:: playStateHandler(vector<Race *> & players)
+                                                              ((WINDOW_WIDTH / 2) - (BUTTON_WIDTH / 2)),
+                                                              ((WINDOW_HEIGHT / 2) - (BUTTON_HEIGHT / 2)) +
+                                                                      CHAR_CARD_HEIGHT,
+                                                              BUTTON_WIDTH, BUTTON_HEIGHT),
+                                                 _characters(NB_PLAYERS)
 {
-    auto * playState = new PlayState();
-    playState->setPlayers(players);
+    _randomPlayers.reserve(NB_PLAYERS);
+}
+
+void ChooseCharactersState:: playStateHandler()
+{
+    auto * playState = new PlayState(move(_randomPlayers)); // CLion bug here, there is no error to highlight
+
     GameStateManager::get().changeGameState(playState);
 }
 
 void ChooseCharactersState::onEnter()
 {
-    for (int i = 0; i < NB_PLAYERS; i++) {
-        _randomPlayers[i] = CharacterFactory::get().createCharacter();
+    for (int i = 0; i < NB_PLAYERS; i++)
+    {
+        _randomPlayers.push_back(unique_ptr<Race>(CharacterFactory::get().createCharacter()));
+    }
+
+    for (int i = 0; i < NB_PLAYERS; i++)
+    {
+        _characters[i] = new CharacterCard(CARD_PATH, CHAR_CARD_MARGIN_SIDE + i * CHAR_CARD_WIDTH,
+                                                CHAR_CARD_MARGIN_TOP, CHAR_CARD_WIDTH, CHAR_CARD_HEIGHT,
+                                                _randomPlayers[i]->RaceToString(), _randomPlayers[i]->ClassToString(),
+                                                _randomPlayers[i]->getName());
     }
 }
 
 void ChooseCharactersState::onExit()
 {
     _playGameBtn.cleanup();
+    for (int i = 0; i < NB_PLAYERS; i++) {
+        _characters[i]->cleanup();
+    }
     _chooseCharacterBg.cleanup();
 }
 
@@ -59,25 +73,14 @@ void ChooseCharactersState::handleEvents()
         _playGameBtn.handleEvent(&event);
         if (_playGameBtn.pressed())
         {
-            playStateHandler(_randomPlayers);
+            playStateHandler();
             break;
         }
     }
 }
 
 void ChooseCharactersState::update()
-{
-    for (int i = 0; i < NB_PLAYERS; i++) {
-        if (_randomPlayers[i]->getRace() == elf)
-        {
-            _characters[i] = new Sprite(THIEF_PATH, 20 + 200 * i, 10, 200, 600);
-        }
-        else
-        {
-            _characters[i] = new Sprite(WIZARD_PATH, 20 + 200 * i, 10, 200, 600);
-        }
-    }
-}
+{}
 
 void ChooseCharactersState::render()
 {
@@ -85,7 +88,7 @@ void ChooseCharactersState::render()
     for (int i = 0; i < NB_PLAYERS; i++) {
         _characters[i]->render();
     }
-    //_playGameBtn.render();
+    _playGameBtn.render();
 }
 
 ChooseCharactersState::~ChooseCharactersState() = default;

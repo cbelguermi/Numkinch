@@ -1,6 +1,6 @@
 #include "Core/GameEngine.h"
 
-int main() {
-
+int main()
+{
     return GameEngine::get().onExecute();
 }

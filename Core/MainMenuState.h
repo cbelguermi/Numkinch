@@ -8,6 +8,7 @@
 #include "GameState.h"
 #include "../GUI/Background.h"
 #include "../GUI/Button.h"
+#include "../GUI/Text.h"
 
 #define MENU_BG_PATH        "./res/menu_bg.png"
 #define PLAY_BUTTON_PATH    "./res/play_btn.png"

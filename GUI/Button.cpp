@@ -4,45 +4,43 @@
 
 #include "Button.h"
 
-Button::Button(const char * path, int x, int y, int w, int h) : Element(path) {
-
+Button::Button(const char * path, int x, int y, int w, int h) : Tile(path, x, y, w, h)
+{
     _pressed = false;
-    _btnRect.w = w;
-    _btnRect.h = h;
-    _btnRect.x = x;
-    _btnRect.y = y;
 }
 
-bool Button::pressed() const {
-
+bool Button::pressed() const
+{
     return _pressed;
 }
 
-void Button::handleEvent(SDL_Event *event) {
-
+void Button::handleEvent(SDL_Event * event)
+{
     if (event->type == SDL_MOUSEBUTTONDOWN)
     {
         // Get mouse position
         int x, y;
-        SDL_GetMouseState(&x, &y);
+        x = event->button.x;
+        y = event->button.y;
 
-        if ((x >= _btnRect.x) && (x <= (_btnRect.x + _btnRect.w)) && (y >= _btnRect.y) && (y <= (_btnRect.y + _btnRect.h)))
+        if ((x >= _tileRect.x) && (x <= (_tileRect.x + _tileRect.w)) && (y >= _tileRect.y) &&
+                (y <= (_tileRect.y + _tileRect.h)))
         {
             _pressed = true;
         }
     }
 }
 
-void Button::render() {
-
+void Button::render()
+{
     loadImage();
 
     loadTexture();
 
-    SDL_RenderCopy(GameEngine::getGameRenderer(), _texture, nullptr, &_btnRect);
+    SDL_RenderCopy(GameEngine::getGameRenderer(), _texture, nullptr, &_tileRect);
 }
 
-void Button::cleanup() {
-
+void Button::cleanup()
+{
     Element::cleanup();
 }
