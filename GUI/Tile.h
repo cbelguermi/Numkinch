@@ -15,6 +15,8 @@ protected:
 public:
     Tile(const char * path, int x, int y, int w, int h);
 
+    void init() override;
+
     void render() override;
 
     void cleanup() override;

@@ -11,7 +11,6 @@ class IHandleable {
 
 public:
     virtual void handleEvent(SDL_Event * event) = 0;
-
 };
 
 #endif //NUMKINCH_HANDLEABLE_H

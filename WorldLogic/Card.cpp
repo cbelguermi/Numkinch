@@ -27,6 +27,23 @@ Room * Card::getRoom()
     return _room;
 }
 
+int Card::getX() const
+{
+    return _positionX;
+}
+
+int Card::getY() const
+{
+    return _positionY;
+}
+
+void Card::init()
+{
+    _backCardBtn.init();
+    _frontCardTile.init();
+    _room->getBigCard()->init();
+}
+
 void Card::handleEvent(SDL_Event * event)
 {
     if (event->type == SDL_MOUSEBUTTONDOWN)
@@ -48,7 +65,7 @@ void Card::render()
     _backCardBtn.render();
     if (_room->visited())
     {
-        _backCardBtn.cleanup();
+        //_backCardBtn.cleanup();
         _frontCardTile.render();
         if (_room->getBigCard()->displayed())
         {
@@ -67,16 +84,6 @@ void Card::cleanup()
     {
         _frontCardTile.cleanup();
     }
-}
-
-int Card::getX() const
-{
-    return _positionX;
-}
-
-int Card::getY() const
-{
-    return _positionY;
 }
 
 Card::~Card()

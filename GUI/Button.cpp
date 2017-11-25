@@ -14,6 +14,11 @@ bool Button::pressed() const
     return _pressed;
 }
 
+void Button::init()
+{
+    Tile::init();
+}
+
 void Button::handleEvent(SDL_Event * event)
 {
     if (event->type == SDL_MOUSEBUTTONDOWN)
@@ -33,10 +38,6 @@ void Button::handleEvent(SDL_Event * event)
 
 void Button::render()
 {
-    loadImage();
-
-    loadTexture();
-
     SDL_RenderCopy(GameEngine::getGameRenderer(), _texture, nullptr, &_tileRect);
 }
 

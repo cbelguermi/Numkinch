@@ -8,7 +8,7 @@
 #include "Room.h"
 #include "BigCard.h"
 
-class Card : public IHandleable {
+class Card : public IHandleable, IDisplayable {
 
 private:
     Room * _room; // don't delete it since it comes from a unique_ptr
@@ -30,11 +30,13 @@ public:
 
     int getY() const;
 
+    void init() override;
+
     void handleEvent(SDL_Event * event) override;
 
-    void render();
+    void render() override;
 
-    void cleanup();
+    void cleanup() override;
 
     ~Card();
 };

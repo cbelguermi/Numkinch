@@ -63,7 +63,6 @@ CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o: ../GUI/IHandleable.h
 CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o: ../GUI/StatCard.h
 CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o: ../GUI/Text.h
 CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o: ../GUI/Tile.h
-CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o: ../GUI/TileGroup.h
 CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o: ../PlayerLogic/CharacterFactory.h
 CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o: ../PlayerLogic/Class.h
 CMakeFiles/Numkinch.dir/Core/ChooseCharactersState.cpp.o: ../PlayerLogic/Race.h
@@ -262,7 +261,6 @@ CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o: ../GUI/IHandleable.h
 CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o: ../GUI/StatCard.h
 CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o: ../GUI/Text.h
 CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o: ../GUI/Tile.h
-CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o: ../GUI/TileGroup.h
 CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o: ../PlayerLogic/Class.h
 CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o: ../PlayerLogic/Race.h
 CMakeFiles/Numkinch.dir/Core/PlayState.cpp.o: ../PlayerLogic/Skill.h
@@ -633,58 +631,6 @@ CMakeFiles/Numkinch.dir/GUI/Tile.cpp.o: ../GUI/IDisplayable.h
 CMakeFiles/Numkinch.dir/GUI/Tile.cpp.o: ../GUI/Tile.cpp
 CMakeFiles/Numkinch.dir/GUI/Tile.cpp.o: ../GUI/Tile.h
 
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_audio.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_config.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_error.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_events.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_hints.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_log.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_main.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_power.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_quit.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_render.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_system.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_thread.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_timer.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_touch.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_version.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_video.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/begin_code.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2.framework/Headers/close_code.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: /Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: ../Core/GameEngine.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: ../GUI/Element.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: ../GUI/IDisplayable.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: ../GUI/Tile.h
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: ../GUI/TileGroup.cpp
-CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o: ../GUI/TileGroup.h
-
 CMakeFiles/Numkinch.dir/Main.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL.h
 CMakeFiles/Numkinch.dir/Main.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
 CMakeFiles/Numkinch.dir/Main.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
@@ -996,7 +942,6 @@ CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o: ../GUI/IDisplayable.h
 CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o: ../GUI/IHandleable.h
 CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o: ../GUI/Text.h
 CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o: ../GUI/Tile.h
-CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o: ../GUI/TileGroup.h
 CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o: ../PlayerLogic/Skill.h
 CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o: ../PlayerLogic/Skills.h
 CMakeFiles/Numkinch.dir/WorldLogic/Dungeon.cpp.o: ../WorldLogic/BigCard.h
@@ -1128,9 +1073,6 @@ CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o: ../WorldLogic/BigCard.h
 CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o: ../WorldLogic/Entities.h
 CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o: ../WorldLogic/Room.cpp
 CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.o: ../WorldLogic/Room.h
-
-CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.o: ../WorldLogic/RoomFactory.cpp
-CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.o: ../WorldLogic/RoomFactory.h
 
 CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL.h
 CMakeFiles/Numkinch.dir/WorldLogic/Trap.cpp.o: /Library/Frameworks/SDL2.framework/Headers/SDL_assert.h

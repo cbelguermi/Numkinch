@@ -11,13 +11,12 @@
 #include "Treasure.h"
 #include "../GUI/GUIConstants.h"
 
-#define DUNGEON_BG_PATH "./res/menu_bg.png"
 #define CARDS_PER_LINE 6
 #define MONSTER_IMAGE_PATH "./res/genericEntity.png" // TO CHANGE !!!!!!!
 #define TRAP_IMAGE_PATH "./res/genericEntity.png" // TO CHANGE !!!!!!!
 #define TREASURE_IMAGE_PATH "./res/genericEntity.png" // TO CHANGE !!!!!!!
 
-Dungeon::Dungeon() : _dungeonBg(DUNGEON_BG_PATH)
+Dungeon::Dungeon()
 {
     _playedDeck.reserve(NB_CARDS_INGAME);
     _allRooms.reserve(NB_CARDS);
@@ -64,6 +63,20 @@ void Dungeon::generate()
             randPosition += DISTANCE;
             nbInGameCards --;
         }
+    }
+}
+
+void Dungeon::setActivated(bool activated)
+{
+    _activated = activated;
+}
+
+
+void Dungeon::init()
+{
+    for (int i = 0; i < NB_CARDS_INGAME; i++)
+    {
+        _playedDeck[i]->init();
     }
 }
 
@@ -115,10 +128,18 @@ Card * Dungeon::findCard(int positionX, int positionY)
 
 void Dungeon::render()
 {
+    bool noBigCard = true;
     for (int i = 0; i < NB_CARDS_INGAME; i++)
     {
         _playedDeck[i]->render();
-        _activated = !_playedDeck[i]->getRoom()->getBigCard()->displayed();
+        if (_playedDeck[i]->getRoom()->getBigCard()->displayed())
+        {
+            noBigCard = false;
+        }
+    }
+    if (noBigCard)
+    {
+        _activated = true;
     }
 }
 

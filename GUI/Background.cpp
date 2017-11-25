@@ -4,14 +4,16 @@
 
 #include "Background.h"
 
-Background::Background(const char * path) : Element(path) {}
+Background::Background(const char * path) : Element(path)
+{}
+
+void Background::init()
+{
+    Element::init();
+}
 
 void Background::render()
 {
-    loadImage();
-
-    loadTexture();
-
     SDL_RenderCopy(GameEngine::getGameRenderer(), _texture, nullptr, nullptr);
 }
 

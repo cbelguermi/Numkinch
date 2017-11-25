@@ -27,10 +27,11 @@ public:
 
     virtual ~Element();
 
-    virtual void render() = 0;
+    void init() override;
 
-    virtual void cleanup();
+    void render() override = 0;
+
+    void cleanup() override;
 };
-
 
 #endif //NUMKINCH_ELEMENT_H

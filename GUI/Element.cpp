@@ -4,15 +4,15 @@
 
 #include "Element.h"
 
-Element::Element(const char * path) {
-
+Element::Element(const char * path)
+{
     _imagePath = path;
     _surface = nullptr;
     _texture = nullptr;
 }
 
-void Element::loadImage() {
-
+void Element::loadImage()
+{
     try {
         _surface = IMG_Load(_imagePath);
         if (_surface == nullptr)
@@ -24,8 +24,8 @@ void Element::loadImage() {
     }
 }
 
-void Element::loadTexture() {
-
+void Element::loadTexture()
+{
     try {
         _texture = SDL_CreateTextureFromSurface(GameEngine::getGameRenderer(), _surface);
         if (_texture == nullptr)
@@ -37,15 +37,22 @@ void Element::loadTexture() {
     }
 }
 
-Element::~Element() {
+void Element::init()
+{
+    loadImage();
 
+    loadTexture();
+}
+
+void Element::cleanup()
+{
+    SDL_FreeSurface(_surface);
+    SDL_DestroyTexture(_texture);
+}
+
+Element::~Element()
+{
     _imagePath = nullptr; // _imagePath receives string literal, no need to call delete[]
     _texture = nullptr;
     _surface = nullptr;
-}
-
-void Element::cleanup() {
-
-    SDL_FreeSurface(_surface);
-    SDL_DestroyTexture(_texture);
 }

@@ -16,6 +16,8 @@ private:
 public:
     Button(const char * path, int x, int y, int w, int h);
 
+    void init() override;
+
     void handleEvent(SDL_Event * event) override;
 
     void render() override;

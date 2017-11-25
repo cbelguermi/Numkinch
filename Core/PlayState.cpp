@@ -14,7 +14,10 @@ PlayState::PlayState(vector<unique_ptr<Race>> players) : _inGameBg(IN_GAME_BG_PA
 
 void PlayState::onEnter()
 {
+    _inGameBg.init();
+
     _dungeon.generate();
+    _dungeon.init();
     for (int i = 0; i < NB_PLAYERS; i++)
     {
         auto * playerNb = new char(2);
@@ -31,6 +34,7 @@ void PlayState::onEnter()
         _playerStats[i] = new StatCard(STAT_CARD_PATH, WINDOW_WIDTH - STAT_CARD_WIDTH,
                                        20 + STAT_CARD_HEIGHT * i, STAT_CARD_WIDTH, STAT_CARD_HEIGHT, playerNb, attack,
                                        defense, agility, life);
+        _playerStats[i]->init();
     }
 }
 

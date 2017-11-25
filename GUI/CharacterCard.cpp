@@ -14,6 +14,11 @@ CharacterCard::CharacterCard(const char * path, int x, int y, int w, int h, cons
                                                                                      0, name, x + 20, y + 90)
 {}
 
+void CharacterCard::init()
+{
+    Tile::init();
+}
+
 void CharacterCard::render()
 {
     Tile::render();

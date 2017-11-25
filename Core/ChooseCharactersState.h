@@ -13,7 +13,6 @@
 #include "../GUI/CharacterCard.h"
 #include <vector>
 
-
 using namespace std;
 
 class ChooseCharactersState : public GameState {
@@ -43,6 +42,5 @@ public:
 
     ~ChooseCharactersState() override;
 };
-
 
 #endif //NUMKINCH_CHOOSECHARACTERSSTATE_H

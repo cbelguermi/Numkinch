@@ -23,8 +23,8 @@ set(SOURCE_FILES Main.cpp Core/GameEngine.cpp Core/GameEngine.h Core/GameState.h
         PlayerLogic/Elf.h PlayerLogic/Skill.cpp PlayerLogic/Skill.h PlayerLogic/Dwarf.cpp PlayerLogic/Dwarf.h
         PlayerLogic/Assassin.cpp PlayerLogic/Assassin.h PlayerLogic/Paladin.cpp PlayerLogic/Paladin.h Core/PlayState.cpp
         Core/PlayState.h GUI/Tile.cpp GUI/Tile.h GUI/GUIConstants.h PlayerLogic/Races.h PlayerLogic/Classes.h
-        PlayerLogic/PlayerLogicConstants.h GUI/IHandleable.h GUI/TileGroup.cpp GUI/TileGroup.h
-        GUI/Point.h PlayerLogic/Skills.h PlayerLogic/Barbarian.cpp PlayerLogic/Barbarian.h
+        PlayerLogic/PlayerLogicConstants.h GUI/IHandleable.h
+        PlayerLogic/Skills.h PlayerLogic/Barbarian.cpp PlayerLogic/Barbarian.h
         PlayerLogic/Human.cpp PlayerLogic/Human.h PlayerLogic/Thief.cpp PlayerLogic/Thief.h PlayerLogic/Priest.cpp
         PlayerLogic/Priest.h GUI/Text.cpp GUI/Text.h GUI/CharacterCard.cpp GUI/CharacterCard.h PlayerLogic/Names.h
         GUI/StatCard.cpp GUI/StatCard.h WorldLogic/Dungeon.cpp WorldLogic/Dungeon.h WorldLogic/Room.cpp

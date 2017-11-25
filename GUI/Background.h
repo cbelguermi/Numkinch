@@ -12,6 +12,8 @@ class Background : public Element {
 public:
     explicit Background(const char * path);
 
+    void init() override;
+
     void render() override;
 
     void cleanup() override;

@@ -8,16 +8,14 @@
 #include <vector>
 #include "../GUI/Button.h"
 #include "../GUI/Background.h"
-#include "../GUI/TileGroup.h"
 #include "Room.h"
 #include "Card.h"
 
 using namespace std;
 
-class Dungeon : public IHandleable {
+class Dungeon : public IHandleable, IDisplayable {
 
 private:
-    Background _dungeonBg;
     vector<unique_ptr<Card>> _playedDeck; // cards that are actually shown on board
     vector<unique_ptr<Room>> _allRooms; // all the cards
 
@@ -31,11 +29,15 @@ public:
 
     void generate();
 
+    void setActivated(bool activated);
+
+    void init() override;
+
     void handleEvent(SDL_Event * event) override;
 
-    void render();
+    void render() override;
 
-    void cleanup();
+    void cleanup() override;
 
 private:
     Card * findCard(int positionX, int positionY);

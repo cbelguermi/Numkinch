@@ -14,6 +14,11 @@ StatCard::StatCard(const char * path, int x, int y, int w, int h, const char * p
         _life(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, life, x + 20, y + 90)
 {}
 
+void StatCard::init()
+{
+    Tile::init();
+}
+
 void StatCard::render()
 {
     Tile::render();

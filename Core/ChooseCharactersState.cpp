@@ -8,12 +8,9 @@
 #include "../GUI/GUIConstants.h"
 #include "GameStateManager.h"
 
-
 #define CARD_PATH "./res/CardBase.png"
-
 #define CHOOSE_CHAR_BG_PATH "./res/choose_bg.png"
 #define GAME_BUTTON_PATH    "./res/game_btn.png"
-
 
 ChooseCharactersState::ChooseCharactersState() : _chooseCharacterBg(CHOOSE_CHAR_BG_PATH),
                                                  _playGameBtn(GAME_BUTTON_PATH,
@@ -28,13 +25,16 @@ ChooseCharactersState::ChooseCharactersState() : _chooseCharacterBg(CHOOSE_CHAR_
 
 void ChooseCharactersState:: playStateHandler()
 {
-    auto * playState = new PlayState(move(_randomPlayers)); // CLion bug here, there is no error to highlight
+    auto * playState = new PlayState(move(_randomPlayers));
 
     GameStateManager::get().changeGameState(playState);
 }
 
 void ChooseCharactersState::onEnter()
 {
+    _chooseCharacterBg.init();
+    _playGameBtn.init();
+
     for (int i = 0; i < NB_PLAYERS; i++)
     {
         _randomPlayers.push_back(unique_ptr<Race>(CharacterFactory::get().createCharacter()));
@@ -46,13 +46,15 @@ void ChooseCharactersState::onEnter()
                                                 CHAR_CARD_MARGIN_TOP, CHAR_CARD_WIDTH, CHAR_CARD_HEIGHT,
                                                 _randomPlayers[i]->RaceToString(), _randomPlayers[i]->ClassToString(),
                                                 _randomPlayers[i]->getName());
+        _characters[i]->init();
     }
 }
 
 void ChooseCharactersState::onExit()
 {
     _playGameBtn.cleanup();
-    for (int i = 0; i < NB_PLAYERS; i++) {
+    for (int i = 0; i < NB_PLAYERS; i++)
+    {
         _characters[i]->cleanup();
     }
     _chooseCharacterBg.cleanup();
@@ -85,10 +87,17 @@ void ChooseCharactersState::update()
 void ChooseCharactersState::render()
 {
     _chooseCharacterBg.render();
-    for (int i = 0; i < NB_PLAYERS; i++) {
+    for (int i = 0; i < NB_PLAYERS; i++)
+    {
         _characters[i]->render();
     }
     _playGameBtn.render();
 }
 
-ChooseCharactersState::~ChooseCharactersState() = default;
+ChooseCharactersState::~ChooseCharactersState()
+{
+    for (auto character : _characters)
+    {
+        delete character;
+    }
+}

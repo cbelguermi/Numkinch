@@ -4,45 +4,47 @@
 
 #include "Tile.h"
 
-Tile::Tile(const char * path, int x, int y, int w, int h) : Element(path) {
-
+Tile::Tile(const char * path, int x, int y, int w, int h) : Element(path)
+{
     _tileRect.w = w;
     _tileRect.h = h;
     _tileRect.x = x;
     _tileRect.y = y;
 }
 
-void Tile::render() {
-
+void Tile::init()
+{
     loadImage();
 
     loadTexture();
-
-    SDL_RenderCopy(GameEngine::getGameRenderer(), _texture, nullptr, &_tileRect);
-
 }
 
-void Tile::cleanup() {
+void Tile::render()
+{
+    SDL_RenderCopy(GameEngine::getGameRenderer(), _texture, nullptr, &_tileRect);
+}
 
+void Tile::cleanup()
+{
     Element::cleanup();
 }
 
-int Tile::getX() const {
-
+int Tile::getX() const
+{
     return _tileRect.x;
 }
 
-int Tile::getY() const {
-
+int Tile::getY() const
+{
     return _tileRect.y;
 }
 
-int Tile::getW() const {
-
+int Tile::getW() const
+{
     return _tileRect.w;
 }
 
-int Tile::getH() const {
-
+int Tile::getH() const
+{
     return _tileRect.h;
 }

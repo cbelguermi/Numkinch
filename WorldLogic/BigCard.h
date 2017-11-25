@@ -42,6 +42,8 @@ public:
 
     void setDisplay(bool displayed);
 
+    void init() override;
+
     void handleEvent(SDL_Event * event) override;
 
     void render() override;

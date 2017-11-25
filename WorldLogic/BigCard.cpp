@@ -4,6 +4,7 @@
 
 #include "BigCard.h"
 #include "../GUI/GUIConstants.h"
+#include "../Core/GameStateManager.h"
 
 #define BIG_CARD_PATH "./res/BigCard.png"
 #define REFUSE_BTN_PATH "./res/FleeBtn.png"
@@ -65,6 +66,16 @@ bool BigCard::displayed() const
 void BigCard::setDisplay(bool displayed)
 {
     _displayed = displayed;
+}
+
+void BigCard::init()
+{
+    _cardImage.init();
+    _acceptBtn.init();
+    if (hasRefuseBtn())
+    {
+        _refuseBtn.init();
+    }
 }
 
 void BigCard::handleEvent(SDL_Event * event)

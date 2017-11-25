@@ -5,8 +5,8 @@
 #ifndef NUMKINCH_TEXT_H
 #define NUMKINCH_TEXT_H
 
-
 #include <SDL_ttf.h>
+
 #define FONT_PATH "./res/fonts/VeraSe.ttf"
 
 class Text {
@@ -32,8 +32,6 @@ public:
     void render();
 
     void cleanup();
-
 };
-
 
 #endif //NUMKINCH_TEXT_H

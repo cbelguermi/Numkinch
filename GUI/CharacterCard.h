@@ -13,17 +13,20 @@ class CharacterCard : public Tile {
 
 private:
     Text _race;
+
     Text _class;
+
     Text _name;
 
 public:
     CharacterCard(const char * path, int x, int y, int w, int h, const char * race, const char * characterClass,
     const char * name);
 
+    void init() override;
+
     void render() override;
 
     void cleanup() override;
 };
-
 
 #endif //NUMKINCH_TEXTTILE_H

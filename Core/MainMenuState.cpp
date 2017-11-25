@@ -19,14 +19,9 @@ MainMenuState::MainMenuState() : _menuBg(MENU_BG_PATH),
 
 void MainMenuState::onEnter()
 {
-
-}
-
-void MainMenuState::onExit()
-{
-    _menuNewPlayBtn.cleanup();
-    _menuQuitBtn.cleanup();
-    _menuBg.cleanup();
+    _menuBg.init();
+    _menuNewPlayBtn.init();
+    _menuQuitBtn.init();
 }
 
 void MainMenuState::handleEvents()
@@ -57,11 +52,19 @@ void MainMenuState::handleEvents()
     }
 }
 
-void MainMenuState::update() {}
+void MainMenuState::update()
+{}
 
 void MainMenuState::render()
 {
     _menuBg.render();
     _menuNewPlayBtn.render();
     _menuQuitBtn.render();
+}
+
+void MainMenuState::onExit()
+{
+    _menuNewPlayBtn.cleanup();
+    _menuQuitBtn.cleanup();
+    _menuBg.cleanup();
 }

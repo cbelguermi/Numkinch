@@ -447,33 +447,6 @@ GUI/Tile.cpp.s:
 	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/Tile.cpp.s
 .PHONY : GUI/Tile.cpp.s
 
-GUI/TileGroup.o: GUI/TileGroup.cpp.o
-
-.PHONY : GUI/TileGroup.o
-
-# target to build an object file
-GUI/TileGroup.cpp.o:
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.o
-.PHONY : GUI/TileGroup.cpp.o
-
-GUI/TileGroup.i: GUI/TileGroup.cpp.i
-
-.PHONY : GUI/TileGroup.i
-
-# target to preprocess a source file
-GUI/TileGroup.cpp.i:
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.i
-.PHONY : GUI/TileGroup.cpp.i
-
-GUI/TileGroup.s: GUI/TileGroup.cpp.s
-
-.PHONY : GUI/TileGroup.s
-
-# target to generate assembly for a file
-GUI/TileGroup.cpp.s:
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/GUI/TileGroup.cpp.s
-.PHONY : GUI/TileGroup.cpp.s
-
 Main.o: Main.cpp.o
 
 .PHONY : Main.o
@@ -960,33 +933,6 @@ WorldLogic/Room.cpp.s:
 	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/WorldLogic/Room.cpp.s
 .PHONY : WorldLogic/Room.cpp.s
 
-WorldLogic/RoomFactory.o: WorldLogic/RoomFactory.cpp.o
-
-.PHONY : WorldLogic/RoomFactory.o
-
-# target to build an object file
-WorldLogic/RoomFactory.cpp.o:
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.o
-.PHONY : WorldLogic/RoomFactory.cpp.o
-
-WorldLogic/RoomFactory.i: WorldLogic/RoomFactory.cpp.i
-
-.PHONY : WorldLogic/RoomFactory.i
-
-# target to preprocess a source file
-WorldLogic/RoomFactory.cpp.i:
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.i
-.PHONY : WorldLogic/RoomFactory.cpp.i
-
-WorldLogic/RoomFactory.s: WorldLogic/RoomFactory.cpp.s
-
-.PHONY : WorldLogic/RoomFactory.s
-
-# target to generate assembly for a file
-WorldLogic/RoomFactory.cpp.s:
-	$(MAKE) -f CMakeFiles/Numkinch.dir/build.make CMakeFiles/Numkinch.dir/WorldLogic/RoomFactory.cpp.s
-.PHONY : WorldLogic/RoomFactory.cpp.s
-
 WorldLogic/Trap.o: WorldLogic/Trap.cpp.o
 
 .PHONY : WorldLogic/Trap.o
@@ -1086,9 +1032,6 @@ help:
 	@echo "... GUI/Tile.o"
 	@echo "... GUI/Tile.i"
 	@echo "... GUI/Tile.s"
-	@echo "... GUI/TileGroup.o"
-	@echo "... GUI/TileGroup.i"
-	@echo "... GUI/TileGroup.s"
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
@@ -1143,9 +1086,6 @@ help:
 	@echo "... WorldLogic/Room.o"
 	@echo "... WorldLogic/Room.i"
 	@echo "... WorldLogic/Room.s"
-	@echo "... WorldLogic/RoomFactory.o"
-	@echo "... WorldLogic/RoomFactory.i"
-	@echo "... WorldLogic/RoomFactory.s"
 	@echo "... WorldLogic/Trap.o"
 	@echo "... WorldLogic/Trap.i"
 	@echo "... WorldLogic/Trap.s"
