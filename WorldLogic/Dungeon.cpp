@@ -22,6 +22,7 @@ Dungeon::Dungeon() : _dungeonBg(DUNGEON_BG_PATH)
     _playedDeck.reserve(NB_CARDS_INGAME);
     _allRooms.reserve(NB_CARDS);
     _activated = true;
+    _lastVisitedCard = nullptr;
 
     int i;
     for (i = 0; i < 40; i++)
@@ -53,8 +54,10 @@ void Dungeon::generate()
     while (nbInGameCards > 0)
     {
         randPosition = uniformPositionDistribution(randomEngine);
-        while (nbInGameCards > 0 && randPosition < NB_CARDS)
+
+        while (nbInGameCards > 0 && randPosition < NB_CARDS && !_allRooms[randPosition]->inDeck())
         {
+            _allRooms[randPosition]->setInDeck(true);
             _playedDeck.push_back(unique_ptr<Card>(new Card(_allRooms[randPosition].get(),
                                                             (NB_CARDS_INGAME - nbInGameCards) % CARDS_PER_LINE,
                                                             (NB_CARDS_INGAME - nbInGameCards) / CARDS_PER_LINE)));
@@ -78,8 +81,21 @@ void Dungeon::handleEvent(SDL_Event * event)
             Card * foundCard = findCard(x, y);
             if (foundCard != nullptr)
             {
+                _lastVisitedCard = foundCard;
+                _activated = false;
+                printf("coucouc\n");
                 foundCard->handleEvent(event);
             }
+        }
+    }
+
+    else if (_lastVisitedCard != nullptr)
+    {
+        printf("hého\n");
+        if (_lastVisitedCard->getRoom()->getBigCard()->displayed())
+        {
+            printf("coucou\n");
+            _lastVisitedCard->getRoom()->getBigCard()->handleEvent(event);
         }
     }
 }
@@ -102,10 +118,7 @@ void Dungeon::render()
     for (int i = 0; i < NB_CARDS_INGAME; i++)
     {
         _playedDeck[i]->render();
-        if (_playedDeck[i]->getRoom()->getBigCard()->displayed())
-        {
-            _activated = false;
-        }
+        _activated = !_playedDeck[i]->getRoom()->getBigCard()->displayed();
     }
 }
 

@@ -23,6 +23,8 @@ private:
 
     bool _activated;
 
+    Card * _lastVisitedCard;
+
 public:
 
     Dungeon();

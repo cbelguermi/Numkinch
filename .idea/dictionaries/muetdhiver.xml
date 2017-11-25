@@ -1,9 +1,19 @@
 <component name="ProjectDictionaryState">
   <dictionary name="muetdhiver">
     <words>
+      <w>bigcard</w>
       <w>characterfactory</w>
+      <w>clickable</w>
+      <w>databaseloader</w>
+      <w>dungeonmanager</w>
+      <w>handleable</w>
+      <w>idisplayable</w>
+      <w>ingame</w>
+      <w>orientedrectangle</w>
       <w>playstate</w>
       <w>skillset</w>
+      <w>texttile</w>
+      <w>tilegroup</w>
     </words>
   </dictionary>
 </component>

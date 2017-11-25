@@ -68,7 +68,6 @@ void PlayState::update() {}
 void PlayState::render()
 {
     _inGameBg.render();
-    // render dungeon
     for (int i = 0; i < NB_PLAYERS; i++)
     {
         _playerStats[i]->render();

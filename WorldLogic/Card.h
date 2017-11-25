@@ -35,6 +35,8 @@ public:
     void render();
 
     void cleanup();
+
+    ~Card();
 };
 
 

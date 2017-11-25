@@ -9,9 +9,6 @@
 #define BACK_CARD_PATH "./res/BackCard.png"
 #define FRONT_CARD_PATH "./res/FrontCard.png"
 
-
-static int nb_visited = 0;
-
 Card::Card(Room * room, int column, int line) : _room(room),
                                                 _backCardBtn(BACK_CARD_PATH, column * CARD_WIDTH + CARD_MARGIN_SIDE,
                                                              line * CARD_HEIGHT + CARD_MARGIN_TOP, CARD_WIDTH,
@@ -21,8 +18,8 @@ Card::Card(Room * room, int column, int line) : _room(room),
                                                                line * CARD_HEIGHT + CARD_MARGIN_TOP, CARD_WIDTH,
                                                                CARD_HEIGHT)
 {
-    _positionX = column * CARD_WIDTH + CHAR_CARD_MARGIN_SIDE;
-    _positionY = line * CARD_HEIGHT + CHAR_CARD_MARGIN_TOP;
+    _positionX = column * CARD_WIDTH + CARD_MARGIN_SIDE;
+    _positionY = line * CARD_HEIGHT + CARD_MARGIN_TOP;
 }
 
 Room * Card::getRoom()
@@ -41,9 +38,6 @@ void Card::handleEvent(SDL_Event * event)
             {
                 _room->setVisited(true);
                 _room->getBigCard()->setDisplay(true);
-                printf("NB visited: %d, last %d %d, set %d\n", ++nb_visited, getX(), getY(),
-                       _room->getBigCard()->displayed());
-
             }
         }
     }
@@ -56,9 +50,6 @@ void Card::render()
     {
         _backCardBtn.cleanup();
         _frontCardTile.render();
-        /*printf("rendered visited %d %d\n\n", (getX() - CHAR_CARD_MARGIN_SIDE) / CARD_WIDTH, (getY() -
-        CHAR_CARD_MARGIN_TOP) / CARD_HEIGHT);
-         */
         if (_room->getBigCard()->displayed())
         {
             _room->getBigCard()->render();
@@ -86,4 +77,9 @@ int Card::getX() const
 int Card::getY() const
 {
     return _positionY;
+}
+
+Card::~Card()
+{
+    _room = nullptr;
 }

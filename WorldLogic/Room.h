@@ -20,6 +20,8 @@ protected:
 
     bool _visited;
 
+    bool _inDeck;
+
     const char * _name;
 
     const char * _description;
@@ -32,6 +34,8 @@ protected:
 public:
     Room(int type, const char * name, const char * description, const char * entityImage);
 
+    bool inDeck() const;
+
     bool visited() const;
 
     void setVisited(bool visited);
@@ -40,6 +44,7 @@ public:
 
     virtual ~Room();
 
+    void setInDeck(bool inDeck);
 };
 
 

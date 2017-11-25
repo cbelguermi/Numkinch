@@ -90,11 +90,11 @@ void BigCard::render()
 {
     _cardImage.render();
     _acceptBtn.render();
-    /*if (hasRefuseBtn())
+    if (hasRefuseBtn())
     {
         _refuseBtn.render();
     }
-    _entityImage.render();
+    /*_entityImage.render();
     _topTxt.render();
     _entityNameTxt.render();
     _descriptionTxt.render();*/
@@ -102,10 +102,10 @@ void BigCard::render()
 
 void BigCard::cleanup()
 {
-    _descriptionTxt.cleanup();
+    /*_descriptionTxt.cleanup();
     _entityNameTxt.cleanup();
     _topTxt.cleanup();
-    _entityNameTxt.cleanup();
+    _entityNameTxt.cleanup();*/
     if (hasRefuseBtn())
     {
         _refuseBtn.cleanup();

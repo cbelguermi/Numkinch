@@ -9,6 +9,7 @@
 Room::Room(int type, const char * name, const char * description, const char * entityImage) :
         _type(type), _name(name), _description(description), _visited(false), _entityImage(entityImage)
 {
+    _inDeck = false;
     _bigCard = nullptr;
 }
 
@@ -27,6 +28,15 @@ BigCard * Room::getBigCard()
     return _bigCard;
 }
 
+bool Room::inDeck() const
+{
+    return _inDeck;
+}
+
+void Room::setInDeck(bool inDeck)
+{
+    _inDeck = inDeck;
+}
 
 Room::~Room()
 {
