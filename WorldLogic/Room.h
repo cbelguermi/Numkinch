@@ -9,9 +9,8 @@
 #include "../GUI/CharacterCard.h"
 #include "BigCard.h"
 
-#define ENTITY_PATH "./genericEntity.png"
+#define ENTITY_PATH "./res/genericEntity.png"
 #define TAKE_BTN_PATH "./res/TakeBtn.png"
-
 
 class Room {
 

@@ -23,7 +23,7 @@ void Text::render()
 
 void Text::cleanup()
 {
+    TTF_CloseFont(_font);
     SDL_DestroyTexture(_texture);
     SDL_FreeSurface(_surface);
-    TTF_CloseFont(_font);
 }

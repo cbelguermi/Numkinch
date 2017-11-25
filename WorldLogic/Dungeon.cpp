@@ -96,7 +96,6 @@ void Dungeon::handleEvent(SDL_Event * event)
             {
                 _lastVisitedCard = foundCard;
                 _activated = false;
-                printf("coucouc\n");
                 foundCard->handleEvent(event);
             }
         }
@@ -104,10 +103,8 @@ void Dungeon::handleEvent(SDL_Event * event)
 
     else if (_lastVisitedCard != nullptr)
     {
-        printf("hého\n");
         if (_lastVisitedCard->getRoom()->getBigCard()->displayed())
         {
-            printf("coucou\n");
             _lastVisitedCard->getRoom()->getBigCard()->handleEvent(event);
         }
     }

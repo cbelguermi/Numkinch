@@ -16,13 +16,13 @@ BigCard::BigCard(bool hasRefuseBtn, const char * acceptBtnPath, const char * ent
                                                             BIG_CARD_HEIGHT),
 
                                                  _acceptBtn(acceptBtnPath, (WINDOW_WIDTH / 2) - (BIG_CARD_WIDTH / 2)
-                                                                           + 10, (WINDOW_HEIGHT / 2) -
-                                                                    (BIG_CARD_HEIGHT / 2) + BIG_CARD_HEIGHT - 60,
+                                                                           + 20, (WINDOW_HEIGHT / 2) -
+                                                                    (BIG_CARD_HEIGHT / 2) + BIG_CARD_HEIGHT - 80,
                                                             BUTTON_WIDTH, BUTTON_HEIGHT),
 
                                                  _refuseBtn(REFUSE_BTN_PATH, (WINDOW_WIDTH / 2) - (BIG_CARD_WIDTH / 2)
-                                                                             + 120, (WINDOW_HEIGHT / 2) -
-                                                                    (BIG_CARD_HEIGHT / 2) + BIG_CARD_HEIGHT - 60,
+                                                                             + 126, (WINDOW_HEIGHT / 2) -
+                                                                    (BIG_CARD_HEIGHT / 2) + BIG_CARD_HEIGHT - 80,
                                                             BUTTON_WIDTH, BUTTON_HEIGHT),
 
                                                  _entityImage(entityImagePath, (WINDOW_WIDTH / 2) - (BIG_CARD_WIDTH / 2)
@@ -34,7 +34,7 @@ BigCard::BigCard(bool hasRefuseBtn, const char * acceptBtnPath, const char * ent
                                                  _topTxt(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, topText,
                                                          (WINDOW_WIDTH / 2) - (BIG_CARD_WIDTH / 2)
                                                          + ENTITY_IMAGE_MARGIN_SIDE, (WINDOW_HEIGHT / 2) -
-                                                                                     (BIG_CARD_HEIGHT / 2) + 10),
+                                                                                     (BIG_CARD_HEIGHT / 2) + 20),
 
                                                  _entityNameTxt(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, entityNameText,
                                                                 (WINDOW_WIDTH / 2) - (BIG_CARD_WIDTH / 2)
@@ -76,6 +76,7 @@ void BigCard::init()
     {
         _refuseBtn.init();
     }
+    _entityImage.init();
 }
 
 void BigCard::handleEvent(SDL_Event * event)
@@ -105,18 +106,17 @@ void BigCard::render()
     {
         _refuseBtn.render();
     }
-    /*_entityImage.render();
+    _entityImage.render();
     _topTxt.render();
     _entityNameTxt.render();
-    _descriptionTxt.render();*/
+    _descriptionTxt.render();
 }
 
 void BigCard::cleanup()
 {
-    /*_descriptionTxt.cleanup();
+    _descriptionTxt.cleanup();
     _entityNameTxt.cleanup();
     _topTxt.cleanup();
-    _entityNameTxt.cleanup();*/
     if (hasRefuseBtn())
     {
         _refuseBtn.cleanup();

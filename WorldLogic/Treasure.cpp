@@ -9,7 +9,7 @@ Treasure::Treasure(int type, const char * name, const char * description, const 
                    unsigned int targetSkill, unsigned int bonus) :
         Room(type, name, description, entityImage), _targetSkill(targetSkill), _bonus(bonus)
 {
-    _bigCard = new BigCard(true, TAKE_BTN_PATH, ENTITY_PATH, getBonusString(), name, description);
+    _bigCard = new BigCard(false, TAKE_BTN_PATH, ENTITY_PATH, getBonusString(), name, description);
 }
 
 const char * Treasure::getBonusString()
@@ -19,15 +19,20 @@ const char * Treasure::getBonusString()
     {
         case (ATTACK):
             sprintf(bonus, "+ %d - ATTACK", _bonus);
+            break;
         case (DEFENSE):
             sprintf(bonus, "+ %d - DEFENSE", _bonus);
+            break;
         case (AGILITY):
             sprintf(bonus, "+ %d - AGILITY", _bonus);
+            break;
         case (LIFE):
             sprintf(bonus, "+ %d - LIFE", _bonus);
+            break;
         default:
             delete bonus;
             bonus = nullptr;
+            break;
     }
     return bonus;
 }
