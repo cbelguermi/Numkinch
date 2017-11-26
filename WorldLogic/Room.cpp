@@ -13,6 +13,12 @@ Room::Room(int type, const char * name, const char * description, const char * e
     _bigCard = nullptr;
 }
 
+int Room::getType() const
+{
+    return _type;
+}
+
+
 bool Room::visited() const
 {
     return _visited;

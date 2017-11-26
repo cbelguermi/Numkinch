@@ -4,7 +4,6 @@
 
 #include "BigCard.h"
 #include "../GUI/GUIConstants.h"
-#include "../Core/GameStateManager.h"
 
 #define BIG_CARD_PATH "./res/BigCard.png"
 #define REFUSE_BTN_PATH "./res/FleeBtn.png"
@@ -51,6 +50,8 @@ BigCard::BigCard(bool hasRefuseBtn, const char * acceptBtnPath, const char * ent
 {
     _hasRefuseBtn = hasRefuseBtn;
     _displayed = false;
+    _accept = false;
+    _refuse = false;
 }
 
 bool BigCard::hasRefuseBtn() const
@@ -61,6 +62,26 @@ bool BigCard::hasRefuseBtn() const
 bool BigCard::displayed() const
 {
     return _displayed;
+}
+
+bool BigCard::accept() const
+{
+    return _accept;
+}
+
+bool BigCard::refuse() const
+{
+    return _refuse;
+}
+
+void BigCard::setAccept(bool accept)
+{
+    _accept = accept;
+}
+
+void BigCard::setRefuse(bool refuse)
+{
+    _refuse = refuse;
 }
 
 void BigCard::setDisplay(bool displayed)
@@ -88,11 +109,13 @@ void BigCard::handleEvent(SDL_Event * event)
     }
     if (_acceptBtn.pressed())
     {
+        setAccept(true);
         setDisplay(false);
         cleanup();
     }
     else if (_refuseBtn.pressed())
     {
+        setRefuse(true);
         setDisplay(false);
         cleanup();
     }
@@ -117,6 +140,7 @@ void BigCard::cleanup()
     _descriptionTxt.cleanup();
     _entityNameTxt.cleanup();
     _topTxt.cleanup();
+    _entityImage.cleanup();
     if (hasRefuseBtn())
     {
         _refuseBtn.cleanup();

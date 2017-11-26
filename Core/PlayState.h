@@ -27,6 +27,8 @@ private:
 
     vector<unique_ptr<Race>> _players;
 
+    unsigned int _currentPlayer;
+
 public:
     explicit PlayState(vector<unique_ptr<Race>> players);
 
@@ -35,6 +37,8 @@ public:
     void onExit() override;
 
     void handleEvents() override;
+
+    void updateCurrentPlayer(Room * room);
 
     void update() override;
 

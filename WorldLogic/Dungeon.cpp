@@ -10,6 +10,8 @@
 #include "../PlayerLogic/Skills.h"
 #include "Treasure.h"
 #include "../GUI/GUIConstants.h"
+#include "../Core/GameStateManager.h"
+#include "../Core/PlayState.h"
 
 #define CARDS_PER_LINE 6
 #define MONSTER_IMAGE_PATH "./res/genericEntity.png" // TO CHANGE !!!!!!!
@@ -66,12 +68,6 @@ void Dungeon::generate()
     }
 }
 
-void Dungeon::setActivated(bool activated)
-{
-    _activated = activated;
-}
-
-
 void Dungeon::init()
 {
     for (int i = 0; i < NB_CARDS_INGAME; i++)
@@ -121,6 +117,19 @@ Card * Dungeon::findCard(int positionX, int positionY)
         }
     }
     return nullptr;
+}
+
+void Dungeon::update()
+{
+    for (int i = 0; i < NB_CARDS_INGAME; i++)
+    {
+        _playedDeck[i]->update();
+        if (_playedDeck[i]->updatePlayer())
+        {
+            auto * playState = (PlayState *) GameStateManager::get().getCurrentGameState();
+            playState->updateCurrentPlayer(_playedDeck[i]->getRoom());
+        }
+    }
 }
 
 void Dungeon::render()

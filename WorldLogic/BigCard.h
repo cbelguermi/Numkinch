@@ -18,6 +18,10 @@ private:
 
     bool _displayed;
 
+    bool _accept;
+
+    bool _refuse;
+
     Tile _cardImage;
 
     Button _acceptBtn;
@@ -39,6 +43,14 @@ public:
     bool hasRefuseBtn() const;
 
     bool displayed() const;
+
+    bool accept() const;
+
+    bool refuse() const;
+
+    void setAccept(bool accept);
+
+    void setRefuse(bool refuse);
 
     void setDisplay(bool displayed);
 

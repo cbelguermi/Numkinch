@@ -33,6 +33,8 @@ protected:
 public:
     Room(int type, const char * name, const char * description, const char * entityImage);
 
+    int getType() const;
+
     bool inDeck() const;
 
     bool visited() const;

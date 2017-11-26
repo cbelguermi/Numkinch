@@ -21,6 +21,8 @@ private:
 
     int _positionY;
 
+    bool _updatePlayer;
+
 public:
     Card(Room * room, int column, int line);
 
@@ -30,9 +32,15 @@ public:
 
     int getY() const;
 
+    void setUpdate(bool update);
+
+    bool updatePlayer() const;
+
     void init() override;
 
     void handleEvent(SDL_Event * event) override;
+
+    void update();
 
     void render() override;
 

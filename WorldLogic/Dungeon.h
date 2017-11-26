@@ -17,6 +17,7 @@ class Dungeon : public IHandleable, IDisplayable {
 
 private:
     vector<unique_ptr<Card>> _playedDeck; // cards that are actually shown on board
+
     vector<unique_ptr<Room>> _allRooms; // all the cards
 
     bool _activated;
@@ -29,11 +30,11 @@ public:
 
     void generate();
 
-    void setActivated(bool activated);
-
     void init() override;
 
     void handleEvent(SDL_Event * event) override;
+
+    void update();
 
     void render() override;
 
@@ -41,9 +42,6 @@ public:
 
 private:
     Card * findCard(int positionX, int positionY);
-
-
 };
-
 
 #endif //NUMKINCH_DUNGEON_H

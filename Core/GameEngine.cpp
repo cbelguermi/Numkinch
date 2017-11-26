@@ -95,17 +95,17 @@ bool GameEngine::onInit()
 
 void GameEngine::handleEvents()
 {
-    GameStateManager::get().getCurrentGameState().handleEvents();
+    GameStateManager::get().getCurrentGameState()->handleEvents();
 }
 
 void GameEngine::update()
 {
-    GameStateManager::get().getCurrentGameState().update();
+    GameStateManager::get().getCurrentGameState()->update();
 }
 
 void GameEngine::render()
 {
-    GameStateManager::get().getCurrentGameState().render();
+    GameStateManager::get().getCurrentGameState()->render();
 }
 
 /**

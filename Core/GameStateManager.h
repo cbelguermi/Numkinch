@@ -24,9 +24,8 @@ public:
 
     GameStateManager & operator=(const GameStateManager&) = delete; // avoid copy
 
-
 public:
-    GameState & getCurrentGameState() const;
+    GameState * getCurrentGameState() const;
 
     void changeGameState(GameState * newState);
 

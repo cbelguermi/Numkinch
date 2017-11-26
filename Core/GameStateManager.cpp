@@ -28,9 +28,9 @@ GameStateManager::~GameStateManager() {
  *
  * @return the current state
  */
-GameState & GameStateManager::getCurrentGameState() const {
+GameState * GameStateManager::getCurrentGameState() const {
 
-    return *_gameStates.top();
+    return _gameStates.top().get();
 }
 
 /**

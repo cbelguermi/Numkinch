@@ -4,13 +4,16 @@
 
 #include "PlayState.h"
 #include "../GUI/GUIConstants.h"
+#include "../WorldLogic/Entities.h"
 #include <cstdio>
 
 #define STAT_CARD_PATH "./res/StatCard.png"
 
 PlayState::PlayState(vector<unique_ptr<Race>> players) : _inGameBg(IN_GAME_BG_PATH), _playerStats(NB_PLAYERS),
                                                          _players(move(players))
-{}
+{
+    _currentPlayer = 0;
+}
 
 void PlayState::onEnter()
 {
@@ -67,7 +70,21 @@ void PlayState::handleEvents()
     }
 }
 
-void PlayState::update() {}
+void PlayState::update()
+{
+    // change player
+    _dungeon.update();
+}
+
+
+void PlayState::updateCurrentPlayer(Room * room)
+{
+    if (room->getType() == MONSTER)
+    {
+        printf("")
+    }
+    _currentPlayer = (_currentPlayer + 1) % NB_PLAYERS;
+}
 
 void PlayState::render()
 {

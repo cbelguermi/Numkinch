@@ -5,6 +5,7 @@
 #include <zconf.h>
 #include "Card.h"
 #include "../GUI/GUIConstants.h"
+#include "../Core/PlayState.h"
 
 #define BACK_CARD_PATH "./res/BackCard.png"
 #define FRONT_CARD_PATH "./res/FrontCard.png"
@@ -20,6 +21,7 @@ Card::Card(Room * room, int column, int line) : _room(room),
 {
     _positionX = column * CARD_WIDTH + CARD_MARGIN_SIDE;
     _positionY = line * CARD_HEIGHT + CARD_MARGIN_TOP;
+    _updatePlayer = false;
 }
 
 Room * Card::getRoom()
@@ -60,12 +62,35 @@ void Card::handleEvent(SDL_Event * event)
     }
 }
 
+void Card::setUpdate(bool update)
+{
+    _updatePlayer = update;
+}
+
+bool Card::updatePlayer() const
+{
+    return _updatePlayer;
+}
+
+void Card::update()
+{
+    if (_room->getBigCard()->accept())
+    {
+        _room->getBigCard()->setAccept(false);
+        setUpdate(true);
+    }
+    else if (_room->getBigCard()->refuse())
+    {
+        _room->getBigCard()->setRefuse(false);
+        setUpdate(false);
+    }
+}
+
 void Card::render()
 {
     _backCardBtn.render();
     if (_room->visited())
     {
-        //_backCardBtn.cleanup();
         _frontCardTile.render();
         if (_room->getBigCard()->displayed())
         {
