@@ -40,22 +40,22 @@ const char * Race::getName() const
     return _name;
 }
 
-Skill * Race::getAttack() const
+Skill * Race::getAttack()
 {
     return & _attack;
 }
 
-Skill * Race::getDefense() const
+Skill * Race::getDefense()
 {
     return & _defense;
 }
 
-Skill * Race::getAgility() const
+Skill * Race::getAgility()
 {
     return & _agility;
 }
 
-Skill * Race::getLife() const
+Skill * Race::getLife()
 {
     return & _life;
 }

@@ -29,13 +29,13 @@ void PlayState::onEnter()
         auto * playerNb = new char(2);
         sprintf(playerNb, "%d", i);
         auto * attack = new char(10);
-        sprintf(attack, "%d / %d", _players[i]->getAttack().getValue(), _players[i]->getAttack().getMaxValue());
+        sprintf(attack, "%d / %d", _players[i]->getAttack()->getValue(), _players[i]->getAttack()->getMaxValue());
         auto * defense = new char(10);
-        sprintf(defense, "%d / %d", _players[i]->getDefense().getValue(), _players[i]->getDefense().getMaxValue());
+        sprintf(defense, "%d / %d", _players[i]->getDefense()->getValue(), _players[i]->getDefense()->getMaxValue());
         auto * agility = new char(10);
-        sprintf(agility, "%d / %d", _players[i]->getAgility().getValue(), _players[i]->getAgility().getMaxValue());
+        sprintf(agility, "%d / %d", _players[i]->getAgility()->getValue(), _players[i]->getAgility()->getMaxValue());
         auto * life = new char(10);
-        sprintf(life, "%d / %d", _players[i]->getLife().getValue(), _players[i]->getLife().getMaxValue());
+        sprintf(life, "%d / %d", _players[i]->getLife()->getValue(), _players[i]->getLife()->getMaxValue());
 
         _playerStats[i] = new StatCard(STAT_CARD_PATH, WINDOW_WIDTH - STAT_CARD_WIDTH,
                                        20 + STAT_CARD_HEIGHT * i, STAT_CARD_WIDTH, STAT_CARD_HEIGHT, playerNb, attack,
@@ -108,7 +108,6 @@ void PlayState::updateCurrentPlayer(Room * room, bool accept)
             default:
                 break;
         }
-        printf("Trap\n");
     }
     else if (room->getType() == TREASURE)
     {
@@ -132,6 +131,8 @@ void PlayState::updateCurrentPlayer(Room * room, bool accept)
         }
         printf("Treasure\n");
     }
+    _playerStats[_currentPlayer]->updateGUI();
+
     _currentPlayer = (_currentPlayer + 1) % NB_PLAYERS;
     printf("Player changed: now %d\n", _currentPlayer);
 }

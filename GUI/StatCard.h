@@ -30,6 +30,8 @@ public:
     void render() override;
 
     void cleanup() override;
+
+    void updateGUI();
 };
 
 #endif //NUMKINCH_STATCARD_H

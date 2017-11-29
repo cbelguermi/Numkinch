@@ -7,8 +7,9 @@
 
 Trap::Trap(int type, const char * name, const char * description, const char * entityImage,
            const unsigned int targetSkill, const unsigned int damage) :
-        Room(type, name, description, entityImage), _targetSkill(targetSkill), _damage(damage)
+        Room(type, name, description, entityImage), _damage(damage)
 {
+    _targetSkill = targetSkill;
     _bigCard = new BigCard(false, TAKE_BTN_PATH, ENTITY_PATH, getDamageString(), name, description);
 }
 

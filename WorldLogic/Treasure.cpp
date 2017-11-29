@@ -7,8 +7,9 @@
 
 Treasure::Treasure(int type, const char * name, const char * description, const char * entityImage,
                    unsigned int targetSkill, unsigned int bonus) :
-        Room(type, name, description, entityImage), _targetSkill(targetSkill), _bonus(bonus)
+        Room(type, name, description, entityImage), _bonus(bonus)
 {
+    _targetSkill = targetSkill;
     _bigCard = new BigCard(false, TAKE_BTN_PATH, ENTITY_PATH, getBonusString(), name, description);
 }
 

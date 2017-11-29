@@ -6,6 +6,7 @@
 #define NUMKINCH_DUNGEON_H
 
 #include <vector>
+#include <memory>
 #include "../GUI/Button.h"
 #include "../GUI/Background.h"
 #include "Room.h"

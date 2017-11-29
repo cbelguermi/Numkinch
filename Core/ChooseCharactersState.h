@@ -12,6 +12,7 @@
 #include "../GUI/Tile.h"
 #include "../GUI/CharacterCard.h"
 #include <vector>
+#include <memory>
 
 using namespace std;
 
