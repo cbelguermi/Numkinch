@@ -74,15 +74,9 @@ bool Card::updatePlayer() const
 
 void Card::update()
 {
-    if (_room->getBigCard()->accept())
+    if (_room->getBigCard()->accept() || _room->getBigCard()->refuse())
     {
-        _room->getBigCard()->setAccept(false);
         setUpdate(true);
-    }
-    else if (_room->getBigCard()->refuse())
-    {
-        _room->getBigCard()->setRefuse(false);
-        setUpdate(false);
     }
 }
 

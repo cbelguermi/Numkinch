@@ -27,19 +27,13 @@ public:
 public:
     GameState * getCurrentGameState() const;
 
-    void changeGameState(GameState * newState);
-
     void pushGameState(GameState * newState);
 
     void popGameState();
 
-    void updateCurrentGameState();
-
 private:
     GameStateManager(); // avoid instancing
     ~GameStateManager();
-
 };
-
 
 #endif //NUMKINCH_GAMESTATEMANAGER_H

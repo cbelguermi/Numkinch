@@ -12,6 +12,11 @@ Treasure::Treasure(int type, const char * name, const char * description, const 
     _bigCard = new BigCard(false, TAKE_BTN_PATH, ENTITY_PATH, getBonusString(), name, description);
 }
 
+unsigned int Treasure::getBonus() const
+{
+    return _bonus;
+}
+
 const char * Treasure::getBonusString()
 {
     auto * bonus = new char(16);

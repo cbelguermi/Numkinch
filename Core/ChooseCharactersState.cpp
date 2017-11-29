@@ -27,7 +27,7 @@ void ChooseCharactersState:: playStateHandler()
 {
     auto * playState = new PlayState(move(_randomPlayers));
 
-    GameStateManager::get().changeGameState(playState);
+    GameStateManager::get().pushGameState(playState);
 }
 
 void ChooseCharactersState::onEnter()

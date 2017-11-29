@@ -26,6 +26,12 @@ public:
 
     bool isBoss() const;
 
+    unsigned int getAttack() const;
+
+    unsigned int getDefense() const;
+
+    unsigned int getLife() const;
+
 private:
     const char * getSkillsString();
 };

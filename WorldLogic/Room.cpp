@@ -5,9 +5,11 @@
 #include "Room.h"
 #include "../GUI/GUIConstants.h"
 #include "Entities.h"
+#include "../PlayerLogic/Skills.h"
 
 Room::Room(int type, const char * name, const char * description, const char * entityImage) :
-        _type(type), _name(name), _description(description), _visited(false), _entityImage(entityImage)
+        _type(type), _name(name), _description(description), _visited(false), _entityImage(entityImage),
+        _targetSkill(NONE)
 {
     _inDeck = false;
     _bigCard = nullptr;
@@ -18,7 +20,6 @@ int Room::getType() const
     return _type;
 }
 
-
 bool Room::visited() const
 {
     return _visited;
@@ -27,6 +28,11 @@ bool Room::visited() const
 void Room::setVisited(bool visited)
 {
     _visited = visited;
+}
+
+unsigned int Room::getTargetSkill() const
+{
+    return _targetSkill;
 }
 
 BigCard * Room::getBigCard()

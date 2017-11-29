@@ -34,13 +34,13 @@ public:
 
     const char * getName() const;
 
-    const Skill & getAttack() const;
+    Skill * getAttack() const;
 
-    const Skill & getDefense() const;
+    Skill * getDefense() const;
 
-    const Skill & getAgility() const;
+    Skill * getAgility() const;
 
-    const Skill & getLife() const;
+    Skill * getLife() const;
 
     const char * RaceToString() const;
 

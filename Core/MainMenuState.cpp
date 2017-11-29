@@ -39,7 +39,7 @@ void MainMenuState::handleEvents()
         _menuNewPlayBtn.handleEvent(& event);
         if (_menuNewPlayBtn.pressed())
         {
-            GameStateManager::get().changeGameState(new ChooseCharactersState());
+            GameStateManager::get().pushGameState(new ChooseCharactersState());
         }
 
         _menuQuitBtn.handleEvent(& event);

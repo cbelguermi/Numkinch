@@ -38,7 +38,7 @@ public:
 
     void handleEvents() override;
 
-    void updateCurrentPlayer(Room * room);
+    void updateCurrentPlayer(Room * room, bool accept);
 
     void update() override;
 

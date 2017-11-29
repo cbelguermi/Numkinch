@@ -126,8 +126,12 @@ void Dungeon::update()
         _playedDeck[i]->update();
         if (_playedDeck[i]->updatePlayer())
         {
+            _playedDeck[i]->setUpdate(false);
             auto * playState = (PlayState *) GameStateManager::get().getCurrentGameState();
-            playState->updateCurrentPlayer(_playedDeck[i]->getRoom());
+            playState->updateCurrentPlayer(_playedDeck[i]->getRoom(),
+                                           _playedDeck[i]->getRoom()->getBigCard()->accept());
+            _playedDeck[i]->getRoom()->getBigCard()->setAccept(false);
+            _playedDeck[i]->getRoom()->getBigCard()->setRefuse(false);
         }
     }
 }

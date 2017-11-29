@@ -5,6 +5,9 @@
 #include "PlayState.h"
 #include "../GUI/GUIConstants.h"
 #include "../WorldLogic/Entities.h"
+#include "../PlayerLogic/Skills.h"
+#include "../WorldLogic/Trap.h"
+#include "../WorldLogic/Treasure.h"
 #include <cstdio>
 
 #define STAT_CARD_PATH "./res/StatCard.png"
@@ -72,18 +75,65 @@ void PlayState::handleEvents()
 
 void PlayState::update()
 {
-    // change player
     _dungeon.update();
 }
 
-
-void PlayState::updateCurrentPlayer(Room * room)
+void PlayState::updateCurrentPlayer(Room * room, bool accept)
 {
-    if (room->getType() == MONSTER)
+    if (room->getType() == MONSTER && accept)
     {
-        printf("")
+        printf("Combat\n");
+    }
+    else if (room->getType() == MONSTER && !accept)
+    {
+        printf("Flee\n");
+    }
+    else if (room->getType() == TRAP)
+    {
+        auto * trap = (Trap *) room;
+        switch (room->getTargetSkill())
+        {
+            case ATTACK:
+                _players[_currentPlayer]->getAttack()->alterPoints(- trap->getDamage());
+                break;
+            case DEFENSE:
+                _players[_currentPlayer]->getDefense()->alterPoints(- trap->getDamage());
+                break;
+            case AGILITY:
+                _players[_currentPlayer]->getAgility()->alterPoints(- trap->getDamage());
+                break;
+            case LIFE:
+                _players[_currentPlayer]->getLife()->alterPoints(- trap->getDamage());
+                break;
+            default:
+                break;
+        }
+        printf("Trap\n");
+    }
+    else if (room->getType() == TREASURE)
+    {
+        auto * treasure = (Treasure *) room;
+        switch (room->getTargetSkill())
+        {
+            case ATTACK:
+                _players[_currentPlayer]->getAttack()->alterPoints(treasure->getBonus());
+                break;
+            case DEFENSE:
+                _players[_currentPlayer]->getDefense()->alterPoints(treasure->getBonus());
+                break;
+            case AGILITY:
+                _players[_currentPlayer]->getAgility()->alterPoints(treasure->getBonus());
+                break;
+            case LIFE:
+                _players[_currentPlayer]->getLife()->alterPoints(treasure->getBonus());
+                break;
+            default:
+                break;
+        }
+        printf("Treasure\n");
     }
     _currentPlayer = (_currentPlayer + 1) % NB_PLAYERS;
+    printf("Player changed: now %d\n", _currentPlayer);
 }
 
 void PlayState::render()
@@ -96,4 +146,10 @@ void PlayState::render()
     _dungeon.render();
 }
 
-PlayState::~PlayState() = default;
+PlayState::~PlayState()
+{
+    for (auto statCard : _playerStats)
+    {
+        delete statCard;
+    }
+}

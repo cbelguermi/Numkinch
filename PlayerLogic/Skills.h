@@ -13,7 +13,9 @@ enum Skills {
 
     AGILITY,
 
-    LIFE
+    LIFE,
+
+    NONE
 };
 
 #endif //NUMKINCH_SKILLS_H

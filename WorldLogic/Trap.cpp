@@ -12,6 +12,11 @@ Trap::Trap(int type, const char * name, const char * description, const char * e
     _bigCard = new BigCard(false, TAKE_BTN_PATH, ENTITY_PATH, getDamageString(), name, description);
 }
 
+unsigned int Trap::getDamage() const
+{
+    return _damage;
+}
+
 const char * Trap::getDamageString()
 {
     auto * damage = new char(16);

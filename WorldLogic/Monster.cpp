@@ -19,6 +19,21 @@ bool Monster::isBoss() const
     return _isBoss;
 }
 
+unsigned int Monster::getAttack() const
+{
+    return _attack;
+}
+
+unsigned int Monster::getDefense() const
+{
+    return _defense;
+}
+
+unsigned int Monster::getLife() const
+{
+    return _life;
+}
+
 const char * Monster::getSkillsString()
 {
     auto * skills = new char(30);

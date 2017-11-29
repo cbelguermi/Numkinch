@@ -27,6 +27,8 @@ protected:
 
     const char * _entityImage;
 
+    unsigned int _targetSkill;
+
     BigCard * _bigCard;
 
 
@@ -42,6 +44,8 @@ public:
     void setVisited(bool visited);
 
     BigCard * getBigCard();
+
+    unsigned int getTargetSkill() const;
 
     virtual ~Room();
 
