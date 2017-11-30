@@ -33,20 +33,20 @@ BigCard::BigCard(bool hasRefuseBtn, const char * acceptBtnPath, const char * ent
                                                  _topTxt(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, topText,
                                                          (WINDOW_WIDTH / 2) - (BIG_CARD_WIDTH / 2)
                                                          + ENTITY_IMAGE_MARGIN_SIDE, (WINDOW_HEIGHT / 2) -
-                                                                                     (BIG_CARD_HEIGHT / 2) + 20),
+                                                                                     (BIG_CARD_HEIGHT / 2) + 20, BIG_CARD_WIDTH-45),
 
                                                  _entityNameTxt(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, entityNameText,
                                                                 (WINDOW_WIDTH / 2) - (BIG_CARD_WIDTH / 2)
                                                                 + ENTITY_IMAGE_MARGIN_SIDE, (WINDOW_HEIGHT / 2) -
                                                                         (BIG_CARD_HEIGHT / 2) + ENTITY_IMAGE_MARGIN_TOP
-                                                                                            + ENTITY_IMAGE_HEIGHT + 10),
+                                                                                            + ENTITY_IMAGE_HEIGHT + 10, BIG_CARD_WIDTH-45),
 
                                                  _descriptionTxt(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, descriptionText,
                                                                  (WINDOW_WIDTH / 2) - (BIG_CARD_WIDTH / 2)
                                                                  + ENTITY_IMAGE_MARGIN_SIDE, (WINDOW_HEIGHT / 2) -
                                                                                              (BIG_CARD_HEIGHT / 2) +
                                                                          ENTITY_IMAGE_MARGIN_TOP + ENTITY_IMAGE_HEIGHT
-                                                                                             + 25)
+                                                                                             + 50, BIG_CARD_WIDTH-45)
 {
     _hasRefuseBtn = hasRefuseBtn;
     _displayed = false;

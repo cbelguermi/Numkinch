@@ -34,13 +34,13 @@ Dungeon::Dungeon()
     }
     for (i = 30; i < 60; i++)
     {
-        _allRooms.push_back(unique_ptr<Room>(new Trap(TRAP, "Un piège machiavélique",
+        _allRooms.push_back(unique_ptr<Room>(new Trap(TRAP, "Un piege machiavelique",
                                                       "Ouille !! Il te pique les fesses", TRAP_IMAGE_PATH, LIFE, 3)));
     }
     for (i = 60; i < 90; i++)
     {
-        _allRooms.push_back(unique_ptr<Room>(new Treasure(TREASURE, "Super épée maginifique",
-                                                          "Tu vas pouvoir tous les défoncer ces sales petits chin... euh, monstres, oui c'est ça, ces sales petits monstres !",
+        _allRooms.push_back(unique_ptr<Room>(new Treasure(TREASURE, "Super epee maginifique",
+                                                          "Tu vas pouvoir tous les defoncer ces sales petits chin... euh, monstres, oui c'est cela, ces sales petits monstres !",
                                                           TREASURE_IMAGE_PATH, ATTACK, 2)));
     }
     for (i = 90; i < 100; i++)
