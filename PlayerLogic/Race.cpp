@@ -2,6 +2,7 @@
 // Created on 03/11/2017.
 //
 
+#include <cstdio>
 #include "Race.h"
 #include "Races.h"
 #include "Classes.h"
@@ -12,17 +13,17 @@ Race::Race(int race, const char * name, Class * characterClass) : _race(race), _
 {
     _class = characterClass;
 
-    _attack.setMaxValue(_attack.getMaxValue() + _class->getAttack().getMaxValue());
-    _attack.setValue(_attack.getValue() + _class->getAttack().getValue());
+    _attack.setMaxValue(_class->getAttack().getMaxValue());
+    _attack.setValue(_class->getAttack().getValue());
 
-    _defense.setMaxValue(_defense.getMaxValue() + _class->getAttack().getMaxValue());
-    _defense.setValue(_defense.getValue() + _class->getAttack().getValue());
+    _defense.setMaxValue(_class->getDefense().getMaxValue());
+    _defense.setValue(_class->getDefense().getValue());
 
-    _agility.setMaxValue(_agility.getMaxValue() + _class->getAttack().getMaxValue());
-    _agility.setValue(_agility.getValue() + _class->getAttack().getValue());
+    _agility.setMaxValue(_class->getAgility().getMaxValue());
+    _agility.setValue(_class->getAgility().getValue());
 
-    _life.setMaxValue(_life.getMaxValue() + _class->getAttack().getMaxValue());
-    _life.setValue(_life.getValue() + _class->getAttack().getValue());
+    _life.setMaxValue(_class->getLife().getMaxValue());
+    _life.setValue(_class->getLife().getValue());
 }
 
 int Race::getRace() const
@@ -30,9 +31,9 @@ int Race::getRace() const
     return _race;
 }
 
-Class* Race::getClass() const
+int Race::getClass() const
 {
-    return _class;
+    return _class->getClass();
 }
 
 const char * Race::getName() const

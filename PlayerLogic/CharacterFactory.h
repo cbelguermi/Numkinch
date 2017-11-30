@@ -23,6 +23,8 @@ public:
 
     Race * createCharacter();
 
+    Race * createCharacter(int race, int classname, const char* name);
+
     const char * NameToString(int name) const;
 
 };

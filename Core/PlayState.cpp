@@ -10,6 +10,7 @@
 #include "../WorldLogic/Treasure.h"
 #include "../WorldLogic/Monster.h"
 #include "../PlayerLogic/PlayerLogicConstants.h"
+#include "../PlayerLogic/CharacterFactory.h"
 #include <cstdio>
 #include <random>
 
@@ -197,9 +198,7 @@ void PlayState::updateCurrentPlayer(Room * room, bool accept)
 
     if (_players[_currentPlayer]->getLife()->getValue() <= 0)
     {
-        // TODO : debug this, when player dies !!
-        printf("Player is dead. Player back to level 0.\n");
-        Race* newPlayer = new Race(_players[_currentPlayer]->getRace(), _players[_currentPlayer]->getName(), _players[_currentPlayer]->getClass());
+        Race* newPlayer = CharacterFactory::get().createCharacter(_players[_currentPlayer]->getRace(), _players[_currentPlayer]->getClass(), _players[_currentPlayer]->getName());
         _players[_currentPlayer].reset(newPlayer);
     }
 

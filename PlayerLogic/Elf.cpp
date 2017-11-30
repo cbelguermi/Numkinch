@@ -8,8 +8,8 @@
 
 Elf::Elf(const char * name, Class * characterClass) : Race(elf, name, characterClass)
 {
-    _attack = Skill(ATTACK_VALUE, ATTACK_MAX_VALUE);
-    _defense = Skill(DEFENSE_VALUE, DEFENSE_MAX_VALUE);
-    _agility = Skill(AGILITY_VALUE+ AGILITY_BONUS, AGILITY_MAX_VALUE+AGILITY_MAX_BONUS);
-    _life = Skill(LIFE_VALUE, LIFE_MAX_VALUE);
+    _attack = Skill(getAttack()->getValue() + ATTACK_VALUE,  getAttack()->getMaxValue() + ATTACK_MAX_VALUE);
+    _defense = Skill(getDefense()->getValue() +DEFENSE_VALUE,getDefense()->getMaxValue() +   DEFENSE_MAX_VALUE);
+    _agility = Skill(getAgility()->getValue() + AGILITY_VALUE+ AGILITY_BONUS, getAgility()->getMaxValue() + AGILITY_MAX_VALUE+AGILITY_MAX_BONUS);
+    _life = Skill(getLife()->getValue() + LIFE_VALUE,getLife()->getMaxValue()+  LIFE_MAX_VALUE);
 }

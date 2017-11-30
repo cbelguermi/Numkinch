@@ -111,6 +111,72 @@ Race * CharacterFactory::createCharacter() {
     }
 }
 
+
+Race * CharacterFactory::createCharacter(int race, int classname, const char* name)
+{
+    switch (race) {
+        case elf: {
+            switch (classname) {
+                case assassin:
+                    return new Elf(name, new Assassin());
+                case paladin:
+                    return new Elf(name, new Paladin());
+                case thief:
+                    return new Elf(name, new Thief());
+                case priest:
+                    return new Elf(name, new Priest());
+                default:
+                    return new Elf(name, new Assassin());
+            }
+        }
+        case dwarf: {
+            switch (classname) {
+                case assassin:
+                    return new Dwarf(name, new Assassin());
+                case paladin:
+                    return new Dwarf(name, new Paladin());
+                case thief:
+                    return new Dwarf(name, new Thief());
+                case priest:
+                    return new Dwarf(name, new Priest());
+                default:
+                    return new Dwarf(name, new Assassin());
+            }
+        }
+        case barbarian: {
+            switch (classname) {
+                case assassin:
+                    return new Barbarian(name, new Assassin());
+                case paladin:
+                    return new Barbarian(name, new Paladin());
+                case thief:
+                    return new Barbarian(name, new Thief());
+                case priest:
+                    return new Barbarian(name, new Priest());
+                default:
+                    return new Barbarian(name, new Assassin());
+            }
+        }
+        case human: {
+            switch (classname) {
+                case assassin:
+                    return new Human(name, new Assassin());
+                case paladin:
+                    return new Human(name, new Paladin());
+                case thief:
+                    return new Human(name, new Thief());
+                case priest:
+                    return new Human(name, new Priest());
+                default:
+                    return new Human(name, new Assassin());
+            }
+        }
+        default: {
+            return new Dwarf(name, new Assassin());
+        }
+    }
+}
+
 const char * CharacterFactory::NameToString(int name) const
 {
     switch (name) {

@@ -30,7 +30,7 @@ public:
 
     int getRace() const;
 
-    Class * getClass() const;
+    int getClass() const;
 
     const char * getName() const;
 

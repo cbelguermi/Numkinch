@@ -8,8 +8,8 @@
 
 Human::Human(const char * name, Class * characterClass) : Race(human, name, characterClass)
 {
-    _attack = Skill(ATTACK_VALUE, ATTACK_MAX_VALUE);
-    _defense = Skill(DEFENSE_VALUE, DEFENSE_MAX_VALUE);
-    _agility = Skill(AGILITY_VALUE, AGILITY_MAX_VALUE);
-    _life = Skill(LIFE_VALUE+LIFE_BONUS, LIFE_MAX_VALUE+LIFE_MAX_BONUS);
+    _attack = Skill(getAttack()->getValue() + ATTACK_VALUE,  getAttack()->getMaxValue() + ATTACK_MAX_VALUE);
+    _defense = Skill(getDefense()->getValue() +DEFENSE_VALUE, getDefense()->getMaxValue() +  DEFENSE_MAX_VALUE);
+    _agility = Skill(getAgility()->getValue() + AGILITY_VALUE, getAgility()->getMaxValue() + AGILITY_MAX_VALUE);
+    _life = Skill(getLife()->getValue() + LIFE_VALUE+LIFE_BONUS,getLife()->getMaxValue()+  LIFE_MAX_VALUE+LIFE_MAX_BONUS);
 }
