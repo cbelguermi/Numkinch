@@ -1,5 +1,5 @@
 //
-// Created by Chloé Belguermi on 08/11/2017.
+// Created on 08/11/2017.
 //
 
 #ifndef NUMKINCH_CHARACTERS_H

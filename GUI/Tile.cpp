@@ -1,5 +1,5 @@
 //
-// Created by Chloé Belguermi on 07/11/2017.
+// Created on 07/11/2017.
 //
 
 #include "Tile.h"

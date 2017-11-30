@@ -1,5 +1,5 @@
 //
-// Created by Chloé Belguermi on 11/11/2017.
+// Created on 11/11/2017.
 //
 
 #include <random>
@@ -29,7 +29,7 @@ Dungeon::Dungeon()
     for (i = 0; i < 40; i++)
     {
         _allRooms.push_back(unique_ptr<Room>(new Monster(MONSTER, false, "Gros monstre pas beau",
-                                                         "Tu vas prendre cher sale petit nomnom", MONSTER_IMAGE_PATH, 10, 5, 20)));
+                                                         "Tu vas prendre cher sale petit nomnom", MONSTER_IMAGE_PATH, 80, 5, 20)));
     }
     for (i = 40; i < 70; i++)
     {

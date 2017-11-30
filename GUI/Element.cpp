@@ -1,5 +1,5 @@
 //
-// Created by Chloé Belguermi on 22/10/2017.
+// Created on 22/10/2017.
 //
 
 #include "Element.h"

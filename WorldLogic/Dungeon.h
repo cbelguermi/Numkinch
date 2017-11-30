@@ -1,5 +1,5 @@
 //
-// Created by Chloé Belguermi on 11/11/2017.
+// Created on 11/11/2017.
 //
 
 #ifndef NUMKINCH_DUNGEON_H

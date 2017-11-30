@@ -1,5 +1,5 @@
 //
-// Created by Chloé Belguermi on 21/11/2017.
+// Created on 21/11/2017.
 //
 
 #ifndef NUMKINCH_STATCARD_H

@@ -1,5 +1,5 @@
 //
-// Created by Chloé Belguermi on 17/10/2017.
+// Created on 17/10/2017.
 //
 
 #ifndef NUMKINCH_GAMESTATE_H

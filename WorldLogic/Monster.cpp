@@ -1,5 +1,5 @@
 //
-// Created by Chloé Belguermi on 19/11/2017.
+// Created on 19/11/2017.
 //
 
 #include "Monster.h"
@@ -7,7 +7,7 @@
 #define FIGHT_BTN_PATH "./res/FightBtn.png"
 
 Monster::Monster(int type, bool isBoss, const char * name, const char * description, const char * entityImage,
-                 unsigned int attack, unsigned int defense, unsigned int life) :
+                 unsigned int attack, unsigned int defense, int life) :
         Room(type, name, description, entityImage), _attack(attack), _defense(defense), _life(life)
 {
     _isBoss = isBoss;
@@ -29,9 +29,15 @@ unsigned int Monster::getDefense() const
     return _defense;
 }
 
-unsigned int Monster::getLife() const
+int Monster::getLife() const
 {
     return _life;
+}
+
+
+void Monster::alterLife(int value)
+{
+    _life += value;
 }
 
 const char * Monster::getSkillsString()

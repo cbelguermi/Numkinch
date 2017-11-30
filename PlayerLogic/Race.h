@@ -1,5 +1,5 @@
 //
-// Created by Chloé Belguermi on 03/11/2017.
+// Created on 03/11/2017.
 //
 
 #ifndef NUMKINCH_RACE_H
@@ -30,7 +30,7 @@ public:
 
     int getRace() const;
 
-    int getClass() const;
+    Class * getClass() const;
 
     const char * getName() const;
 

@@ -1,5 +1,5 @@
 //
-// Created by Chloé Belguermi on 22/11/2017.
+// Created on 22/11/2017.
 //
 
 #include "DatabaseManager.h"

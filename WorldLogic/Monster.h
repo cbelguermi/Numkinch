@@ -1,5 +1,5 @@
 //
-// Created by Chloé Belguermi on 19/11/2017.
+// Created on 19/11/2017.
 //
 
 #ifndef NUMKINCH_MONSTER_H
@@ -18,11 +18,11 @@ private:
 
     unsigned int _defense;
 
-    unsigned int _life;
+    int _life;
 
 public:
     Monster(int type, bool isBoss, const char * name, const char * description, const char * entityImage,
-            unsigned int attack, unsigned int defense, unsigned int life);
+            unsigned int attack, unsigned int defense, int life);
 
     bool isBoss() const;
 
@@ -30,7 +30,9 @@ public:
 
     unsigned int getDefense() const;
 
-    unsigned int getLife() const;
+    int getLife() const;
+
+    void alterLife(int value);
 
 private:
     const char * getSkillsString();

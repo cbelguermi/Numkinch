@@ -1,5 +1,5 @@
 //
-// Created by Chloé Belguermi on 03/11/2017.
+// Created on 03/11/2017.
 //
 
 #include "Race.h"
@@ -30,9 +30,9 @@ int Race::getRace() const
     return _race;
 }
 
-int Race::getClass() const
+Class* Race::getClass() const
 {
-    return _class->getClass();
+    return _class;
 }
 
 const char * Race::getName() const

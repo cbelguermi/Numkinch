@@ -1,16 +1,16 @@
 //
-// Created by Chloé Belguermi on 03/11/2017.
+// Created on 03/11/2017.
 //
 
 #include "Skill.h"
 
 Skill::Skill() : _value(0), _maxValue(0) { }
 
-Skill::Skill(int maxValue) {
+Skill::Skill(int value, int maxValue) {
 
-    if (maxValue >= 0) {
+    if (maxValue >= 0 && value >= 0) {
         _maxValue = maxValue;
-        _value = maxValue;
+        _value = value;
     }
     else {
         _maxValue = 0;

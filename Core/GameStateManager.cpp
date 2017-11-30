@@ -1,5 +1,5 @@
 //
-// Created by Chloé Belguermi on 18/10/2017.
+// Created on 18/10/2017.
 //
 
 #include "GameStateManager.h"

@@ -1,5 +1,5 @@
 //
-// Created by Chloé Belguermi on 24/11/2017.
+// Created on 24/11/2017.
 //
 
 #include "BigCard.h"

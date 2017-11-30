@@ -1,5 +1,5 @@
 //
-// Created by Chloé Belguermi on 22/10/2017.
+// Created on 22/10/2017.
 //
 
 #ifndef NUMKINCH_MENUBACKGROUND_H
