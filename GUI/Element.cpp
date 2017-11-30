@@ -50,6 +50,11 @@ void Element::cleanup()
     SDL_DestroyTexture(_texture);
 }
 
+void Element::setImagePath(const char* path)
+{
+    _imagePath = path;
+}
+
 Element::~Element()
 {
     _imagePath = nullptr; // _imagePath receives string literal, no need to call delete[]

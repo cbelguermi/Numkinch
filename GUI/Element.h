@@ -33,6 +33,8 @@ public:
     void render() override = 0;
 
     void cleanup() override;
+
+    void setImagePath(const char* path);
 };
 
 #endif //NUMKINCH_ELEMENT_H

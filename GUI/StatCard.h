@@ -32,6 +32,8 @@ public:
     void render() override;
 
     void cleanup() override;
+
+    void setTile(const char* path);
 };
 
 #endif //NUMKINCH_STATCARD_H

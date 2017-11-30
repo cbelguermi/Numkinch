@@ -5,12 +5,12 @@
 #include "Treasure.h"
 #include "../PlayerLogic/Skills.h"
 
-Treasure::Treasure(int type, const char * name, const char * description,
+Treasure::Treasure(int type, const char * name, const char * description,const char* imagePath,
                    unsigned int targetSkill, unsigned int bonus) :
         Room(type, name, description), _bonus(bonus)
 {
     _targetSkill = targetSkill;
-    _bigCard = new BigCard(false, TAKE_BTN_PATH, ENTITY_PATH, getBonusString(), name, description);
+    _bigCard = new BigCard(false, TAKE_BTN_PATH, imagePath, getBonusString(), name, description);
 }
 
 unsigned int Treasure::getBonus() const

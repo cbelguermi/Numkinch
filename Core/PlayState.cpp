@@ -16,7 +16,8 @@
 
 
 
-#define STAT_CARD_PATH "./res/StatCard.png"
+#define STAT_CARD_PATH_INACTIVE "./res/StatCardInactive.png"
+#define STAT_CARD_PATH_ACTIVE "./res/StatCardActive.png"
 
 PlayState::PlayState(vector<unique_ptr<Race>> players) : _inGameBg(IN_GAME_DEFAULT_BG_PATH), _playerStats(NB_PLAYERS),
                                                          _players(move(players))
@@ -64,9 +65,10 @@ void PlayState::onEnter()
         auto * life = new char(10);
         sprintf(life, "%d / %d", _players[i]->getLife()->getValue(), _players[i]->getLife()->getMaxValue());
 
-        _playerStats[i] = new StatCard(STAT_CARD_PATH, WINDOW_WIDTH - STAT_CARD_WIDTH,
+        _playerStats[i] = new StatCard(STAT_CARD_PATH_INACTIVE, WINDOW_WIDTH - STAT_CARD_WIDTH,
                                        350 + STAT_CARD_HEIGHT * i, STAT_CARD_WIDTH, STAT_CARD_HEIGHT, playerIdentity,
                                        attack, defense, agility, life);
+        _playerStats[_currentPlayer]->setTile(STAT_CARD_PATH_ACTIVE);
         delete playerIdentity;
         delete attack;
         delete defense;
@@ -251,7 +253,9 @@ void PlayState::updateCurrentPlayer(Room * room, bool accept)
     delete agility;
     delete life;
 
+    _playerStats[_currentPlayer]->setTile(STAT_CARD_PATH_INACTIVE);
     _currentPlayer = (_currentPlayer + 1) % NB_PLAYERS;
+    _playerStats[_currentPlayer]->setTile(STAT_CARD_PATH_ACTIVE);
     printf("Player changed: now %d\n", _currentPlayer);
 }
 

@@ -6,12 +6,12 @@
 
 #define FIGHT_BTN_PATH "./res/FightBtn.png"
 
-Monster::Monster(int type, bool isBoss, const char * name, const char * description,
+Monster::Monster(int type, bool isBoss, const char * name, const char * description, const char* imagePath,
                  unsigned int attack, unsigned int defense, int life) :
         Room(type, name, description), _attack(attack), _defense(defense), _life(life)
 {
     _isBoss = isBoss;
-    _bigCard = new BigCard(true, FIGHT_BTN_PATH, ENTITY_PATH, getSkillsString(), name, description);
+    _bigCard = new BigCard(true, FIGHT_BTN_PATH, imagePath, getSkillsString(), name, description);
 }
 
 bool Monster::isBoss() const

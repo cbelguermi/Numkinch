@@ -46,3 +46,12 @@ void StatCard::cleanup()
     _agility.cleanup();
     _life.cleanup();
 }
+
+void StatCard::setTile(const char * path)
+{
+    Tile::cleanup();
+    Tile::setImagePath(path);
+    Tile::init();
+    Tile::render();
+
+}
