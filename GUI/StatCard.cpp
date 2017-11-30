@@ -4,10 +4,10 @@
 
 #include "StatCard.h"
 
-StatCard::StatCard(const char * path, int x, int y, int w, int h, const char * playerNb, const char * attack,
+StatCard::StatCard(const char * path, int x, int y, int w, int h, const char * playerIdentity, const char * attack,
                    const char * defense, const char * agility, const char * life) :
         Tile(path, x, y, w, h),
-        _playerNb(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, playerNb, x + 20, y + 10),
+        _playerIdentity(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, playerIdentity, x + 20, y + 10),
         _attack(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, attack, x + 20, y + 30),
         _defense(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, defense, x + 20, y + 50),
         _agility(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, agility, x + 20, y + 70),
@@ -30,7 +30,7 @@ void StatCard::update(const char * attack, const char * defense, const char * ag
 void StatCard::render()
 {
     Tile::render();
-    _playerNb.render();
+    _playerIdentity.render();
     _attack.render();
     _defense.render();
     _agility.render();
@@ -40,7 +40,7 @@ void StatCard::render()
 void StatCard::cleanup()
 {
     Tile::cleanup();
-    _playerNb.cleanup();
+    _playerIdentity.cleanup();
     _attack.cleanup();
     _defense.cleanup();
     _agility.cleanup();

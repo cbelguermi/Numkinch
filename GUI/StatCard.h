@@ -11,7 +11,7 @@
 class StatCard : public Tile {
 
 private:
-    Text _playerNb;
+    Text _playerIdentity;
 
     Text _attack;
 
@@ -22,7 +22,7 @@ private:
     Text _life;
 
 public:
-    StatCard(const char * path, int x, int y, int w, int h, const char * playerNb, const char * attack,
+    StatCard(const char * path, int x, int y, int w, int h, const char * playerIdentity, const char * attack,
              const char * defense, const char * agility, const char * life);
 
     void init() override;

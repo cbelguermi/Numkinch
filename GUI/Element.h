@@ -14,13 +14,14 @@ class Element : public IDisplayable {
 
 protected:
     const char * _imagePath;
+
     SDL_Surface * _surface;
+
     SDL_Texture * _texture;
 
     void loadImage();
 
     void loadTexture();
-
 
 public:
     explicit Element(const char * path);

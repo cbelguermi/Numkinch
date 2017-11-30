@@ -17,8 +17,6 @@ public:
     void render() override;
 
     void cleanup() override;
-
 };
-
 
 #endif //NUMKINCH_MENUBACKGROUND_H

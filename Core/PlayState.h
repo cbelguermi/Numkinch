@@ -47,5 +47,4 @@ public:
     ~PlayState() override;
 };
 
-
 #endif //NUMKINCH_PLAYSTATE_H

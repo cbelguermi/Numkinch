@@ -31,8 +31,8 @@ void PlayState::onEnter()
     _dungeon.init();
     for (int i = 0; i < NB_PLAYERS; i++)
     {
-        auto * playerNb = new char(2);
-        sprintf(playerNb, "%d", i);
+        auto * playerIdentity = new char(60);
+        sprintf(playerIdentity, "%s (%s, %s)", _players[i]->getName(), _players[i]->RaceToString(), _players[i]->ClassToString());
         auto * attack = new char(10);
         sprintf(attack, "%d / %d", _players[i]->getAttack()->getValue(), _players[i]->getAttack()->getMaxValue());
         auto * defense = new char(10);
@@ -43,8 +43,9 @@ void PlayState::onEnter()
         sprintf(life, "%d / %d", _players[i]->getLife()->getValue(), _players[i]->getLife()->getMaxValue());
 
         _playerStats[i] = new StatCard(STAT_CARD_PATH, WINDOW_WIDTH - STAT_CARD_WIDTH,
-                                       20 + STAT_CARD_HEIGHT * i, STAT_CARD_WIDTH, STAT_CARD_HEIGHT, playerNb, attack,
-                                       defense, agility, life);
+                                       20 + STAT_CARD_HEIGHT * i, STAT_CARD_WIDTH, STAT_CARD_HEIGHT, playerIdentity,
+                                       attack, defense, agility, life);
+        delete playerIdentity;
         delete attack;
         delete defense;
         delete agility;
