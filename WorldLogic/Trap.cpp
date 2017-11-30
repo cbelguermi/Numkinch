@@ -20,20 +20,20 @@ unsigned int Trap::getDamage() const
 
 const char * Trap::getDamageString()
 {
-    auto * damage = new char(16);
+    auto * damage = new char(50);
     switch (_targetSkill)
     {
         case (ATTACK):
-            sprintf(damage, "- %d - ATTACK", _damage);
+            sprintf(damage, "MALUS : ATTACK -%d", _damage);
             break;
         case (DEFENSE):
-            sprintf(damage, "- %d - DEFENSE", _damage);
+            sprintf(damage, "MALUS : DEFENSE -%d", _damage);
             break;
         case (AGILITY):
-            sprintf(damage, "- %d - AGILITY", _damage);
+            sprintf(damage, "MALUS : AGILITY -%d", _damage);
             break;
         case (LIFE):
-            sprintf(damage, "- %d - LIFE", _damage);
+            sprintf(damage, "MALUS : LIFE -%d", _damage);
             break;
         default:
             delete damage;

@@ -42,7 +42,10 @@ void Monster::alterLife(int value)
 
 const char * Monster::getSkillsString()
 {
-    auto * skills = new char(40);
-    sprintf(skills, "ATT %d - DEF %d - PV %d", _attack, _defense, _life);
+    char* skills = new char(100);
+    //sprintf(skills, "ATTACK : %d - DEFENSE : %d - PV : %d ", _attack, _defense, _life);
+    //printf("%s\n", skills);
+    sprintf(skills, "TODO : debug this shit ");
+    printf("%s\n", skills);
     return skills;
 }

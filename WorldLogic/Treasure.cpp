@@ -20,20 +20,20 @@ unsigned int Treasure::getBonus() const
 
 const char * Treasure::getBonusString()
 {
-    auto * bonus = new char(16);
+    auto * bonus = new char(50);
     switch (_targetSkill)
     {
         case (ATTACK):
-            sprintf(bonus, "+ %d - ATTACK", _bonus);
+            sprintf(bonus, "BONUS : ATTACK +%d", _bonus);
             break;
         case (DEFENSE):
-            sprintf(bonus, "+ %d - DEFENSE", _bonus);
+            sprintf(bonus, "BONUS : DEFENSE +%d", _bonus);
             break;
         case (AGILITY):
-            sprintf(bonus, "+ %d - AGILITY", _bonus);
+            sprintf(bonus, "BONUS : AGILITY +%d", _bonus);
             break;
         case (LIFE):
-            sprintf(bonus, "+ %d - LIFE", _bonus);
+            sprintf(bonus, "BONUS : LIFE +%d", _bonus);
             break;
         default:
             delete bonus;

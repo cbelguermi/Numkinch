@@ -18,9 +18,30 @@
 
 #define STAT_CARD_PATH "./res/StatCard.png"
 
-PlayState::PlayState(vector<unique_ptr<Race>> players) : _inGameBg(IN_GAME_BG_PATH), _playerStats(NB_PLAYERS),
+PlayState::PlayState(vector<unique_ptr<Race>> players) : _inGameBg(IN_GAME_DEFAULT_BG_PATH), _playerStats(NB_PLAYERS),
                                                          _players(move(players))
 {
+    random_device r;
+    default_random_engine randomEngine(r());
+    uniform_int_distribution<int> uniformIntDistribution(1, 4); // between 1 and 4 included
+    int randNb = uniformIntDistribution(randomEngine);
+    switch (randNb)
+    {
+        case 1:
+            _inGameBg = Background(IN_GAME_BG_1_PATH);
+            break;
+        case 2:
+            _inGameBg = Background(IN_GAME_BG_2_PATH);
+            break;
+        case 3:
+            _inGameBg = Background(IN_GAME_BG_3_PATH);
+            break;
+        case 4:
+            _inGameBg = Background(IN_GAME_BG_4_PATH);
+            break;
+        default:
+            break;
+    }
     _currentPlayer = 0;
 }
 
@@ -44,7 +65,7 @@ void PlayState::onEnter()
         sprintf(life, "%d / %d", _players[i]->getLife()->getValue(), _players[i]->getLife()->getMaxValue());
 
         _playerStats[i] = new StatCard(STAT_CARD_PATH, WINDOW_WIDTH - STAT_CARD_WIDTH,
-                                       20 + STAT_CARD_HEIGHT * i, STAT_CARD_WIDTH, STAT_CARD_HEIGHT, playerIdentity,
+                                       350 + STAT_CARD_HEIGHT * i, STAT_CARD_WIDTH, STAT_CARD_HEIGHT, playerIdentity,
                                        attack, defense, agility, life);
         delete playerIdentity;
         delete attack;
