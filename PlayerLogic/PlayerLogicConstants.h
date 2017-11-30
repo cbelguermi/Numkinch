@@ -30,6 +30,7 @@ enum PlayerLogicConstants
     LIFE_MAX_VALUE = 200,
     LIFE_BONUS = 20,
     LIFE_MAX_BONUS = 100,
+    LIFE_INCREASE = 5,
 };
 
 #endif //NUMKINCH_PLAYER_LOGIC_CONSTANTS_H

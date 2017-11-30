@@ -26,21 +26,26 @@ Dungeon::Dungeon()
     _lastVisitedCard = nullptr;
 
     int i;
-    for (i = 0; i < 40; i++)
+    for (i = 0; i < 30; i++)
     {
         _allRooms.push_back(unique_ptr<Room>(new Monster(MONSTER, false, "Gros monstre pas beau",
                                                          "Tu vas prendre cher sale petit nomnom", MONSTER_IMAGE_PATH, 80, 5, 20)));
     }
-    for (i = 40; i < 70; i++)
+    for (i = 30; i < 60; i++)
     {
         _allRooms.push_back(unique_ptr<Room>(new Trap(TRAP, "Un piège machiavélique",
                                                       "Ouille !! Il te pique les fesses", TRAP_IMAGE_PATH, LIFE, 3)));
     }
-    for (i = 70; i < 100; i++)
+    for (i = 60; i < 90; i++)
     {
         _allRooms.push_back(unique_ptr<Room>(new Treasure(TREASURE, "Super épée maginifique",
                                                           "Tu vas pouvoir tous les défoncer ces sales petits chin... euh, monstres, oui c'est ça, ces sales petits monstres !",
                                                           TREASURE_IMAGE_PATH, ATTACK, 2)));
+    }
+    for (i = 90; i < 100; i++)
+    {
+        _allRooms.push_back(unique_ptr<Room>(new Monster(MONSTER, true, "BOSS du donjon",
+                                                         "Dragon de glace crachant du feu", MONSTER_IMAGE_PATH, 40, 25, 200)));
     }
 }
 

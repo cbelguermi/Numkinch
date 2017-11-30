@@ -200,7 +200,10 @@ void PlayState::updateCurrentPlayer(Room * room, bool accept)
     {
         Race* newPlayer = CharacterFactory::get().createCharacter(_players[_currentPlayer]->getRace(), _players[_currentPlayer]->getClass(), _players[_currentPlayer]->getName());
         _players[_currentPlayer].reset(newPlayer);
+    } else {
+        _players[_currentPlayer]->getLife()->alterPoints(LIFE_INCREASE);
     }
+
 
 
     auto * attack = new char(10);
