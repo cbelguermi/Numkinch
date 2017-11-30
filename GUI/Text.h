@@ -29,6 +29,8 @@ private:
 public:
     Text(TTF_Font * font, Uint8 colorR, Uint8 colorG, Uint8 colorB, const char * text, int rectX, int rectY);
 
+    void update(const char * text);
+
     void render();
 
     void cleanup();

@@ -40,6 +40,10 @@ void PlayState::onEnter()
         _playerStats[i] = new StatCard(STAT_CARD_PATH, WINDOW_WIDTH - STAT_CARD_WIDTH,
                                        20 + STAT_CARD_HEIGHT * i, STAT_CARD_WIDTH, STAT_CARD_HEIGHT, playerNb, attack,
                                        defense, agility, life);
+        delete attack;
+        delete defense;
+        delete agility;
+        delete life;
         _playerStats[i]->init();
     }
 }
@@ -131,7 +135,26 @@ void PlayState::updateCurrentPlayer(Room * room, bool accept)
         }
         printf("Treasure\n");
     }
-    _playerStats[_currentPlayer]->updateGUI();
+
+
+    auto * attack = new char(10);
+    sprintf(attack, "%d / %d", _players[_currentPlayer]->getAttack()->getValue(),
+            _players[_currentPlayer]->getAttack()->getMaxValue());
+    auto * defense = new char(10);
+    sprintf(defense, "%d / %d", _players[_currentPlayer]->getDefense()->getValue(),
+            _players[_currentPlayer]->getDefense()->getMaxValue());
+    auto * agility = new char(10);
+    sprintf(agility, "%d / %d", _players[_currentPlayer]->getAgility()->getValue(),
+            _players[_currentPlayer]->getAgility()->getMaxValue());
+    auto * life = new char(10);
+    sprintf(life, "%d / %d", _players[_currentPlayer]->getLife()->getValue(),
+            _players[_currentPlayer]->getLife()->getMaxValue());
+
+    _playerStats[_currentPlayer]->update(attack, defense, agility, life);
+    delete attack;
+    delete defense;
+    delete agility;
+    delete life;
 
     _currentPlayer = (_currentPlayer + 1) % NB_PLAYERS;
     printf("Player changed: now %d\n", _currentPlayer);

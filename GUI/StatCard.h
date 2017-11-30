@@ -27,11 +27,11 @@ public:
 
     void init() override;
 
+    void update(const char * attack, const char * defense, const char * agility, const char * life);
+
     void render() override;
 
     void cleanup() override;
-
-    void updateGUI();
 };
 
 #endif //NUMKINCH_STATCARD_H

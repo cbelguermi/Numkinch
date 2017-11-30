@@ -16,6 +16,14 @@ Text::Text(TTF_Font * font, Uint8 colorR, Uint8 colorG, Uint8 colorB, const char
     _distanceRect = { rectX, rectY, _textWidth, _textHeight };
 }
 
+void Text::update(const char * text)
+{
+    SDL_FreeSurface(_surface);
+    SDL_DestroyTexture(_texture);
+    _surface = TTF_RenderText_Blended(_font, text, _textColor);
+    _texture = SDL_CreateTextureFromSurface(GameEngine::getGameRenderer(), _surface);
+}
+
 void Text::render()
 {
     SDL_RenderCopy(GameEngine::getGameRenderer(), _texture, nullptr, & _distanceRect);

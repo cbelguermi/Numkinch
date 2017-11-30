@@ -19,6 +19,14 @@ void StatCard::init()
     Tile::init();
 }
 
+void StatCard::update(const char * attack, const char * defense, const char * agility, const char * life)
+{
+    _attack.update(attack);
+    _defense.update(defense);
+    _agility.update(agility);
+    _life.update(life);
+}
+
 void StatCard::render()
 {
     Tile::render();
@@ -37,21 +45,4 @@ void StatCard::cleanup()
     _defense.cleanup();
     _agility.cleanup();
     _life.cleanup();
-}
-
-void StatCard::updateGUI()
-{
-    int w = getW();
-    int* wp = &w;
-
-    int h = getH();
-    int* hp = &h;
-
-    TTF_SizeText(TTF_OpenFont(FONT_PATH, 15), "samarchepas", wp, hp);
-    //some stuff here to match the centers of the text and the object its
-    //being rendered against which goes beyond the scope of this question.
-
-    SDL_Surface* temp = TTF_RenderText_Solid(TTF_OpenFont(FONT_PATH, 15), "samarchepas", SDL_Color());
-    //cleanup();
-    SDL_CreateTextureFromSurface(GameEngine::getGameRenderer(), temp);
 }
