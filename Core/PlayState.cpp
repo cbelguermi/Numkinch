@@ -139,6 +139,11 @@ void PlayState::updateCurrentPlayer(Room * room, bool accept)
                 default:
                     break;
             }
+            if (monster->isBoss())
+            {
+                printf("%s WINS !!\n", _players[_currentPlayer]->getName());
+                exit(0);
+            }
         }
     }
     else if (room->getType() == MONSTER && !accept)

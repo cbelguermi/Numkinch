@@ -24,12 +24,13 @@ Dungeon::Dungeon()
     _allRooms.reserve(NB_CARDS);
     _activated = true;
     _lastVisitedCard = nullptr;
+    _returnedCardsCount = 0;
 
     int i;
     for (i = 0; i < 30; i++)
     {
         _allRooms.push_back(unique_ptr<Room>(new Monster(MONSTER, false, "Gros monstre pas beau",
-                                                         "Tu vas prendre cher sale petit nomnom", MONSTER_IMAGE_PATH, 80, 5, 20)));
+                                                         "Tu vas prendre cher sale petit nomnom", MONSTER_IMAGE_PATH, 20, 5, 20)));
     }
     for (i = 30; i < 60; i++)
     {
@@ -45,7 +46,7 @@ Dungeon::Dungeon()
     for (i = 90; i < 100; i++)
     {
         _allRooms.push_back(unique_ptr<Room>(new Monster(MONSTER, true, "BOSS du donjon",
-                                                         "Dragon de glace crachant du feu", MONSTER_IMAGE_PATH, 40, 25, 200)));
+                                                         "Dragon de glace crachant du feu", MONSTER_IMAGE_PATH, 60, 5, 80)));
     }
 }
 
@@ -67,6 +68,32 @@ void Dungeon::generate()
             _playedDeck.push_back(unique_ptr<Card>(new Card(_allRooms[randPosition].get(),
                                                             (NB_CARDS_INGAME - nbInGameCards) % CARDS_PER_LINE,
                                                             (NB_CARDS_INGAME - nbInGameCards) / CARDS_PER_LINE)));
+            randPosition += DISTANCE;
+            nbInGameCards --;
+        }
+    }
+}
+
+void Dungeon::regenerate()
+{
+    int randPosition;
+    int nbInGameCards = NB_CARDS_INGAME;
+    random_device r;
+    default_random_engine randomEngine(r());
+    uniform_int_distribution<int> uniformPositionDistribution(0, DISTANCE);
+
+    while (nbInGameCards > 0)
+    {
+        randPosition = uniformPositionDistribution(randomEngine);
+
+        while (nbInGameCards > 0 && randPosition < NB_CARDS && !_allRooms[randPosition]->inDeck())
+        {
+            _allRooms[randPosition]->setInDeck(true);
+
+            _playedDeck[NB_CARDS_INGAME - nbInGameCards].reset(new Card(_allRooms[randPosition].get(),
+                                                                        (NB_CARDS_INGAME - nbInGameCards) % CARDS_PER_LINE,
+                                                                        (NB_CARDS_INGAME - nbInGameCards) / CARDS_PER_LINE));
+
             randPosition += DISTANCE;
             nbInGameCards --;
         }
@@ -137,6 +164,14 @@ void Dungeon::update()
                                            _playedDeck[i]->getRoom()->getBigCard()->accept());
             _playedDeck[i]->getRoom()->getBigCard()->setAccept(false);
             _playedDeck[i]->getRoom()->getBigCard()->setRefuse(false);
+
+            _returnedCardsCount ++;
+            if(_returnedCardsCount == NB_CARDS_INGAME)
+            {
+                cleanup();
+                regenerate();
+                init();
+            }
         }
     }
 }

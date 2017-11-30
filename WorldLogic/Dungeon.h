@@ -25,11 +25,15 @@ private:
 
     Card * _lastVisitedCard;
 
+    unsigned int _returnedCardsCount;
+
 public:
 
     Dungeon();
 
     void generate();
+
+    void regenerate();
 
     void init() override;
 
