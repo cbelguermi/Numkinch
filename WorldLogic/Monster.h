@@ -21,7 +21,7 @@ private:
     int _life;
 
 public:
-    Monster(int type, bool isBoss, const char * name, const char * description, const char * entityImage,
+    Monster(int type, bool isBoss, const char * name, const char * description,
             unsigned int attack, unsigned int defense, int life);
 
     bool isBoss() const;

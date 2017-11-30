@@ -25,15 +25,13 @@ protected:
 
     const char * _description;
 
-    const char * _entityImage;
-
     unsigned int _targetSkill;
 
     BigCard * _bigCard;
 
 
 public:
-    Room(int type, const char * name, const char * description, const char * entityImage);
+    Room(int type, const char * name, const char * description);
 
     int getType() const;
 

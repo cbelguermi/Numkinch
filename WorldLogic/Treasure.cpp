@@ -5,9 +5,9 @@
 #include "Treasure.h"
 #include "../PlayerLogic/Skills.h"
 
-Treasure::Treasure(int type, const char * name, const char * description, const char * entityImage,
+Treasure::Treasure(int type, const char * name, const char * description,
                    unsigned int targetSkill, unsigned int bonus) :
-        Room(type, name, description, entityImage), _bonus(bonus)
+        Room(type, name, description), _bonus(bonus)
 {
     _targetSkill = targetSkill;
     _bigCard = new BigCard(false, TAKE_BTN_PATH, ENTITY_PATH, getBonusString(), name, description);

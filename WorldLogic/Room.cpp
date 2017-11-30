@@ -7,8 +7,8 @@
 #include "Entities.h"
 #include "../PlayerLogic/Skills.h"
 
-Room::Room(int type, const char * name, const char * description, const char * entityImage) :
-        _type(type), _name(name), _description(description), _visited(false), _entityImage(entityImage),
+Room::Room(int type, const char * name, const char * description) :
+        _type(type), _name(name), _description(description), _visited(false),
         _targetSkill(NONE)
 {
     _inDeck = false;
@@ -54,7 +54,6 @@ Room::~Room()
 {
     _name = nullptr;
     _description = nullptr;
-    _entityImage = nullptr;
     delete _bigCard;
     _bigCard = nullptr;
 }

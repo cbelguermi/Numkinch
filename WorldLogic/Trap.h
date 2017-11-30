@@ -14,7 +14,7 @@ private:
     const unsigned int _damage;
 
 public:
-    Trap(int type, const char * name, const char * description, const char * entityImage, unsigned int targetSkill,
+    Trap(int type, const char * name, const char * description, unsigned int targetSkill,
          unsigned int damage);
 
     unsigned int getDamage() const;

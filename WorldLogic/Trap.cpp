@@ -5,9 +5,9 @@
 #include "Trap.h"
 #include "../PlayerLogic/Skills.h"
 
-Trap::Trap(int type, const char * name, const char * description, const char * entityImage,
+Trap::Trap(int type, const char * name, const char * description,
            const unsigned int targetSkill, const unsigned int damage) :
-        Room(type, name, description, entityImage), _damage(damage)
+        Room(type, name, description), _damage(damage)
 {
     _targetSkill = targetSkill;
     _bigCard = new BigCard(false, TAKE_BTN_PATH, ENTITY_PATH, getDamageString(), name, description);

@@ -13,7 +13,7 @@ private:
     const unsigned int _bonus;
 
 public:
-    Treasure(int type, const char * name, const char * description, const char * entityImage, unsigned int targetSkill,
+    Treasure(int type, const char * name, const char * description, unsigned int targetSkill,
              unsigned int bonus);
 
     unsigned int getBonus() const;
