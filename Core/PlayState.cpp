@@ -68,7 +68,6 @@ void PlayState::onEnter()
         _playerStats[i] = new StatCard(STAT_CARD_PATH_INACTIVE, WINDOW_WIDTH - STAT_CARD_WIDTH,
                                        350 + STAT_CARD_HEIGHT * i, STAT_CARD_WIDTH, STAT_CARD_HEIGHT, playerIdentity,
                                        attack, defense, agility, life);
-        _playerStats[_currentPlayer]->setTile(STAT_CARD_PATH_ACTIVE);
         delete playerIdentity;
         delete attack;
         delete defense;
@@ -76,6 +75,7 @@ void PlayState::onEnter()
         delete life;
         _playerStats[i]->init();
     }
+    _playerStats[_currentPlayer]->setTile(STAT_CARD_PATH_ACTIVE);
 }
 
 void PlayState::onExit()

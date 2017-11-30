@@ -172,6 +172,7 @@ void Dungeon::update()
                 cleanup();
                 regenerate();
                 init();
+                _returnedCardsCount = 0;
             }
         }
     }
