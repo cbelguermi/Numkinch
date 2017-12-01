@@ -37,7 +37,7 @@ private:
     Text _descriptionTxt;
 
 public:
-    BigCard(bool hasRefuseBtn, const char * acceptBtnPath, const char * entityImagePath, const char * topText,
+    BigCard(bool hasRefuseBtn, const char * acceptBtnPath, const char * entityImagePath, string topText,
             const char * entityNameText, const char * descriptionText);
 
     bool hasRefuseBtn() const;

@@ -160,13 +160,13 @@ void GameEngine::onCleanup()
 {
     SDL_DestroyRenderer(getGameRenderer());
     SDL_DestroyWindow(getGameWindow());
-    IMG_Quit();
-    TTF_Quit();
-    SDL_Quit();
 }
 
 GameEngine::~GameEngine()
 {
+    IMG_Quit();
+    TTF_Quit();
+    SDL_Quit();
     _gameRenderer = nullptr;
     _gameWindow = nullptr;
 }

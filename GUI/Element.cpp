@@ -46,8 +46,8 @@ void Element::init()
 
 void Element::cleanup()
 {
-    SDL_FreeSurface(_surface);
     SDL_DestroyTexture(_texture);
+    SDL_FreeSurface(_surface);
 }
 
 void Element::setImagePath(const char* path)

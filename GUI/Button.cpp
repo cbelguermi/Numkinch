@@ -43,5 +43,5 @@ void Button::render()
 
 void Button::cleanup()
 {
-    Element::cleanup();
+    Tile::cleanup();
 }

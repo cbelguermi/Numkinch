@@ -9,6 +9,8 @@
 #include "Room.h"
 #include "../PlayerLogic/Skill.h"
 
+using namespace std;
+
 class Monster : public Room {
 
 private:
@@ -35,7 +37,7 @@ public:
     void alterLife(int value);
 
 private:
-    const char * getSkillsString();
+    string getSkillsString();
 };
 
 

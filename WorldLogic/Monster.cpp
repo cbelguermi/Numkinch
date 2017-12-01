@@ -2,6 +2,7 @@
 // Created on 19/11/2017.
 //
 
+#include <sstream>
 #include "Monster.h"
 
 #define FIGHT_BTN_PATH "./res/FightBtn.png"
@@ -40,12 +41,9 @@ void Monster::alterLife(int value)
     _life += value;
 }
 
-const char * Monster::getSkillsString()
+string Monster::getSkillsString()
 {
-    char* skills = new char(100);
-    //sprintf(skills, "ATTACK : %d - DEFENSE : %d - PV : %d ", _attack, _defense, _life);
-    //printf("%s\n", skills);
-    sprintf(skills, "TODO : debug this shit ");
-    printf("%s\n", skills);
-    return skills;
+    ostringstream stringStream;
+    stringStream << "ATT: " << _attack << " - DEF: " << _defense << " - PV: " << _life;
+    return stringStream.str();
 }

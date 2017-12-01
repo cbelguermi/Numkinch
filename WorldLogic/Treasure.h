@@ -19,7 +19,7 @@ public:
     unsigned int getBonus() const;
 
 private:
-    const char * getBonusString();
+    string getBonusString();
 };
 
 #endif //NUMKINCH_TREASURE_H

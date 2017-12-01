@@ -2,6 +2,7 @@
 // Created on 19/11/2017.
 //
 
+#include <sstream>
 #include "Trap.h"
 #include "../PlayerLogic/Skills.h"
 
@@ -18,27 +19,25 @@ unsigned int Trap::getDamage() const
     return _damage;
 }
 
-const char * Trap::getDamageString()
+string Trap::getDamageString()
 {
-    auto * damage = new char(50);
+    ostringstream damageString;
     switch (_targetSkill)
     {
         case (ATTACK):
-            sprintf(damage, "MALUS : ATTACK -%d", _damage);
+            damageString << "MALUS: ATTACK -" << _damage;
             break;
         case (DEFENSE):
-            sprintf(damage, "MALUS : DEFENSE -%d", _damage);
+            damageString << "MALUS: DEFENSE -" << _damage;
             break;
         case (AGILITY):
-            sprintf(damage, "MALUS : AGILITY -%d", _damage);
+            damageString << "MALUS: AGILITY -" << _damage;
             break;
         case (LIFE):
-            sprintf(damage, "MALUS : LIFE -%d", _damage);
+            damageString << "MALUS: LIFE -" << _damage;
             break;
         default:
-            delete damage;
-            damage = nullptr;
             break;
     }
-    return damage;
+    return damageString.str();
 }

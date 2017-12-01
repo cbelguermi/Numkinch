@@ -8,7 +8,7 @@
 #define BIG_CARD_PATH "./res/BigCard.png"
 #define REFUSE_BTN_PATH "./res/FleeBtn.png"
 
-BigCard::BigCard(bool hasRefuseBtn, const char * acceptBtnPath, const char * entityImagePath, const char * topText,
+BigCard::BigCard(bool hasRefuseBtn, const char * acceptBtnPath, const char * entityImagePath, string topText,
                  const char * entityNameText,
                  const char * descriptionText) : _cardImage(BIG_CARD_PATH, BIG_CARD_MARGIN_SIDE,
                                                             BIG_CARD_MARGIN_TOP, BIG_CARD_WIDTH,
@@ -30,7 +30,7 @@ BigCard::BigCard(bool hasRefuseBtn, const char * acceptBtnPath, const char * ent
                                                                       ENTITY_IMAGE_MARGIN_TOP, ENTITY_IMAGE_WIDTH,
                                                               ENTITY_IMAGE_HEIGHT),
 
-                                                 _topTxt(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, topText,
+                                                 _topTxt(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, topText.c_str(),
                                                          BIG_CARD_MARGIN_SIDE
                                                          + ENTITY_IMAGE_MARGIN_SIDE, BIG_CARD_MARGIN_TOP
                                                                                       + 30, BIG_CARD_WIDTH-70),

@@ -67,7 +67,6 @@ void ChooseCharactersState::handleEvents()
     {
         if (event.type == SDL_QUIT)
         {
-            onExit();
             GameEngine::get().Quit();
             break;
         }

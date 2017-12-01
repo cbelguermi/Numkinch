@@ -2,6 +2,9 @@
 // Created on 07/11/2017.
 //
 
+#include <random>
+#include <string>
+#include <sstream>
 #include "PlayState.h"
 #include "../GUI/GUIConstants.h"
 #include "../WorldLogic/Entities.h"
@@ -11,10 +14,6 @@
 #include "../WorldLogic/Monster.h"
 #include "../PlayerLogic/PlayerLogicConstants.h"
 #include "../PlayerLogic/CharacterFactory.h"
-#include <cstdio>
-#include <random>
-
-
 
 #define STAT_CARD_PATH_INACTIVE "./res/StatCardInactive.png"
 #define STAT_CARD_PATH_ACTIVE "./res/StatCardActive.png"
@@ -54,25 +53,35 @@ void PlayState::onEnter()
     _dungeon.init();
     for (int i = 0; i < NB_PLAYERS; i++)
     {
-        auto * playerIdentity = new char(60);
-        sprintf(playerIdentity, "%s (%s, %s)", _players[i]->getName(), _players[i]->RaceToString(), _players[i]->ClassToString());
-        auto * attack = new char(10);
-        sprintf(attack, "%d / %d", _players[i]->getAttack()->getValue(), _players[i]->getAttack()->getMaxValue());
-        auto * defense = new char(10);
-        sprintf(defense, "%d / %d", _players[i]->getDefense()->getValue(), _players[i]->getDefense()->getMaxValue());
-        auto * agility = new char(10);
-        sprintf(agility, "%d / %d", _players[i]->getAgility()->getValue(), _players[i]->getAgility()->getMaxValue());
-        auto * life = new char(10);
-        sprintf(life, "%d / %d", _players[i]->getLife()->getValue(), _players[i]->getLife()->getMaxValue());
+        ostringstream playerIdentityString;
+        playerIdentityString << _players[i]->getName() << " (" << _players[i]->RaceToString() << ", "
+                       << _players[i]->ClassToString() << ")";
+        string playerIdentity = playerIdentityString.str();
+
+        ostringstream attackString;
+        attackString << "Attack: " << _players[i]->getAttack()->getValue() << " / "
+                     << _players[i]->getAttack()->getMaxValue();
+        string attack = attackString.str();
+
+        ostringstream defenseString;
+        defenseString << "Defense: " << _players[i]->getDefense()->getValue() << " / "
+                     << _players[i]->getDefense()->getMaxValue();
+        string defense = defenseString.str();
+
+        ostringstream agilityString;
+        agilityString << "Agility: " << _players[i]->getAgility()->getValue() << " / "
+                      << _players[i]->getAgility()->getMaxValue();
+        string agility = agilityString.str();
+
+        ostringstream lifeString;
+        lifeString << "Life: " << _players[i]->getLife()->getValue() << " / "
+                      << _players[i]->getLife()->getMaxValue();
+        string life = lifeString.str();
 
         _playerStats[i] = new StatCard(STAT_CARD_PATH_INACTIVE, WINDOW_WIDTH - STAT_CARD_WIDTH,
                                        350 + STAT_CARD_HEIGHT * i, STAT_CARD_WIDTH, STAT_CARD_HEIGHT, playerIdentity,
                                        attack, defense, agility, life);
-        delete playerIdentity;
-        delete attack;
-        delete defense;
-        delete agility;
-        delete life;
+
         _playerStats[i]->init();
     }
     _playerStats[_currentPlayer]->setTile(STAT_CARD_PATH_ACTIVE);
@@ -95,7 +104,6 @@ void PlayState::handleEvents()
     {
         if (event.type == SDL_QUIT)
         {
-            onExit();
             GameEngine::get().Quit();
             break;
         }
@@ -226,32 +234,37 @@ void PlayState::updateCurrentPlayer(Room * room, bool accept)
 
     if (_players[_currentPlayer]->getLife()->getValue() <= 0)
     {
-        Race* newPlayer = CharacterFactory::get().createCharacter(_players[_currentPlayer]->getRace(), _players[_currentPlayer]->getClass(), _players[_currentPlayer]->getName());
+        Race * newPlayer = CharacterFactory::get().createCharacter(_players[_currentPlayer]->getRace(),
+                                                                   _players[_currentPlayer]->getClass(),
+                                                                   _players[_currentPlayer]->getName());
         _players[_currentPlayer].reset(newPlayer);
-    } else {
+    }
+    else
+    {
         _players[_currentPlayer]->getLife()->alterPoints(LIFE_INCREASE);
     }
 
+    ostringstream attackString;
+    attackString << "Attack: " << _players[_currentPlayer]->getAttack()->getValue() << " / "
+                 << _players[_currentPlayer]->getAttack()->getMaxValue();
+    string attack = attackString.str();
 
+    ostringstream defenseString;
+    defenseString << "Defense: " << _players[_currentPlayer]->getDefense()->getValue() << " / "
+                  << _players[_currentPlayer]->getDefense()->getMaxValue();
+    string defense = defenseString.str();
 
-    auto * attack = new char(10);
-    sprintf(attack, "%d / %d", _players[_currentPlayer]->getAttack()->getValue(),
-            _players[_currentPlayer]->getAttack()->getMaxValue());
-    auto * defense = new char(10);
-    sprintf(defense, "%d / %d", _players[_currentPlayer]->getDefense()->getValue(),
-            _players[_currentPlayer]->getDefense()->getMaxValue());
-    auto * agility = new char(10);
-    sprintf(agility, "%d / %d", _players[_currentPlayer]->getAgility()->getValue(),
-            _players[_currentPlayer]->getAgility()->getMaxValue());
-    auto * life = new char(10);
-    sprintf(life, "%d / %d", _players[_currentPlayer]->getLife()->getValue(),
-            _players[_currentPlayer]->getLife()->getMaxValue());
+    ostringstream agilityString;
+    agilityString << "Agility: " << _players[_currentPlayer]->getAgility()->getValue() << " / "
+                  << _players[_currentPlayer]->getAgility()->getMaxValue();
+    string agility = agilityString.str();
+
+    ostringstream lifeString;
+    lifeString << "Life: " << _players[_currentPlayer]->getLife()->getValue() << " / "
+               << _players[_currentPlayer]->getLife()->getMaxValue();
+    string life = lifeString.str();
 
     _playerStats[_currentPlayer]->update(attack, defense, agility, life);
-    delete attack;
-    delete defense;
-    delete agility;
-    delete life;
 
     _playerStats[_currentPlayer]->setTile(STAT_CARD_PATH_INACTIVE);
     _currentPlayer = (_currentPlayer + 1) % NB_PLAYERS;

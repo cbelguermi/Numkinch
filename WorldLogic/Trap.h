@@ -20,7 +20,7 @@ public:
     unsigned int getDamage() const;
 
 private:
-    const char * getDamageString();
+    string getDamageString();
 };
 
 #endif //NUMKINCH_TRAP_H

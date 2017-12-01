@@ -2,6 +2,7 @@
 // Created on 19/11/2017.
 //
 
+#include <sstream>
 #include "Treasure.h"
 #include "../PlayerLogic/Skills.h"
 
@@ -18,27 +19,25 @@ unsigned int Treasure::getBonus() const
     return _bonus;
 }
 
-const char * Treasure::getBonusString()
+string Treasure::getBonusString()
 {
-    auto * bonus = new char(50);
+    ostringstream bonusString;
     switch (_targetSkill)
     {
         case (ATTACK):
-            sprintf(bonus, "BONUS : ATTACK +%d", _bonus);
+            bonusString << "BONUS: ATTACK +" << _bonus;
             break;
         case (DEFENSE):
-            sprintf(bonus, "BONUS : DEFENSE +%d", _bonus);
+            bonusString << "BONUS: DEFENSE +" << _bonus;
             break;
         case (AGILITY):
-            sprintf(bonus, "BONUS : AGILITY +%d", _bonus);
+            bonusString << "BONUS: AGILITY +" << _bonus;
             break;
         case (LIFE):
-            sprintf(bonus, "BONUS : LIFE +%d", _bonus);
+            bonusString << "BONUS: LIFE +" << _bonus;
             break;
         default:
-            delete bonus;
-            bonus = nullptr;
             break;
     }
-    return bonus;
+    return bonusString.str();
 }

@@ -5,8 +5,11 @@
 #ifndef NUMKINCH_STATCARD_H
 #define NUMKINCH_STATCARD_H
 
+#include <string>
 #include "Tile.h"
 #include "Text.h"
+
+using namespace std;
 
 class StatCard : public Tile {
 
@@ -22,12 +25,12 @@ private:
     Text _life;
 
 public:
-    StatCard(const char * path, int x, int y, int w, int h, const char * playerIdentity, const char * attack,
-             const char * defense, const char * agility, const char * life);
+    StatCard(const char * path, int x, int y, int w, int h, string playerIdentity, string attack, string defense,
+             string agility, string life);
 
     void init() override;
 
-    void update(const char * attack, const char * defense, const char * agility, const char * life);
+    void update(string attack, string defense, string agility, string life);
 
     void render() override;
 
