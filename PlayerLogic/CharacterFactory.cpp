@@ -42,7 +42,7 @@ Race * CharacterFactory::createCharacter() {
     default_random_engine randomEngine(r());
     uniform_int_distribution<int> uniformRaceDistribution(elf, human); // between 0 and 3 included
     uniform_int_distribution<int> uniformClassDistribution(assassin, priest); // between 0 and 3 included
-    uniform_int_distribution<int> uniformNameDistribution(dismin, iviel); // between 0 and 4 included
+    uniform_int_distribution<int> uniformNameDistribution(Gardy, Stephana); // between 0 and 4 included
 
     randRace = uniformRaceDistribution(randomEngine);
     randClass = uniformClassDistribution(randomEngine);
@@ -180,15 +180,57 @@ Race * CharacterFactory::createCharacter(int race, int className, const char* na
 const char * CharacterFactory::NameToString(int name) const
 {
     switch (name) {
-        case dismin:
-            return "Dismin";
-        case eyl:
-            return "Eyl";
-        case gardy:
-            return "Gardy";
-        case iviel:
-            return "Iviel";
+        case Gardy: 
+            return "GARDY";
+        case Gaultier:
+            return "GAULTIER";
+        case Louis:
+            return "LOUIS";
+        case Hannequin:
+            return "HANNEQUIN";
+        case Evard:
+            return "EVARD";
+        case Guerin:
+            return "GUERIN";
+        case Collinet:
+            return "COLLINET";
+        case Artur:
+            return "ARTUR";
+        case Jaquet:
+            return "JAQUET";
+        case Tristan:
+            return "TRISTAN";
+        case Alixandre:
+            return "ALIXANDRE";
+        case Gamet:
+            return "GAMET";
+        case Estiene:
+            return "ESTIENNE";
+        case Amaury:
+            return "AMAURY";
+        case Albert:
+            return "ALBERT";
+        case Ysabel:
+            return "YSABEL";
+        case Gila:
+            return "GILA";
+        case Cecile:
+            return "CECILE";
+        case Thecia:
+            return "THECIA";
+        case Aeliz:
+            return "AELIZ";
+        case Edine:
+            return "EDINE";
+        case Alison:
+            return "ALISON";
+        case Ondine:
+            return "ONDINE";
+        case Emelina:
+            return "EMELINA";
+        case Stephana:
+            return "STEPHANA";
         default:
-            return "Blank";
+            return "Unknown"; 
     }
 }
