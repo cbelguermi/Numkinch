@@ -7,6 +7,9 @@
 
 #include "Race.h"
 
+/**
+ * Builds characters (race + class) with the Factory pattern.
+ */
 class CharacterFactory {
 
 private:
@@ -23,7 +26,7 @@ public:
 
     Race * createCharacter();
 
-    Race * createCharacter(int race, int classname, const char* name);
+    Race * createCharacter(int race, int className, const char * name);
 
     const char * NameToString(int name) const;
 

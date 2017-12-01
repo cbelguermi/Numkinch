@@ -112,11 +112,11 @@ Race * CharacterFactory::createCharacter() {
 }
 
 
-Race * CharacterFactory::createCharacter(int race, int classname, const char* name)
+Race * CharacterFactory::createCharacter(int race, int className, const char* name)
 {
     switch (race) {
         case elf: {
-            switch (classname) {
+            switch (className) {
                 case assassin:
                     return new Elf(name, new Assassin());
                 case paladin:
@@ -130,7 +130,7 @@ Race * CharacterFactory::createCharacter(int race, int classname, const char* na
             }
         }
         case dwarf: {
-            switch (classname) {
+            switch (className) {
                 case assassin:
                     return new Dwarf(name, new Assassin());
                 case paladin:
@@ -144,7 +144,7 @@ Race * CharacterFactory::createCharacter(int race, int classname, const char* na
             }
         }
         case barbarian: {
-            switch (classname) {
+            switch (className) {
                 case assassin:
                     return new Barbarian(name, new Assassin());
                 case paladin:
@@ -158,7 +158,7 @@ Race * CharacterFactory::createCharacter(int race, int classname, const char* na
             }
         }
         case human: {
-            switch (classname) {
+            switch (className) {
                 case assassin:
                     return new Human(name, new Assassin());
                 case paladin:

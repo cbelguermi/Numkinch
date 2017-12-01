@@ -11,6 +11,7 @@
       <w>ingame</w>
       <w>orientedrectangle</w>
       <w>playstate</w>
+      <w>postcondition</w>
       <w>skillset</w>
       <w>statcard</w>
       <w>texttile</w>
