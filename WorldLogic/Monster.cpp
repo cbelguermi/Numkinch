@@ -8,8 +8,8 @@
 #define FIGHT_BTN_PATH "./res/FightBtn.png"
 
 Monster::Monster(int type, bool isBoss, const char * name, const char * description, const char* imagePath,
-                 unsigned int attack, unsigned int defense, int life) :
-        Room(type, name, description), _attack(attack), _defense(defense), _life(life)
+                 unsigned int attack, unsigned int defense, int life, unsigned int level) :
+        Room(type, name, description), _attack(attack), _defense(defense), _life(life), _level(level)
 {
     _isBoss = isBoss;
     _bigCard = new BigCard(true, FIGHT_BTN_PATH, imagePath, getSkillsString(), name, description);
@@ -35,6 +35,11 @@ int Monster::getLife() const
     return _life;
 }
 
+unsigned int Monster::getLevel() const
+{
+    return _level;
+}
+
 
 void Monster::alterLife(int value)
 {
@@ -44,6 +49,6 @@ void Monster::alterLife(int value)
 string Monster::getSkillsString()
 {
     ostringstream stringStream;
-    stringStream << "ATT: " << _attack << " - DEF: " << _defense << " - PV: " << _life;
+    stringStream << "ATT: " << _attack << " / DEF: " << _defense << " / PV: " << _life << "\nNIV: " << _level;
     return stringStream.str();
 }

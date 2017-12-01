@@ -22,15 +22,19 @@ private:
 
     int _life;
 
+    unsigned int _level;
+
 public:
     Monster(int type, bool isBoss, const char * name, const char * description, const char* imagePath,
-            unsigned int attack, unsigned int defense, int life);
+            unsigned int attack, unsigned int defense, int life, unsigned int level);
 
     bool isBoss() const;
 
     unsigned int getAttack() const;
 
     unsigned int getDefense() const;
+
+    unsigned int getLevel() const;
 
     int getLife() const;
 

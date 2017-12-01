@@ -159,13 +159,13 @@ void PlayState::updateCurrentPlayer(Room * room, bool accept)
             switch (randNb)
             {
                 case 1:
-                    _players[_currentPlayer]->getAttack()->alterPoints(ATTACK_INCREASE);
+                    _players[_currentPlayer]->getAttack()->alterPoints(monster->getLevel());
                     break;
                 case 2:
-                    _players[_currentPlayer]->getDefense()->alterPoints(DEFENSE_INCREASE);
+                    _players[_currentPlayer]->getDefense()->alterPoints(monster->getLevel());
                     break;
                 case 3:
-                    _players[_currentPlayer]->getAgility()->alterPoints(AGILITY_INCREASE);
+                    _players[_currentPlayer]->getAgility()->alterPoints(monster->getLevel());
                     break;
                 default:
                     break;
