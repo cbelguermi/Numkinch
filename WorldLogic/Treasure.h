@@ -7,6 +7,8 @@
 
 #include "Room.h"
 
+#define TAKE_BTN_PATH "./res/TakeBtn.png"
+
 class Treasure : public Room {
 
 private:

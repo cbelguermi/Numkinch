@@ -11,7 +11,7 @@ Trap::Trap(int type, const char * name, const char * description, const char* im
         Room(type, name, description), _damage(damage)
 {
     _targetSkill = targetSkill;
-    _bigCard = new BigCard(false, TAKE_BTN_PATH, imagePath, getDamageString(), name, description);
+    _bigCard = new BigCard(false, OK_BTN_PATH, imagePath, getDamageString(), name, description);
 }
 
 unsigned int Trap::getDamage() const

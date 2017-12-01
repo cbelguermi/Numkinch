@@ -15,14 +15,14 @@ BigCard::BigCard(bool hasRefuseBtn, const char * acceptBtnPath, const char * ent
                                                             BIG_CARD_HEIGHT),
 
                                                  _acceptBtn(acceptBtnPath, BIG_CARD_MARGIN_SIDE
-                                                                           + 50, BIG_CARD_MARGIN_TOP
-                                                                     + BIG_CARD_HEIGHT - 90,
-                                                            BUTTON_WIDTH, BUTTON_HEIGHT),
+                                                                           + 40, BIG_CARD_MARGIN_TOP
+                                                                     + BIG_CARD_HEIGHT - 100,
+                                                            BUTTON_BIG_CARD_WIDTH, BUTTON_BIG_CARD_HEIGHT),
 
                                                  _refuseBtn(REFUSE_BTN_PATH, BIG_CARD_MARGIN_SIDE
-                                                                             + 200, BIG_CARD_MARGIN_TOP
-                                                                     + BIG_CARD_HEIGHT - 90,
-                                                            BUTTON_WIDTH, BUTTON_HEIGHT),
+                                                                             + 180, BIG_CARD_MARGIN_TOP
+                                                                     + BIG_CARD_HEIGHT - 100,
+                                                            BUTTON_BIG_CARD_WIDTH, BUTTON_BIG_CARD_HEIGHT),
 
                                                  _entityImage(entityImagePath, BIG_CARD_MARGIN_SIDE
                                                                                + ENTITY_IMAGE_MARGIN_SIDE,

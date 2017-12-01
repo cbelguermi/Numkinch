@@ -9,7 +9,6 @@
 #include "../GUI/CharacterCard.h"
 #include "BigCard.h"
 
-#define TAKE_BTN_PATH "./res/TakeBtn.png"
 
 /**
  * Defines the content of a dungeon card (what is inside a dungeon "room").

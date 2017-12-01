@@ -8,6 +8,8 @@
 
 #include "Room.h"
 
+#define OK_BTN_PATH "./res/OkBtn.png"
+
 class Trap : public Room {
 
 private:
