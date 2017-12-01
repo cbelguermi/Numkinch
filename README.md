@@ -20,7 +20,7 @@ Chloé Belguermi & Damien Haurat.
 
 Nous avons rédigé les scénarios / cas d'utilisation du programme en amont du développement.
 
-Les scénarios sont disponibles dans le dossier `doc`.
+Le diagramme de cas d'utilisation est disponible dans le dossier `doc`.
 
 #### Développement
 
@@ -28,9 +28,13 @@ Nous avons travaillé en ***pair-programming*** avec l'IDE CLion, sous environne
 
 #### Documentation
 
-Doxygen
+Une documentation Doxygen (http://www.stack.nl/~dimitri/doxygen/) a été générée à partir des commentaires présents dans le code. Elle recense toutes les classes avec leur hiérarchie.
 
-Le diagramme de classes est disponible dans le dossier `doc`.
+Sous forme de pages HTML, la documentation permet de visualiser les membres et méthodes de chaque classe, ainsi que son diagramme de dépendances.
+
+Pour la consulter, aller dans le dossier `doc/html`, trouver et ouvrir le fichier `index.html` (oui, il y a effectivement beaucoup de fichiers...).
+
+**Visualisation du diagramme de classes :** ouvrir `index.html`, aller à l'onglet *Classes* puis cliquer sur *Class hierarchy*.
 
 ## Compilation des sources
 

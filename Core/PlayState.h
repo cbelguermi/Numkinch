@@ -68,7 +68,7 @@ public:
     bool fightMonster(Monster * monster);
 
     /**
-     * The player has one it two chance of loosing life points when fleeing a monster.
+     * The player has one in four chance of loosing half of his/her life points when fleeing a monster.
      */
     void fleeMonster();
 
