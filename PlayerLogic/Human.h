@@ -8,10 +8,10 @@
 
 #include "Race.h"
 
-class Human : public Race
-{
+class Human : public Race {
+
 public:
-    explicit Human(const char * name, Class * characterClass);
+    Human(const char * name, Class * characterClass);
 };
 
 

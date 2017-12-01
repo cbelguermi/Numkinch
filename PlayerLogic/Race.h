@@ -8,6 +8,10 @@
 #include "Skill.h"
 #include "Class.h"
 
+/**
+ * Defines a set of points for three qualities: attack, defense, agility. The addition of these points plus the points
+ * given by the class of the character gives the total amount of points of the character in each quality.
+ */
 class Race {
 
 protected:
@@ -23,7 +27,7 @@ protected:
 
     Skill _life;
 
-    Class * _class;
+    Class * _class; /*!< The pointer to the class object defining the character. */
 
 public:
     Race(int race, const char * name, Class * characterClass);

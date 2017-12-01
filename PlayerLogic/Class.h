@@ -7,6 +7,9 @@
 
 #include "Skill.h"
 
+/**
+ * Defines a set of points for three qualities: attack, defense, agility.
+ */
 class Class {
 
 protected:

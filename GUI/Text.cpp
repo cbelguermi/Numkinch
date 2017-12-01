@@ -16,8 +16,8 @@ Text::Text(TTF_Font * font, Uint8 colorR, Uint8 colorG, Uint8 colorB, const char
     _distanceRect = { rectX, rectY, _textWidth, _textHeight };
 }
 
-Text::Text(TTF_Font * font, Uint8 colorR, Uint8 colorG, Uint8 colorB, const char * text, int rectX, int rectY, unsigned int width)
-        : _textWidth(0), _textHeight(0)
+Text::Text(TTF_Font * font, Uint8 colorR, Uint8 colorG, Uint8 colorB, const char * text, int rectX, int rectY,
+           unsigned int width) : _textWidth(0), _textHeight(0)
 {
     _font = font;
     _textColor = { colorR, colorG, colorB };
@@ -25,6 +25,11 @@ Text::Text(TTF_Font * font, Uint8 colorR, Uint8 colorG, Uint8 colorB, const char
     _texture = SDL_CreateTextureFromSurface(GameEngine::getGameRenderer(), _surface);
     SDL_QueryTexture(_texture, nullptr, nullptr, & _textWidth, & _textHeight);
     _distanceRect = { rectX, rectY, _textWidth, _textHeight };
+}
+
+void Text::init()
+{
+
 }
 
 void Text::update(string text)

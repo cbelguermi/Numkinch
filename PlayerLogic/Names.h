@@ -30,7 +30,7 @@ enum Names {
     Alison,
     Ondine,
     Emelina,
-    Stephana,
+    Stephana
 };
 
 #endif //NUMKINCH_NAMES_H

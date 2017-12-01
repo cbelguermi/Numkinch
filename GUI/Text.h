@@ -7,12 +7,13 @@
 
 #include <SDL_ttf.h>
 #include <string>
+#include "IDisplayable.h"
 
 #define FONT_PATH "./res/fonts/VeraSe.ttf"
 
 using namespace std;
 
-class Text {
+class Text : IDisplayable {
 
 private:
     TTF_Font * _font;
@@ -34,11 +35,13 @@ public:
 
     Text(TTF_Font * font, Uint8 colorR, Uint8 colorG, Uint8 colorB, const char * text, int rectX, int rectY, unsigned int width);
 
+    void init() override;
+
     void update(string text);
 
-    void render();
+    void render() override;
 
-    void cleanup();
+    void cleanup() override;
 
     ~Text();
 };

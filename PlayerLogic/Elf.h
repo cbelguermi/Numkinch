@@ -10,7 +10,7 @@
 class Elf : public Race {
 
 public:
-    explicit Elf(const char * name, Class * characterClass);
+    Elf(const char * name, Class * characterClass);
 };
 
 

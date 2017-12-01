@@ -5,7 +5,6 @@
 #ifndef NUMKINCH_THIEF_H
 #define NUMKINCH_THIEF_H
 
-
 #include "Class.h"
 
 class Thief : public Class

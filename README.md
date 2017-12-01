@@ -34,9 +34,13 @@ Le diagramme de classes est disponible dans le dossier `doc`.
 
 ## Compilation des sources
 
-Le programme utilise la bibliothèque graphique SDL.
+### Prérequis
 
-### Installation de la SDL
+* Bibliothèque graphique SDL2 (voir section suivante pour l'installation).
+* Moteur de production CMake.
+* Outil Make.
+
+### Installation de la SDL et de ses extensions
 
 #### Sous macOS
 
@@ -58,12 +62,18 @@ Installer les paquetages `SDL2`, `SDL2_image` et `SDL2_ttf` suivants :
 
 `sudo apt install libsdl2-ttf-dev`
 
-(attention à bien choisir la version finissant par `dev`)
+(attention à bien choisir la version finissant par `dev`).
 
-### Construction du projet
+### Construction du projet (Linux et macOS)
 
-`CMake` est utilisé.
+Le dossier racine contient un fichier `CMakeLists.txt` pour construire le projet. Dans le dossier racine, lancer la commande suivante :
 
-Génère un `Makefile`.
+`cmake .`
 
-À la racine du projet, lancer la commande `make`. Un exécutable nommé `Numkinch` sera généré.
+Un `Makefile` est alors généré. Pour produire l'exécutable, lancer la commande suivante, toujours dans le dossier racine :
+
+`make`
+
+Un exécutable nommé `Numkinch` sera généré. Pour le lancer, saisir simplement la commande suivante :
+
+`./Numkinch`
