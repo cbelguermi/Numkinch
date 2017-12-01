@@ -62,10 +62,10 @@ public:
 
     /**
      * Computes the points gained/lost during a fight against a monster.
-     *
+     * Return true if a boss is killed
      * @param monster the monster card taken from the deck.
      */
-    void fightMonster(Monster * monster);
+    bool fightMonster(Monster * monster);
 
     /**
      * The player has one it two chance of loosing life points when fleeing a monster.

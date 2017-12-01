@@ -15,6 +15,8 @@
 
 #define STAT_CARD_PATH_INACTIVE "./res/StatCardInactive.png"
 #define STAT_CARD_PATH_ACTIVE "./res/StatCardActive.png"
+#define STAT_CARD_PATH_DEAD "./res/StatCardDead.png"
+#define STAT_CARD_PATH_WIN "./res/StatCardWin.png"
 
 PlayState::PlayState(vector<unique_ptr<Race>> players) : _inGameBg(IN_GAME_DEFAULT_BG_PATH), _playerStats(NB_PLAYERS),
                                                          _players(move(players))
@@ -108,10 +110,10 @@ void PlayState::onEnter()
                 bodyTilePath = BODY_HUMAN_PATH;
                 break;
             case elf:
-                bodyTilePath = BODY_DWARF_PATH;
+                bodyTilePath = BODY_ELF_PATH;
                 break;
             case dwarf:
-                bodyTilePath = BODY_ELF_PATH;
+                bodyTilePath = BODY_DWARF_PATH;
                 break;
             default:
                 bodyTilePath = BODY_HUMAN_PATH;
@@ -151,7 +153,7 @@ void PlayState::update()
     _dungeon.update();
 }
 
-void PlayState::fightMonster(Monster * monster)
+bool PlayState::fightMonster(Monster * monster)
 {
     while (monster->getLife() > 0 && _players[_currentPlayer]->getLife()->getValue() > 0)
     {
@@ -201,9 +203,10 @@ void PlayState::fightMonster(Monster * monster)
         if (monster->isBoss())
         {
             printf("%s WINS !!\n", _players[_currentPlayer]->getName());
-            exit(0);
+            return true;
         }
     }
+    return false;
 }
 
 void PlayState::fleeMonster()
@@ -263,10 +266,15 @@ void PlayState::takeTreasure(Treasure * treasure)
 
 void PlayState::updateCurrentPlayer(Room * room, bool accept)
 {
+    bool winOrDead = false;
     if (room->getType() == MONSTER && accept)
     {
         auto monster = (Monster *) room;
-        fightMonster(monster);
+        if (fightMonster(monster))
+        {
+            winOrDead = true;
+            _playerStats[_currentPlayer]->setTile(STAT_CARD_PATH_WIN);
+        }
     }
     else if (room->getType() == MONSTER && !accept)
     {
@@ -289,6 +297,8 @@ void PlayState::updateCurrentPlayer(Room * room, bool accept)
                                                                    _players[_currentPlayer]->getClass(),
                                                                    _players[_currentPlayer]->getName());
         _players[_currentPlayer].reset(newPlayer);
+        winOrDead = true;
+        _playerStats[_currentPlayer]->setTile(STAT_CARD_PATH_DEAD);
     }
     else
     {
@@ -317,7 +327,10 @@ void PlayState::updateCurrentPlayer(Room * room, bool accept)
 
     _playerStats[_currentPlayer]->update(attack, defense, agility, life);
 
-    _playerStats[_currentPlayer]->setTile(STAT_CARD_PATH_INACTIVE);
+    if (!winOrDead)
+    {
+        _playerStats[_currentPlayer]->setTile(STAT_CARD_PATH_INACTIVE);
+    }
     _currentPlayer = (_currentPlayer + 1) % NB_PLAYERS;
     _playerStats[_currentPlayer]->setTile(STAT_CARD_PATH_ACTIVE);
     printf("Player changed: now %d\n", _currentPlayer);
