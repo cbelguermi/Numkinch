@@ -81,3 +81,11 @@ Un `Makefile` est alors généré. Pour produire l'exécutable, lancer la comman
 Un exécutable nommé `Numkinch` sera généré. Pour le lancer, saisir simplement la commande suivante :
 
 `./Numkinch`
+
+### Résolution d'écran
+
+Le programme a été testé avec une résolution d'écran de 1 920 x 1 080.
+
+Si vous possédez un Mac avec écran Retina, il peut être nécessaire de modifier la résolution pour que le jeu s'affiche correctement :
+
+aller dans *Préférences Système > Moniteurs*, cocher l'option « Résolution à l'échelle » et choisir l'option « Plus d'espace ». Le texte devrait apparaître plus petit.
