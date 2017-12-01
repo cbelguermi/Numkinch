@@ -8,10 +8,13 @@
 #include "Room.h"
 #include "BigCard.h"
 
+/**
+ * One of the selectable rooms displayed on screen. Contains a Room, i.e. the value/information given by the card.
+ */
 class Card : public IHandleable, IDisplayable {
 
 private:
-    Room * _room; // don't delete it since it comes from a unique_ptr
+    Room * _room; // don't delete it in the destructor since it comes from a unique_ptr
 
     Button _backCardBtn;
 

@@ -25,7 +25,7 @@ private:
     unsigned int _level;
 
 public:
-    Monster(int type, bool isBoss, const char * name, const char * description, const char* imagePath,
+    Monster(int type, bool isBoss, const char * name, const char * description, const char * imagePath,
             unsigned int attack, unsigned int defense, int life, unsigned int level);
 
     bool isBoss() const;

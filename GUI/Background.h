@@ -7,6 +7,9 @@
 
 #include "Element.h"
 
+/**
+ * Used to render image with no coordinates which fits the entire window.
+ */
 class Background : public Element {
 
 public:

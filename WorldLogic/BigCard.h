@@ -11,6 +11,9 @@
 #include "../GUI/Button.h"
 #include "../GUI/Text.h"
 
+/**
+ * GUI element displaying the information of a dungeon card when selected by a player.
+ */
 class BigCard : IHandleable, IDisplayable {
 
 private:

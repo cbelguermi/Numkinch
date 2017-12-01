@@ -7,7 +7,7 @@
 
 #define FIGHT_BTN_PATH "./res/FightBtn.png"
 
-Monster::Monster(int type, bool isBoss, const char * name, const char * description, const char* imagePath,
+Monster::Monster(int type, bool isBoss, const char * name, const char * description, const char * imagePath,
                  unsigned int attack, unsigned int defense, int life, unsigned int level) :
         Room(type, name, description), _attack(attack), _defense(defense), _life(life), _level(level)
 {

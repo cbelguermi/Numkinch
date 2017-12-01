@@ -10,8 +10,10 @@
 class GameEngine {
 
 private:
-    static GameEngine _gameEngine;
+    static GameEngine _gameEngine; //!< Singleton pattern.
+
     static SDL_Window * _gameWindow;
+
     static SDL_Renderer * _gameRenderer;
 
     bool _running;
@@ -24,10 +26,6 @@ public:
 
     static SDL_Renderer * getGameRenderer();
 
-    int getWindowWidth() const;
-
-    int getWindowHeight() const;
-
     GameEngine(const GameEngine &) = delete; // avoid copy
 
     GameEngine & operator=(const GameEngine&) = delete; // avoid copy
@@ -35,21 +33,49 @@ public:
 private:
     GameEngine(); // avoid instancing
 
+    /**
+     * Shutdowns the SDL API.
+     */
     ~GameEngine();
 
 public:
-    int onExecute();
-
+    /**
+     * Creates the game window.
+     *
+     * @return true if window creation succeeded.
+     */
     bool onInit();
 
+    /**
+     * Calls the current GameState handleEvents method.
+     */
     void handleEvents();
 
+    /**
+     * Calls the current GameState update method.
+     */
     void update();
 
+    /**
+     * Calls the current GameState render method.
+     */
     void render();
 
+    /**
+     * Initializes SDL API, pushes the first GameState on the GameStateManager stack and launches the main game loop.
+     *
+     * @return 0 (EXIT_SUCCESS) if the game excited successfully.
+     */
+    int onExecute();
+
+    /**
+     * Causes the GameEngine to break from the main game loop.
+     */
     void Quit();
 
+    /**
+     * Calls SDL cleaning functions.
+     */
     void onCleanup();
 };
 

@@ -42,21 +42,6 @@ SDL_Renderer * GameEngine::getGameRenderer()
     return _gameRenderer;
 }
 
-int GameEngine::getWindowWidth() const
-{
-    return WINDOW_WIDTH;
-}
-
-int GameEngine::getWindowHeight() const
-{
-    return WINDOW_HEIGHT;
-}
-
-/**
- * Creates game window.
- *
- * @return true if window creation succeeded.
- */
 bool GameEngine::onInit()
 {
     if (SDL_Init(SDL_INIT_EVERYTHING) < 0) // start SDL
@@ -108,11 +93,6 @@ void GameEngine::render()
     GameStateManager::get().getCurrentGameState()->render();
 }
 
-/**
- * Launches game state manager.
- *
- * @return 0 if game exited successfully.
- */
 int GameEngine::onExecute()
 {
     if (!onInit())
@@ -142,20 +122,11 @@ int GameEngine::onExecute()
     return EXIT_SUCCESS;
 }
 
-/**
- * Exits game loop.
- *
- */
 void GameEngine::Quit()
 {
     _running = false;
 }
 
-
-/**
- * Shutdowns SDL.
- *
- */
 void GameEngine::onCleanup()
 {
     SDL_DestroyRenderer(getGameRenderer());

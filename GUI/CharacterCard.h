@@ -5,10 +5,12 @@
 #ifndef NUMKINCH_TEXTTILE_H
 #define NUMKINCH_TEXTTILE_H
 
-
 #include "Tile.h"
 #include "Text.h"
 
+/**
+ * Used in ChooseCharacterState to display the information of a character.
+ */
 class CharacterCard : public Tile {
 
 private:

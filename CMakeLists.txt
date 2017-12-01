@@ -6,12 +6,16 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake-build-de
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}")
 
 if (APPLE)
+    set(CMAKE_CXX_FLAGS "-framework SDL2")
+    set(SDL2_INCLUDE_DIR /Library/Frameworks/SDL2.framework/Headers)
+    set(SDL2_IMAGE_LIBRARY /Library/Frameworks/SDL2.framework)
+
     set(SDL2_IMAGE_INCLUDE_DIR /Library/Frameworks/SDL2_image.framework/Headers)
     set(SDL2_IMAGE_LIBRARY /Library/Frameworks/SDL2_image.framework)
 
     set(SDL2_TTF_INCLUDE_DIR /Library/Frameworks/SDL2_ttf.framework/Headers)
     set(SDL2_TTF_LIBRARY /Library/Frameworks/SDL2_ttf.framework)
-else()
+else(APPLE)
     find_package(SDL2 REQUIRED)
     find_package(SDL2_image REQUIRED)
     find_package(SDL2_ttf REQUIRED)

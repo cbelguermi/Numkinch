@@ -6,15 +6,19 @@
 #define NUMKINCH_GAMESTATEMANAGER_H
 
 #include <stack>
-#include "GameState.h"
 #include <memory>
+#include "GameState.h"
 
 using namespace std;
 
+/**
+ * In charge of pushing/popping GameStates on a stack.
+ */
 class GameStateManager {
 
 private:
-    static GameStateManager _gameStateManager;
+    static GameStateManager _gameStateManager; //!< Singleton pattern.
+
     stack<unique_ptr<GameState>> _gameStates;
 
 public:
@@ -27,12 +31,24 @@ public:
 public:
     GameState * getCurrentGameState() const;
 
+    /**
+     * Adds a new game state onto the stack and activates it.
+     *
+     * @param newState the new current GameState to be
+     */
     void pushGameState(GameState * newState);
 
+    /**
+     * Cleans up the current state and removes it from the stack.
+     */
     void popGameState();
 
 private:
     GameStateManager(); // avoid instancing
+
+    /**
+     * Removes all GameStates from the stack.
+     */
     ~GameStateManager();
 };
 

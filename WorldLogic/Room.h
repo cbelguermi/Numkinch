@@ -11,6 +11,9 @@
 
 #define TAKE_BTN_PATH "./res/TakeBtn.png"
 
+/**
+ * Defines the content of a dungeon card (what is inside a dungeon "room").
+ */
 class Room {
 
 protected:
@@ -26,7 +29,7 @@ protected:
 
     unsigned int _targetSkill;
 
-    BigCard * _bigCard;
+    BigCard * _bigCard; /*!< Big representation of the card, displaying all the information of the room on screen. */
 
 
 public:

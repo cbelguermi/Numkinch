@@ -10,6 +10,9 @@
 #include "../Core/GameEngine.h"
 #include "IDisplayable.h"
 
+/**
+ * Base GUI element.
+ */
 class Element : public IDisplayable {
 
 protected:

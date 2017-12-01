@@ -3,15 +3,11 @@
 //
 
 #include <random>
-#include <string>
 #include <sstream>
 #include "PlayState.h"
 #include "../GUI/GUIConstants.h"
 #include "../WorldLogic/Entities.h"
 #include "../PlayerLogic/Skills.h"
-#include "../WorldLogic/Trap.h"
-#include "../WorldLogic/Treasure.h"
-#include "../WorldLogic/Monster.h"
 #include "../PlayerLogic/PlayerLogicConstants.h"
 #include "../PlayerLogic/CharacterFactory.h"
 
@@ -50,7 +46,9 @@ void PlayState::onEnter()
     _inGameBg.init();
 
     _dungeon.generate();
+
     _dungeon.init();
+
     for (int i = 0; i < NB_PLAYERS; i++)
     {
         ostringstream playerIdentityString;
@@ -84,17 +82,8 @@ void PlayState::onEnter()
 
         _playerStats[i]->init();
     }
-    _playerStats[_currentPlayer]->setTile(STAT_CARD_PATH_ACTIVE);
-}
 
-void PlayState::onExit()
-{
-    _dungeon.cleanup();
-    for (int i = 0; i < NB_PLAYERS; i++)
-    {
-        _playerStats[i]->cleanup();
-    }
-    _inGameBg.cleanup();
+    _playerStats[_currentPlayer]->setTile(STAT_CARD_PATH_ACTIVE);
 }
 
 void PlayState::handleEvents()
@@ -120,116 +109,136 @@ void PlayState::update()
     _dungeon.update();
 }
 
+void PlayState::fightMonster(Monster * monster)
+{
+    while (monster->getLife() > 0 && _players[_currentPlayer]->getLife()->getValue() > 0)
+    {
+        int pAttackValue = _players[_currentPlayer]->getAttack()->getValue() - monster->getDefense();
+        if (pAttackValue < 0) {pAttackValue = 0;}
+        monster->alterLife(- pAttackValue );
+        printf("Player attack : %d\nMonster have %d life points.\n", pAttackValue, monster->getLife() );
+        if (monster->getLife() > 0)
+        {
+            random_device r;
+            default_random_engine randomEngine(r());
+            uniform_int_distribution<int> uniformIntDistribution(1, 100); // between 1 and 4 included
+            int randNb = uniformIntDistribution(randomEngine);
+
+            if (randNb > _players[_currentPlayer]->getAgility()->getValue())
+            {
+                int mAttackValue = monster->getAttack() - _players[_currentPlayer]->getDefense()->getValue();
+                if (mAttackValue < 0) {mAttackValue = 0;}
+                _players[_currentPlayer]->getLife()->alterPoints(- mAttackValue);
+                printf("Monster attack : %d\nPlayer have %d life points.\n", mAttackValue, _players[_currentPlayer]->getLife()->getValue());
+            } else
+            {
+                printf("Dodge !!\n");
+            }
+        }
+    }
+    if (monster->getLife() <= 0)
+    {
+        random_device r;
+        default_random_engine randomEngine(r());
+        uniform_int_distribution<int> uniformIntDistribution(1, 3); // between 1 and 4 included
+        int randNb = uniformIntDistribution(randomEngine);
+        switch (randNb)
+        {
+            case 1:
+                _players[_currentPlayer]->getAttack()->alterPoints(monster->getLevel());
+                break;
+            case 2:
+                _players[_currentPlayer]->getDefense()->alterPoints(monster->getLevel());
+                break;
+            case 3:
+                _players[_currentPlayer]->getAgility()->alterPoints(monster->getLevel());
+                break;
+            default:
+                break;
+        }
+        if (monster->isBoss())
+        {
+            printf("%s WINS !!\n", _players[_currentPlayer]->getName());
+            exit(0);
+        }
+    }
+}
+
+void PlayState::fleeMonster()
+{
+    random_device r;
+    default_random_engine randomEngine(r());
+    uniform_int_distribution<int> uniformIntDistribution(1, 4); // between 1 and 4 included
+    int randNb = uniformIntDistribution(randomEngine);
+
+    if (randNb == 1)
+    {
+        _players[_currentPlayer]->getLife()->alterPoints(- (_players[_currentPlayer]->getLife()->getValue()/2));
+    }
+}
+
+void PlayState::takeTrap(Trap * trap)
+{
+    switch (trap->getTargetSkill())
+    {
+        case ATTACK:
+            _players[_currentPlayer]->getAttack()->alterPoints(- trap->getDamage());
+            break;
+        case DEFENSE:
+            _players[_currentPlayer]->getDefense()->alterPoints(- trap->getDamage());
+            break;
+        case AGILITY:
+            _players[_currentPlayer]->getAgility()->alterPoints(- trap->getDamage());
+            break;
+        case LIFE:
+            _players[_currentPlayer]->getLife()->alterPoints(- trap->getDamage());
+            break;
+        default:
+            break;
+    }
+}
+
+void PlayState::takeTreasure(Treasure * treasure)
+{
+    switch (treasure->getTargetSkill())
+    {
+        case ATTACK:
+            _players[_currentPlayer]->getAttack()->alterPoints(treasure->getBonus());
+            break;
+        case DEFENSE:
+            _players[_currentPlayer]->getDefense()->alterPoints(treasure->getBonus());
+            break;
+        case AGILITY:
+            _players[_currentPlayer]->getAgility()->alterPoints(treasure->getBonus());
+            break;
+        case LIFE:
+            _players[_currentPlayer]->getLife()->alterPoints(treasure->getBonus());
+            break;
+        default:
+            break;
+    }
+}
+
 void PlayState::updateCurrentPlayer(Room * room, bool accept)
 {
     if (room->getType() == MONSTER && accept)
     {
-        auto monster = (Monster*) room;
-        while (monster->getLife() > 0 && _players[_currentPlayer]->getLife()->getValue() > 0)
-        {
-            int pAttackValue = _players[_currentPlayer]->getAttack()->getValue() - monster->getDefense();
-            if (pAttackValue < 0) {pAttackValue = 0;}
-            monster->alterLife(- pAttackValue );
-            printf("Player attack : %d\nMonster have %d life points.\n", pAttackValue, monster->getLife() );
-            if (monster->getLife() > 0)
-            {
-                random_device r;
-                default_random_engine randomEngine(r());
-                uniform_int_distribution<int> uniformIntDistribution(1, 100); // between 1 and 4 included
-                int randNb = uniformIntDistribution(randomEngine);
-
-                if (randNb > _players[_currentPlayer]->getAgility()->getValue())
-                {
-                    int mAttackValue = monster->getAttack() - _players[_currentPlayer]->getDefense()->getValue();
-                    if (mAttackValue < 0) {mAttackValue = 0;}
-                    _players[_currentPlayer]->getLife()->alterPoints(- mAttackValue);
-                    printf("Monster attack : %d\nPlayer have %d life points.\n", mAttackValue, _players[_currentPlayer]->getLife()->getValue());
-                } else
-                {
-                    printf("Dodge !!\n");
-                }
-            }
-        }
-        if (monster->getLife() <= 0)
-        {
-            random_device r;
-            default_random_engine randomEngine(r());
-            uniform_int_distribution<int> uniformIntDistribution(1, 3); // between 1 and 4 included
-            int randNb = uniformIntDistribution(randomEngine);
-            switch (randNb)
-            {
-                case 1:
-                    _players[_currentPlayer]->getAttack()->alterPoints(monster->getLevel());
-                    break;
-                case 2:
-                    _players[_currentPlayer]->getDefense()->alterPoints(monster->getLevel());
-                    break;
-                case 3:
-                    _players[_currentPlayer]->getAgility()->alterPoints(monster->getLevel());
-                    break;
-                default:
-                    break;
-            }
-            if (monster->isBoss())
-            {
-                printf("%s WINS !!\n", _players[_currentPlayer]->getName());
-                exit(0);
-            }
-        }
+        auto monster = (Monster *) room;
+        fightMonster(monster);
     }
     else if (room->getType() == MONSTER && !accept)
     {
-        random_device r;
-        default_random_engine randomEngine(r());
-        uniform_int_distribution<int> uniformIntDistribution(1, 4); // between 1 and 4 included
-        int randNb = uniformIntDistribution(randomEngine);
-
-        if (randNb == 1)
-        {
-            _players[_currentPlayer]->getLife()->alterPoints(- (_players[_currentPlayer]->getLife()->getValue()/2));
-        }
+        fleeMonster();
     }
     else if (room->getType() == TRAP)
     {
         auto * trap = (Trap *) room;
-        switch (room->getTargetSkill())
-        {
-            case ATTACK:
-                _players[_currentPlayer]->getAttack()->alterPoints(- trap->getDamage());
-                break;
-            case DEFENSE:
-                _players[_currentPlayer]->getDefense()->alterPoints(- trap->getDamage());
-                break;
-            case AGILITY:
-                _players[_currentPlayer]->getAgility()->alterPoints(- trap->getDamage());
-                break;
-            case LIFE:
-                _players[_currentPlayer]->getLife()->alterPoints(- trap->getDamage());
-                break;
-            default:
-                break;
-        }
+        takeTrap(trap);
     }
     else if (room->getType() == TREASURE)
     {
         auto * treasure = (Treasure *) room;
-        switch (room->getTargetSkill())
-        {
-            case ATTACK:
-                _players[_currentPlayer]->getAttack()->alterPoints(treasure->getBonus());
-                break;
-            case DEFENSE:
-                _players[_currentPlayer]->getDefense()->alterPoints(treasure->getBonus());
-                break;
-            case AGILITY:
-                _players[_currentPlayer]->getAgility()->alterPoints(treasure->getBonus());
-                break;
-            case LIFE:
-                _players[_currentPlayer]->getLife()->alterPoints(treasure->getBonus());
-                break;
-            default:
-                break;
-        }
+        takeTreasure(treasure);
     }
 
     if (_players[_currentPlayer]->getLife()->getValue() <= 0)
@@ -280,6 +289,16 @@ void PlayState::render()
         _playerStats[i]->render();
     }
     _dungeon.render();
+}
+
+void PlayState::onExit()
+{
+    _dungeon.cleanup();
+    for (int i = 0; i < NB_PLAYERS; i++)
+    {
+        _playerStats[i]->cleanup();
+    }
+    _inGameBg.cleanup();
 }
 
 PlayState::~PlayState()

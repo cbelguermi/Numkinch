@@ -11,6 +11,9 @@
 
 using namespace std;
 
+/**
+ *
+ */
 class StatCard : public Tile {
 
 private:

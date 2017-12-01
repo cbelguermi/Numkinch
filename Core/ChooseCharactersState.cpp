@@ -50,16 +50,6 @@ void ChooseCharactersState::onEnter()
     }
 }
 
-void ChooseCharactersState::onExit()
-{
-    _playGameBtn.cleanup();
-    for (int i = 0; i < NB_PLAYERS; i++)
-    {
-        _characters[i]->cleanup();
-    }
-    _chooseCharacterBg.cleanup();
-}
-
 void ChooseCharactersState::handleEvents()
 {
     SDL_Event event{};
@@ -91,6 +81,16 @@ void ChooseCharactersState::render()
         _characters[i]->render();
     }
     _playGameBtn.render();
+}
+
+void ChooseCharactersState::onExit()
+{
+    _playGameBtn.cleanup();
+    for (int i = 0; i < NB_PLAYERS; i++)
+    {
+        _characters[i]->cleanup();
+    }
+    _chooseCharacterBg.cleanup();
 }
 
 ChooseCharactersState::~ChooseCharactersState()
