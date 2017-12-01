@@ -65,7 +65,7 @@ void ChooseCharactersState::onEnter()
                 break;
         }
         string bodyTilePath;
-        switch (_randomPlayers[i]->getClass())
+        switch (_randomPlayers[i]->getRace())
         {
             case barbarian:
                 bodyTilePath = BODY_BARBARIAN_PATH;
@@ -74,10 +74,10 @@ void ChooseCharactersState::onEnter()
                 bodyTilePath = BODY_HUMAN_PATH;
                 break;
             case elf:
-                bodyTilePath = BODY_DWARF_PATH;
+                bodyTilePath = BODY_ELF_PATH;
                 break;
             case dwarf:
-                bodyTilePath = BODY_ELF_PATH;
+                bodyTilePath = BODY_DWARF_PATH;
                 break;
             default:
                 bodyTilePath = BODY_HUMAN_PATH;

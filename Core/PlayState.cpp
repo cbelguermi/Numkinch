@@ -101,7 +101,7 @@ void PlayState::onEnter()
                 break;
         }
         string bodyTilePath;
-        switch (_players[i]->getClass())
+        switch (_players[i]->getRace())
         {
             case barbarian:
                 bodyTilePath = BODY_BARBARIAN_PATH;
