@@ -5,18 +5,24 @@
 #include "CharacterCard.h"
 
 CharacterCard::CharacterCard(const char * path, int x, int y, int w, int h, const char * race,
-                             const char * characterClass, const char * name) : Tile(path, x, y, w, h),
-                                                                               _race(TTF_OpenFont(FONT_PATH, 25), 0, 0,
-                                                                                     0, race, x + 20, y + 20),
-                                                                               _class(TTF_OpenFont(FONT_PATH, 25), 0, 0,
-                                                                                      0, characterClass, x + 20, y + 60),
-                                                                               _name(TTF_OpenFont(FONT_PATH, 25), 0, 0,
-                                                                                     0, name, x + 20, y + 90)
-{}
+                             const char * characterClass, const char * name, const char * headTilePath,
+                             const char * bodyTilePath) : Tile(path, x, y, w, h),
+                                                           _race(TTF_OpenFont(FONT_PATH, 23), 0, 0,
+                                                                  0, race, x + 20, y + 60),
+                                                           _class(TTF_OpenFont(FONT_PATH, 23), 0, 0,
+                                                                  0, characterClass, x + 20, y + 90),
+                                                           _name(TTF_OpenFont(FONT_PATH, 22), 0, 0,
+                                                                 0, name, x + 20, y + 20),
+                                                           _headTile(headTilePath, x+45, y+115, w-100, h-250),
+                                                           _bodyTile(bodyTilePath, x+45, y+145, w-80, h-200)
+{
+}
 
 void CharacterCard::init()
 {
     Tile::init();
+    _bodyTile.init();
+    _headTile.init();
 }
 
 void CharacterCard::render()
@@ -25,6 +31,8 @@ void CharacterCard::render()
     _race.render();
     _class.render();
     _name.render();
+    _bodyTile.render();
+    _headTile.render();
 }
 
 void CharacterCard::cleanup()
@@ -33,6 +41,8 @@ void CharacterCard::cleanup()
     _name.cleanup();
     _class.cleanup();
     _race.cleanup();
+    _bodyTile.cleanup();
+    _headTile.cleanup();
 }
 
 

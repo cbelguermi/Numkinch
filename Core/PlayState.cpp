@@ -10,6 +10,8 @@
 #include "../PlayerLogic/Skills.h"
 #include "../PlayerLogic/PlayerLogicConstants.h"
 #include "../PlayerLogic/CharacterFactory.h"
+#include "../PlayerLogic/Races.h"
+#include "../PlayerLogic/Classes.h"
 
 #define STAT_CARD_PATH_INACTIVE "./res/StatCardInactive.png"
 #define STAT_CARD_PATH_ACTIVE "./res/StatCardActive.png"
@@ -76,9 +78,49 @@ void PlayState::onEnter()
                       << _players[i]->getLife()->getMaxValue();
         string life = lifeString.str();
 
+
+        string headTilePath;
+        switch (_players[i]->getClass())
+        {
+            case thief:
+                headTilePath = HEAD_THIEF_PATH;
+                break;
+            case priest:
+                headTilePath = HEAD_PRIEST_PATH;
+                break;
+            case assassin:
+                headTilePath = HEAD_ASSASSIN_PATH;
+                break;
+            case paladin:
+                headTilePath = HEAD_PALADIN_PATH;
+                break;
+            default:
+                headTilePath = HEAD_PALADIN_PATH;
+                break;
+        }
+        string bodyTilePath;
+        switch (_players[i]->getClass())
+        {
+            case barbarian:
+                bodyTilePath = BODY_BARBARIAN_PATH;
+                break;
+            case human:
+                bodyTilePath = BODY_HUMAN_PATH;
+                break;
+            case elf:
+                bodyTilePath = BODY_DWARF_PATH;
+                break;
+            case dwarf:
+                bodyTilePath = BODY_ELF_PATH;
+                break;
+            default:
+                bodyTilePath = BODY_HUMAN_PATH;
+                break;
+        }
+
         _playerStats[i] = new StatCard(STAT_CARD_PATH_INACTIVE, WINDOW_WIDTH - STAT_CARD_WIDTH,
                                        350 + STAT_CARD_HEIGHT * i, STAT_CARD_WIDTH, STAT_CARD_HEIGHT, playerIdentity,
-                                       attack, defense, agility, life);
+                                       attack, defense, agility, life, headTilePath.c_str(), bodyTilePath.c_str());
 
         _playerStats[i]->init();
     }

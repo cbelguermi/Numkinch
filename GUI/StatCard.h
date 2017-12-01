@@ -27,9 +27,13 @@ private:
 
     Text _life;
 
+    Tile _headTile;
+
+    Tile _bodyTile;
+
 public:
     StatCard(const char * path, int x, int y, int w, int h, string playerIdentity, string attack, string defense,
-             string agility, string life);
+             string agility, string life, const char * headTilePath, const char * bodyTilePath);
 
     void init() override;
 

@@ -66,15 +66,15 @@ const char * Race::RaceToString() const
     switch (_race)
     {
         case barbarian:
-            return "Barbarian";
+            return "Nordique";
         case dwarf:
-            return "Dwarf";
+            return "Nain";
         case elf:
             return "Elf";
         case human:
-            return "Human";
+            return "Humain";
         default:
-            return "UFO";
+            return "OVNI";
     }
 }
 
@@ -87,11 +87,11 @@ const char * Race::ClassToString() const
         case paladin:
             return "Paladin";
         case priest:
-            return "Priest";
+            return "Pretre";
         case thief:
-            return "Thief";
+            return "Voleur";
         default:
-            return "UFO";
+            return "OVNI";
     }
 }
 

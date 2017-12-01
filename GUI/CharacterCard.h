@@ -20,9 +20,13 @@ private:
 
     Text _name;
 
+    Tile _headTile;
+
+    Tile _bodyTile;
+
 public:
     CharacterCard(const char * path, int x, int y, int w, int h, const char * race, const char * characterClass,
-    const char * name);
+    const char * name, const char * headTilePath, const char * bodyTilePath);
 
     void init() override;
 

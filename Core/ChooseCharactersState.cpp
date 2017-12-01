@@ -7,6 +7,9 @@
 #include "PlayState.h"
 #include "../GUI/GUIConstants.h"
 #include "GameStateManager.h"
+#include "../PlayerLogic/Race.h"
+#include "../PlayerLogic/Races.h"
+#include "../PlayerLogic/Classes.h"
 
 #define CARD_PATH "./res/CardBase.png"
 #define CHOOSE_CHAR_BG_PATH "./res/choose_bg.png"
@@ -42,10 +45,48 @@ void ChooseCharactersState::onEnter()
 
     for (int i = 0; i < NB_PLAYERS; i++)
     {
+        string headTilePath;
+        switch (_randomPlayers[i]->getClass())
+        {
+            case thief:
+                headTilePath = HEAD_THIEF_PATH;
+                break;
+            case priest:
+                headTilePath = HEAD_PRIEST_PATH;
+                break;
+            case assassin:
+                headTilePath = HEAD_ASSASSIN_PATH;
+                break;
+            case paladin:
+                headTilePath = HEAD_PALADIN_PATH;
+                break;
+            default:
+                headTilePath = HEAD_PALADIN_PATH;
+                break;
+        }
+        string bodyTilePath;
+        switch (_randomPlayers[i]->getClass())
+        {
+            case barbarian:
+                bodyTilePath = BODY_BARBARIAN_PATH;
+                break;
+            case human:
+                bodyTilePath = BODY_HUMAN_PATH;
+                break;
+            case elf:
+                bodyTilePath = BODY_DWARF_PATH;
+                break;
+            case dwarf:
+                bodyTilePath = BODY_ELF_PATH;
+                break;
+            default:
+                bodyTilePath = BODY_HUMAN_PATH;
+                break;
+        }
         _characters[i] = new CharacterCard(CARD_PATH, CHAR_CARD_MARGIN_SIDE + i * CHAR_CARD_WIDTH,
                                                 CHAR_CARD_MARGIN_TOP, CHAR_CARD_WIDTH, CHAR_CARD_HEIGHT,
                                                 _randomPlayers[i]->RaceToString(), _randomPlayers[i]->ClassToString(),
-                                                _randomPlayers[i]->getName());
+                                                _randomPlayers[i]->getName(), headTilePath.c_str(), bodyTilePath.c_str());
         _characters[i]->init();
     }
 }
