@@ -82,6 +82,11 @@ Un exécutable nommé `Numkinch` sera généré. Pour le lancer, saisir simpleme
 
 `./Numkinch`
 
+### Utilisation
+
+* En cliquant sur « Nouvelle Partie », il se peut que le programme mette quelques secondes à répondre. Ne pas tenter de re-cliquer sur le bouton.
+* Il peut être également possible que le programme plante après avoir cliqué sur « Jouer », la première fois qu'on l'utilise. Dans ce cas, relancer le programme et ré-essayer, le plantage ne devrait pas arriver de nouveau.
+
 ### Résolution d'écran
 
 Le programme a été testé avec une résolution d'écran de 1 920 x 1 080.
