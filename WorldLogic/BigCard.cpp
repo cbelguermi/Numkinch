@@ -16,12 +16,12 @@ BigCard::BigCard(bool hasRefuseBtn, const char * acceptBtnPath, const char * ent
 
                                                  _acceptBtn(acceptBtnPath, BIG_CARD_MARGIN_SIDE
                                                                            + 50, BIG_CARD_MARGIN_TOP
-                                                                     + BIG_CARD_HEIGHT - 100,
+                                                                     + BIG_CARD_HEIGHT - 90,
                                                             BUTTON_WIDTH, BUTTON_HEIGHT),
 
                                                  _refuseBtn(REFUSE_BTN_PATH, BIG_CARD_MARGIN_SIDE
                                                                              + 200, BIG_CARD_MARGIN_TOP
-                                                                     + BIG_CARD_HEIGHT - 100,
+                                                                     + BIG_CARD_HEIGHT - 90,
                                                             BUTTON_WIDTH, BUTTON_HEIGHT),
 
                                                  _entityImage(entityImagePath, BIG_CARD_MARGIN_SIDE
@@ -30,23 +30,23 @@ BigCard::BigCard(bool hasRefuseBtn, const char * acceptBtnPath, const char * ent
                                                                       ENTITY_IMAGE_MARGIN_TOP, ENTITY_IMAGE_WIDTH,
                                                               ENTITY_IMAGE_HEIGHT),
 
-                                                 _topTxt(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, topText.c_str(),
+                                                 _topTxt(TTF_OpenFont(FONT_PATH, 25), 0, 0, 0, topText.c_str(),
                                                          BIG_CARD_MARGIN_SIDE
                                                          + ENTITY_IMAGE_MARGIN_SIDE, BIG_CARD_MARGIN_TOP
                                                                                       + 30, BIG_CARD_WIDTH-70),
 
-                                                 _entityNameTxt(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, entityNameText,
+                                                 _entityNameTxt(TTF_OpenFont(FONT_PATH, 25), 0, 0, 0, entityNameText,
                                                                 BIG_CARD_MARGIN_SIDE
                                                                 + ENTITY_IMAGE_MARGIN_SIDE, BIG_CARD_MARGIN_TOP
                                                                          + ENTITY_IMAGE_MARGIN_TOP
                                                                                             + ENTITY_IMAGE_HEIGHT + 10, BIG_CARD_WIDTH-70),
 
-                                                 _descriptionTxt(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, descriptionText,
+                                                 _descriptionTxt(TTF_OpenFont(FONT_PATH, 20), 0, 0, 0, descriptionText,
                                                                  BIG_CARD_MARGIN_SIDE
                                                                  + ENTITY_IMAGE_MARGIN_SIDE, BIG_CARD_MARGIN_TOP
                                                                                               +
                                                                          ENTITY_IMAGE_MARGIN_TOP + ENTITY_IMAGE_HEIGHT
-                                                                                             + 50, BIG_CARD_WIDTH-70)
+                                                                                             + 70, BIG_CARD_WIDTH-70)
 {
     _hasRefuseBtn = hasRefuseBtn;
     _displayed = false;

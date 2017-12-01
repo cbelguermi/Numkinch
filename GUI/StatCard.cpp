@@ -7,11 +7,11 @@
 StatCard::StatCard(const char * path, int x, int y, int w, int h, string playerIdentity, string attack,
                    string defense, string agility, string life) :
         Tile(path, x, y, w, h),
-        _playerIdentity(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, playerIdentity.c_str(), x + 20, y + 10),
-        _attack(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, attack.c_str(), x + 20, y + 30),
-        _defense(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, defense.c_str(), x + 20, y + 50),
-        _agility(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, agility.c_str(), x + 20, y + 70),
-        _life(TTF_OpenFont(FONT_PATH, 15), 0, 0, 0, life.c_str(), x + 20, y + 90)
+        _playerIdentity(TTF_OpenFont(FONT_PATH, 20), 0, 0, 0, playerIdentity.c_str(), x + 20, y + 10),
+        _attack(TTF_OpenFont(FONT_PATH, 20), 0, 0, 0, attack.c_str(), x + 20, y + 38),
+        _defense(TTF_OpenFont(FONT_PATH, 20), 0, 0, 0, defense.c_str(), x + 20, y + 66),
+        _agility(TTF_OpenFont(FONT_PATH, 20), 0, 0, 0, agility.c_str(), x + 20, y + 94),
+        _life(TTF_OpenFont(FONT_PATH, 20), 0, 0, 0, life.c_str(), x + 20, y + 122)
 {}
 
 void StatCard::init()

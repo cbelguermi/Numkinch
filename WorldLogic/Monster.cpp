@@ -49,6 +49,6 @@ void Monster::alterLife(int value)
 string Monster::getSkillsString()
 {
     ostringstream stringStream;
-    stringStream << "ATT: " << _attack << " / DEF: " << _defense << " / PV: " << _life << "\nNIV: " << _level;
+    stringStream << "ATT: " << _attack << " / DEF: " << _defense << "\nPV: " << _life << " / NIV: " << _level;
     return stringStream.str();
 }
