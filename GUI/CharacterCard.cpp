@@ -13,8 +13,8 @@ CharacterCard::CharacterCard(const char * path, int x, int y, int w, int h, cons
                                                                   0, characterClass, x + 20, y + 90),
                                                            _name(TTF_OpenFont(FONT_PATH, 22), 0, 0,
                                                                  0, name, x + 20, y + 20),
-                                                           _headTile(headTilePath, x+45, y+115, w-100, h-250),
-                                                           _bodyTile(bodyTilePath, x+38, y+162, w-80, h-200)
+                                                           _headTile(headTilePath, x+40, y+115, w-90, h-235),
+                                                           _bodyTile(bodyTilePath, x+38, y+177, w-80, h-200)
 {
 }
 

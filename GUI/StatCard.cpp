@@ -13,8 +13,8 @@ StatCard::StatCard(const char * path, int x, int y, int w, int h, string playerI
         _defense(TTF_OpenFont(FONT_PATH, 20), 0, 0, 0, defense.c_str(), x + 20, y + 64),
         _agility(TTF_OpenFont(FONT_PATH, 20), 0, 0, 0, agility.c_str(), x + 20, y + 92),
         _life(TTF_OpenFont(FONT_PATH, 20), 0, 0, 0, life.c_str(), x + 20, y + 120),
-        _headTile(headTilePath, x+185, y+30, w-200, h-100),
-        _bodyTile(bodyTilePath, x+185, y+80, w-200, h-100)
+        _headTile(headTilePath, x+182, y+32, w-200, h-100),
+        _bodyTile(bodyTilePath, x+185, y+80, w-200, h-90)
 {}
 
 void StatCard::init()
