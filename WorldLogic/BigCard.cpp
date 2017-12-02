@@ -146,5 +146,7 @@ void BigCard::cleanup()
         _refuseBtn.cleanup();
     }
     _acceptBtn.cleanup();
+    _refuseBtn.unpress();
+    _acceptBtn.unpress();
     _cardImage.cleanup();
 }

@@ -45,3 +45,7 @@ void Button::cleanup()
 {
     Tile::cleanup();
 }
+
+void Button::unpress() {
+    _pressed =false;
+}
