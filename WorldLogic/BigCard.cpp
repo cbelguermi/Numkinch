@@ -137,9 +137,9 @@ void BigCard::render()
 
 void BigCard::cleanup()
 {
-    _descriptionTxt.cleanup();
+    /*_descriptionTxt.cleanup();
     _entityNameTxt.cleanup();
-    _topTxt.cleanup();
+    _topTxt.cleanup();*/
     _entityImage.cleanup();
     if (hasRefuseBtn())
     {
